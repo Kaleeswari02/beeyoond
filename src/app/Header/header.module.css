@@ -1,0 +1,58 @@
+.mobileMenuOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  color: white;
+}
+
+.overlayBg {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.1;
+  object-fit: cover;
+}
+
+.menuContent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 60px;
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 22px;
+  margin-top: 60px;
+}
+
+.navLinks a {
+  color: white;
+  text-decoration: none;
+}
+
+.navLinks a.highlight {
+  background-color: #ffcc00;
+  color: black;
+  padding: 6px 14px;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 20px;
+  font-size: 22px;
+  padding-bottom: 30px;
+}
