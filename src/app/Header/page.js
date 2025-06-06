@@ -1,68 +1,75 @@
 'use client';
-import React, { useState } from 'react';
-import {
-  Navbar,
-  NavbarBrand,
-  Container,
-  Button,
-} from 'reactstrap';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import { FaBars, FaTimes, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import styles from './header.module.css';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const toggleMenu = () => setIsOpen(!isOpen);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+    document.body.style.overflow = !isOpen ? 'hidden' : 'auto';
+  };
+
+  useEffect(() => {
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, []);
 
   return (
     <header>
-      <Navbar dark fixed="top" className="bg-black border-bottom border-warning py-2">
-        <Container className="d-flex justify-content-between align-items-center">
-          <NavbarBrand href="/" className="d-flex align-items-center gap-2">
-            <Image src="/assets/images/logo.png" alt="Beeyoond" width={150} height={40} />
-          </NavbarBrand>
-
-          <div className="d-flex align-items-center gap-2">
-            <Button size="sm" outline color="warning" className="rounded-pill px-3">
+      <nav className="navbar navbar-expand-lg bg-black fixed-top">
+        <div className={`container d-flex justify-content-between align-items-center mb-4 border-bottom border-warning ${styles.navContainer}`}>
+          <a href="/" className={`navbar-brand ${styles.navbarBrand}`}>
+                <img
+                    src="/assets/images/logo.png"
+                    alt="Beeyoond"
+                    className={styles.navbarLogo}
+                />
+                </a>
+          <div className="d-flex align-items-center gap-3">
+            <a className={styles.contactBtn} href="#contact">
               Contact
-            </Button>
-
-            <Button
-              color="warning"
-              className="rounded-circle d-md-none"
-              style={{ width: '36px', height: '36px', padding: 0 }}
-              onClick={toggleMenu}
-            >
-              {isOpen ? '✕' : '≡'}
-            </Button>
+            </a>
+            <button onClick={toggleMenu} className={styles.menuButton}>
+              {isOpen ? <FaTimes size={18} /> :  <img
+              src="/assets/images/menu-icon.png"
+              alt="Beeyoond"
+              width={36}
+              height={24}
+              style={{ objectFit: 'contain' }}
+            />}
+            </button>
           </div>
-        </Container>
-      </Navbar>
+        </div>
+      </nav>
 
-      {/* Mobile Overlay Menu */}
       {isOpen && (
-        <div className="mobileMenuOverlay">
-          <Image
-            src="/images/car-bg.jpg"
-            alt="Background"
-            fill
-            className="overlayBg"
-          />
-
-          <Container className="menuContent">
-            <nav className="navLinks">
-              <a href="/">Home</a>
-              <a href="/about">About us</a>
-              <a href="/services">Services</a>
-              <a href="/portfolio">Portfolio</a>
-              <a href="/testimonial">Testimonial</a>
-              <a href="/careers" className="highlight">Careers</a>
+        <div className={styles.mobileMenuOverlay}>
+          <div className={styles.menuContent}>
+            <nav className={styles.navLinks}>
+              <a href="/" onClick={toggleMenu}>Home</a>
+              <a href="/about" onClick={toggleMenu}>About us</a>
+              <a href="/services" onClick={toggleMenu}>Services</a>
+              <a href="/portfolio" onClick={toggleMenu}>Portfolio</a>
+              <a href="/testimonial" onClick={toggleMenu}>Testimonial</a>
+              <a href="/careers" className={styles.highlight} onClick={toggleMenu}>Careers</a>
             </nav>
 
-            <div className="socialIcons mt-auto">
-              <a href="#"><i className="ri-linkedin-fill"></i></a>
-              <a href="#"><i className="ri-instagram-fill"></i></a>
-              <a href="#"><i className="ri-close-line" onClick={toggleMenu}></i></a>
+            <div className={`${styles.socialIcons} mt-auto`}>
+              <a href="#"><FaLinkedinIn size={20} /></a>
+              <a href="#"><FaInstagram size={20} /></a>
+              <button
+                onClick={toggleMenu}
+                className="text-white ms-3 p-0"
+                style={{ fontSize: '20px', background: 'none', border: 'none' }}
+              >
+                <FaTimes />
+              </button>
             </div>
-          </Container>
+          </div>
         </div>
       )}
     </header>
