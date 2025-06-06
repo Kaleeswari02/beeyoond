@@ -1,0 +1,37 @@
+
+.banner-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    min-width: 100%;
+    background-color: #00000002;
+  }
+  .video-sec{
+    height: 60vh;
+  }
+  .banner-container::before{
+    content: "";
+    background-image:  linear-gradient(to bottom right, #000000, #00000018);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    z-index: -1;
+    pointer-events: none;
+    object-fit: cover;
+    height: 90vh;
+  }
+  .banner-overlay {
+    z-index: 1;
+  }
+.banner-head{
+  font-size:100px ;
+}

@@ -1,24 +1,41 @@
-'use client'
+'use client';
 import './home.css';
 
-export default function Banner(){
-    return(
-        <>
-        <div className="container-fluid">
-            <div className="banner-section" >
-                <div className="row">
-                    <div className="col-xl-5 col-lg-5">
-                        <div className="content-section">
-                            <h3>We make</h3>
-                            <h1>GAMES</h1>
-                            <p>At Beeyoond, we create immersive AR/VR gaming experiences that connect with real world machines. We use powerful 2D and 3D animations to show natural movement and machine action, and we produce high quality videos that clearly explain how equipment works.</p>
-                            <div><button>Get Quote</button></div>
-                        </div>
-                    </div>
-                    <div className="col-xl-7 col-lg-7"></div>
+export default function Banner() {
+  return (
+    <div className="banner-container mt-xl-5 mt-lg-5 mt-md-5 mt-5">
+    <div className='video-sec mt-xl-5 mt-lg-5 mt-md-5 mt-5'>
+        <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            id="bg-video"
+          >
+            <source src="/assets/videos/banner-vdo.mp4" type="video/mp4" />
+        </video>
+        <div className='container'>
+        <div className="banner-overlay mt-xl-5 mt-lg-5 mt-md-5 mt-5">
+            <div className="row mt-xl-5 mt-lg-5 mt-md-5 mt-5">
+              <div className="col-xl-5 col-lg-5 mt-xl-5 mt-lg-5 mt-md-5 mt-5">
+                <div className="content-section mt-xl-5 mt-lg-5 mt-md-5 mt-5">
+                  <h3 className='banner-head mt-xl-5 mt-lg-5 mt-md-5 mt-5'>We make</h3>
+                  <h1 className='banner-subhead'>GAMES</h1>
+                  <p className='banner-para'>
+                    At Beeyoond, we create immersive AR/VR gaming experiences that connect with real world machines. 
+                    We use powerful 2D and 3D animations to show natural movement and machine action, and we produce 
+                    high quality videos that clearly explain how equipment works.
+                  </p>
+                  <div><button>Get Quote</button></div>
                 </div>
+              </div>
+              <div className="col-xl-7 col-lg-7"></div>
             </div>
         </div>
-        </>
-    )
+     </div>
+    </div>
+
+
+    </div>
+  );
 }
