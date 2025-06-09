@@ -23,10 +23,8 @@ export default function Banner() {
                   <h3 className='banner-subhead'>GAMES</h3>
                   <p className='banner-para'>
                     At Beeyoond, we create immersive AR/VR gaming experiences that connect with real world machines. 
-                    We use powerful 2D and 3D animations to show natural movement and machine action, and we produce 
-                    high quality videos that clearly explain how equipment works.
                   </p>
-                  <div><button>Get Quote</button></div>
+                  <div><button className='banner-btn'>Get Quotes</button></div>
                 </div>
               </div>
               <div className="col-xl-7 col-lg-7"></div>
