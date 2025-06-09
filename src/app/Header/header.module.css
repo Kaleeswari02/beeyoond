@@ -24,14 +24,18 @@
 }
 
 /* Navbar */
-.navbarbg{
+.navbarbg {
   background-color: #0b0b0a !important;
 }
+
+
 .navbarBrand {
   display: flex;
   align-items: center;
   padding: 6px 0;
 }
+
+
 
 .navbarLogo {
   width: 200px;
