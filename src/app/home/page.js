@@ -17,8 +17,8 @@ export default function Banner() {
         <div className='container'>
         <div className="banner-overlay mt-xl-5 mt-lg-5 mt-md-5 mt-5">
             <div className="row mt-xl-5 mt-lg-5 mt-md-5 mt-5">
-              <div className="col-xl-5 col-lg-5 mt-xl-5 mt-lg-5 mt-md-5 mt-5">
-                <div className="content-section mt-xl-5 mt-lg-5 mt-md-5 mt-5">
+              <div className="col-xl-4 col-lg-5 mt-xl-3 mt-lg-3 mt-md-3 mt-5">
+                <div className="content-section ">
                   <h3 className='banner-head mt-xl-5 mt-lg-5 mt-md-5 mt-5'>WE MAKE</h3>
                   <h3 className='banner-subhead'>GAMES</h3>
                   <p className='banner-para'>
@@ -27,7 +27,8 @@ export default function Banner() {
                   <div><button className='banner-btn'>Get Quotes</button></div>
                 </div>
               </div>
-              <div className="col-xl-7 col-lg-7"></div>
+              <div className="col-xl-2 col-lg-1"></div>
+              <div className="col-xl-6 col-lg-6"></div>
             </div>
         </div>
      </div>

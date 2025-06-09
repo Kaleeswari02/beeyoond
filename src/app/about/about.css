@@ -1,0 +1,41 @@
+#about-video{
+    max-width: 100%;
+}
+.about-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+.about-sec-bg{
+    background-color: #0b0b0a;
+}
+.about-head{
+    font-size: 60px;
+    color: #ffffff;
+    font-family: Anton, sans-serif !important;
+    letter-spacing: 1px;
+    text-transform: uppercase !important;
+}
+.about-para{
+    font-size: 17px;
+    color: #ffffff;
+    font-family: Anton, sans-serif !important;
+    letter-spacing: 1px;
+}
+.about-three{
+    position: relative;
+    left:2vw;
+    bottom: 17vh;
+}
+.about-two{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.content::before{
+    content: '';
+    background-image: url('/assets/images/pentagan.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

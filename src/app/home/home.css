@@ -6,11 +6,11 @@
     min-width: 100%;
   }
   .video-sec{
-    height: 100vh;
+    height: 75vh;
   }
   .banner-container::before{
     content: "";
-    background-color: #00000097;
+    background: linear-gradient(to bottom, #000000, #0000000c);
     position: absolute;
     top: 0;
     right: 0;
@@ -19,14 +19,14 @@
     z-index: 0;
   }
   #bg-video {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     min-width: 100%;
     z-index: -1;
     pointer-events: none;
     object-fit: cover;
-    height: 100vh;
+    height: 90vh;
   }
   .banner-overlay {
     position: relative;
@@ -56,7 +56,8 @@
   -webkit-text-stroke-color: #ffbf00;
   stroke: #ffbf00;
   font-family: Anton, sans-serif !important;
-  font-size: 170px;
+  font-size: 160px;
+  text-shadow: 3px 3px 15px #ffbf00;
 }
 .banner-para{ 
   font-family: Anton, sans-serif !important;
@@ -68,6 +69,9 @@
     border: none;
     background-color: #ffbf00;
     border-radius: 30px 30px 30px 30px !important;
-    padding: 5px 40px;
+    padding: 5px 30px;
     color: #000;
+}
+.content-section{
+  margin-top: 30%;
 }
