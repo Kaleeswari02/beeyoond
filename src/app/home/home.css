@@ -4,20 +4,19 @@
     width: 100%;
     overflow: hidden;
     min-width: 100%;
-    background-color: #00000002;
   }
   .video-sec{
-    height: 60vh;
+    height: 100vh;
   }
   .banner-container::before{
     content: "";
-    background-image:  linear-gradient(to bottom right, #000000, #00000018);
+    background-color: #00000097;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 1;
+    z-index: 0;
   }
   #bg-video {
     position: fixed;
@@ -27,11 +26,35 @@
     z-index: -1;
     pointer-events: none;
     object-fit: cover;
-    height: 90vh;
+    height: 100vh;
   }
   .banner-overlay {
-    z-index: 1;
+    position: relative;
+     z-index: 2;
   }
 .banner-head{
-  font-size:100px ;
+  font-size:50px ;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-transform: capitalize !important;
+}
+
+.banner-head,
+.banner-subhead,
+.banner-para {
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  font-family: Anton, sans-serif !important;
+
+}
+.banner-subhead{
+  color: #FFFFFF;
+  font-family: Anton, Sans-serif;
+  -webkit-text-stroke-width: 2px;
+  stroke-width: 2px;
+  -webkit-text-stroke-color: #fcd202;
+  stroke: #fcd202;
+  font-family: Anton, sans-serif !important;
+  font-size: 170px;
 }

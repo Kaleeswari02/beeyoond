@@ -12,15 +12,15 @@ export default function Banner() {
             playsInline
             id="bg-video"
           >
-            <source src="/assets/videos/banner-vdo.mp4" type="video/mp4" />
+            <source src="/assets/videos/bannervideo.mp4" type="video/mp4" />
         </video>
         <div className='container'>
         <div className="banner-overlay mt-xl-5 mt-lg-5 mt-md-5 mt-5">
             <div className="row mt-xl-5 mt-lg-5 mt-md-5 mt-5">
               <div className="col-xl-5 col-lg-5 mt-xl-5 mt-lg-5 mt-md-5 mt-5">
                 <div className="content-section mt-xl-5 mt-lg-5 mt-md-5 mt-5">
-                  <h3 className='banner-head mt-xl-5 mt-lg-5 mt-md-5 mt-5'>We make</h3>
-                  <h1 className='banner-subhead'>GAMES</h1>
+                  <h3 className='banner-head mt-xl-5 mt-lg-5 mt-md-5 mt-5'>WE MAKE</h3>
+                  <h3 className='banner-subhead'>GAMES</h3>
                   <p className='banner-para'>
                     At Beeyoond, we create immersive AR/VR gaming experiences that connect with real world machines. 
                     We use powerful 2D and 3D animations to show natural movement and machine action, and we produce 
