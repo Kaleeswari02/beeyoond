@@ -53,8 +53,21 @@
   font-family: Anton, Sans-serif;
   -webkit-text-stroke-width: 2px;
   stroke-width: 2px;
-  -webkit-text-stroke-color: #fcd202;
-  stroke: #fcd202;
+  -webkit-text-stroke-color: #ffbf00;
+  stroke: #ffbf00;
   font-family: Anton, sans-serif !important;
   font-size: 170px;
+}
+.banner-para{ 
+  font-family: Anton, sans-serif !important;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+.banner-btn{
+    font-size: 20px;
+    border: none;
+    background-color: #ffbf00;
+    border-radius: 30px 30px 30px 30px !important;
+    padding: 5px 40px;
+    color: #000;
 }
