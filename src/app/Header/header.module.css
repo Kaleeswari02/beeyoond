@@ -1,24 +1,31 @@
+/* Overlay menu */
 .mobileMenuOverlay {
-  position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
-  width: 100vw;
-  background: rgba(0, 0, 0, 0.96);
+  width: 100%;
   z-index: 9999;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px;
-  color: white;
+  padding: 20px 24px;
+  color: #fff;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85));
+  backdrop-filter: blur(4px); /* Optional: soft blur effect */
   overflow: hidden;
 }
+
 
 .menuContent {
   display: flex;
   flex-direction: column;
   height: 100%;
   padding-top: 60px;
+}
+
+/* Navbar */
+.navbarbg{
+  background-color: #0b0b0a !important;
 }
 .navbarBrand {
   display: flex;
@@ -32,6 +39,57 @@
   object-fit: contain;
 }
 
+.navContainer {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ffbf00;
+}
+
+/* Contact Button */
+.contactBtn {
+  border: 1px solid #ffbf00;
+  border-radius: 30px;
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 7px 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.contactBtn:hover {
+  background-color: #ffbf00;
+  color: black;
+  border-color: #ffbf00;
+}
+
+/* Menu Icon Button */
+.menuButton {
+  padding: 10px 23px;
+  border-radius: 30px;
+  background-color: #ffbf00;
+  border: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.menuButton:hover {
+  background-color: #ffbf00;
+}
+
+.menuIcon {
+  width: 30px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* Vertical nav links */
 .navLinks {
   display: flex;
   flex-direction: column;
@@ -57,56 +115,31 @@
   border-radius: 12px;
   width: fit-content;
 }
-.navContainer{
-  padding-bottom: 10px;
+
+/* Social Icons */
+
+.careerWithIcons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
 }
 
-
-/* Contact Button Styling */
-.contactBtn {
-  border: 1px solid #ffbf00;
-  border-radius: 30px;
+.careerWithIcons a:first-child {
+  font-size: 24px;
   color: white;
-  background-color: transparent;
   text-decoration: none;
-  font-size: 18px;
-  padding: 7px 23px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
-.contactBtn:hover {
-  background-color: #ffbf00;
-  color: black;
-  border-color: #ffbf00;
-}
-/* Menu Icon Button */
-.menuButton {
-  /* width: 85px;
-  height: 51px; */
-    padding: 10px 23px;
-
-  border-radius: 30px;
-  background-color: #ffbf00;
-  border: none;
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 0.3s;
-}
-
-.menuButton:hover {
-  background-color: #ffbf00;
+.careerWithIcons a:first-child:hover {
+  color: #ffbf01;
 }
 
 .socialIcons {
   display: flex;
   gap: 20px;
   font-size: 22px;
-  padding-bottom: 30px;
   align-items: center;
+  justify-content: flex-end;
 }
