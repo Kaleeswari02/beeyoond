@@ -24,7 +24,7 @@ export default function Banner() {
                   <p className='banner-para'>
                     At Beeyoond, we create immersive AR/VR gaming experiences that connect with real world machines. 
                   </p>
-                  <div><button className='banner-btn'>Get Quote</button></div>
+                  <div><button className='banner-btn'>Get Quotes</button></div>
                 </div>
               </div>
               <div className="col-xl-7 col-lg-7"></div>
