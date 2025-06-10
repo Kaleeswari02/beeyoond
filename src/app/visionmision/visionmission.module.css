@@ -1,0 +1,143 @@
+.VisionMissionSection {
+  background-color: #0b0b0a;
+}
+
+.VisionMissionSection h2 {
+  font-size: 60px;
+  color: #ffffff;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.cardBox {
+  position: relative;
+  width: 100%;
+  border-radius: 60px;
+  overflow: hidden;
+  border: 2px solid #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.cardBox:hover {
+  transform: scale(1.015);
+}
+
+.cardImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 60px;
+  filter: brightness(0.9);
+  transition: filter 0.3s ease;
+}
+
+.cardBox:hover .cardImage {
+  filter: brightness(0.2);
+}
+
+.cardBox > .title {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  z-index: 2;
+  color: #fff;
+  font-size: 48px;
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  line-height: 1.2;
+  transition: all 0.3s ease;
+}
+.cardBox:hover > .title {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 2.5rem;
+  border-radius: 60px;
+  transition: all 0.4s ease;
+  z-index: 2;
+  color: #fff;
+  opacity: 1;
+  visibility: visible;
+}
+.cardBox:hover .overlay {
+  justify-content: center;
+}
+
+
+.title {
+  font-size: 40px;
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1.2;
+  transition: all 0.4s ease;
+}
+
+.title span {
+  color: #f0cb11;
+  display: block;
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.7;
+  color: #fff;
+  margin-top: 1rem;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 0.5px;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.cardBox:hover .description {
+  opacity: 1;
+  max-height: 500px;
+}
+
+@media (max-width: 767px) {
+  .VisionMissionSection h2 {
+    font-size: 36px;
+  }
+
+  .cardBox > .title,
+  .overlay .title {
+    font-size: 28px;
+  }
+
+  .cardBox > .title span,
+  .overlay .title span {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .overlay {
+    padding: 1.5rem;
+    border-radius: 32px;
+  }
+
+  .cardImage {
+    border-radius: 32px;
+  }
+
+  .cardBox {
+    border-radius: 32px;
+  }
+}
