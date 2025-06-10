@@ -4,6 +4,7 @@ import Header from "./Header/page";
 import Banner from "./home/page";
 import About from "./about/page";
 import Videosection from "./videosection/page";
+import Stats from "./stats/page";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
   <Banner/>
   <About/>
   <Videosection/>
+  <Stats/>
   </>
   );
 }
