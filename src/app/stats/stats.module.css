@@ -1,5 +1,6 @@
 .statsSection {
   background-color: #0b0b0a;
+  padding-bottom: 100px;
 }
 .hexagonInner {
   background: #0b0b0a;
@@ -60,7 +61,7 @@
 /* Responsive adjustments */
 @media (max-width: 767px) {
   .hexagonBox {
-    width: 120px;
+    width: 130px;
     height: 120px;
   }
 
