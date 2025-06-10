@@ -12,8 +12,8 @@ export default function Home() {
   <Header/>
   <Banner/>
   <About/>
-  <Videosection/>
   <Stats/>
+  <Videosection/>
   </>
   );
 }
