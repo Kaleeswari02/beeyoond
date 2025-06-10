@@ -18,15 +18,15 @@
     text-transform: uppercase !important;
 }
 .about-para{
-    font-size: 17px;
+    font-size: 19px;
     color: #ffffff;
     font-family: Anton, sans-serif !important;
     letter-spacing: 1px;
 }
 .about-three{
     position: relative;
-    left:2vw;
-    bottom: 17vh;
+    left:0;
+    bottom: 13vh;
 }
 .about-two{
     padding-left: 10%;
@@ -39,3 +39,28 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+.about-content {
+    background-image: url('/assets/images/pentagan.png');
+    background-size: fill;
+    background-repeat: no-repeat;
+    position: relative;
+    max-width: 100%;
+    padding: 12% 10% 21% 12%;
+    
+  }
+  .about-content::before {
+    content: "";
+    position: absolute;
+    top: 15vh;
+    left: 0;
+    width: 100%;
+    height: 59%;
+    background-color: rgba(0, 0, 0, 0.39); /* dark overlay */
+    z-index: 0;
+  
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+  }
