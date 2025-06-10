@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import Header from "./Header/page";
 import Banner from "./home/page";
 import About from "./about/page";
+import Videosection from "./videosection/page";
 import Stats from "./stats/page";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
   <Header/>
   <Banner/>
   <About/>
+  <Videosection/>
   <Stats/>
   </>
   );
