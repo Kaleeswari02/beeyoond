@@ -60,7 +60,7 @@
 /* Responsive adjustments */
 @media (max-width: 767px) {
   .hexagonBox {
-    width: 120px;
+    width: 130px;
     height: 120px;
   }
 
