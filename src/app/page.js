@@ -19,9 +19,9 @@ export default function Home() {
   <Stats/>
   <Videosection/>
   <VisionMission/>
+  <Portfolio/>
   <Testimonalsec/>
   <AccordianFunction/>
-  <Portfolio/>
   </>
   );
 }
