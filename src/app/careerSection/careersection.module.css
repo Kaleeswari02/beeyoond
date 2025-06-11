@@ -1,0 +1,60 @@
+.careerSectionBg {
+  background-color: #0B0B0A;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.careerSection {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/assets/images/careersec-bg.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-image: url('/assets/images/careersec-overlay.png');
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; 
+  padding: 60px 20px;
+}
+
+.heading {
+  text-transform: uppercase;
+    color: #ffffff;
+    font-family: Anton, sans-serif !important;
+    font-size: 60px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.description {
+  font-size: 18px;
+  color: #ffffff;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 0.2px;
+  padding: 20px;
+}
+
+.joinusBtn {
+  background: #F0CB11;
+  color: #000;
+  border: none;
+  padding: 5px 30px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}

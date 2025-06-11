@@ -9,6 +9,8 @@ import VisionMission from "./visionmision/page";
 import Testimonalsec from "./testimonal/page";
 import AccordianFunction from "./accordian/page";
 import Portfolio from "./portfolio/page";
+import CareerSection from "./careerSection/page";
+import Footer from "./footer/page";
 
 export default function Home() {
   return (
@@ -22,6 +24,8 @@ export default function Home() {
   <Portfolio/>
   <Testimonalsec/>
   <AccordianFunction/>
+  <CareerSection/>
+  <Footer/>
   </>
   );
 }
