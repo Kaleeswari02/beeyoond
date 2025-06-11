@@ -17,12 +17,17 @@
     border-radius: 10px !important;
     font-size: 30px !important;
     outline: none !important;
+    z-index: 2 !important;
 }
 .accordion-body{
     background-color: #000000;
     color: #ffffff;
     font-size: 18px !important;
     font-family: Anton, sans-serif !important;
+    z-index: 2 !important;
+}
+.accordion-body:focus{
+    z-index: 2 !important;
 }
 .accordion-collapse{
     border: none !important;
@@ -30,15 +35,18 @@
 .accordion-item{
     margin:0% 0% 2% 0% !important;
     border: 1px solid #ffffff !important;
+    z-index: 2 !important;
 }
 .accordion-button:focus{
     outline: none !important;
+    /* z-index: 2 !important; */
 }
 .accordion{
     border: 1px solid #000000;
     --bs-accordion-bg:none !important;
     outline: none !important;
     --bs-accordion-active-color: none !important;
+    z-index: 2 !important;
 }
 
 .accordion-header span {
@@ -64,6 +72,7 @@
     box-shadow: none !important;
     outline: none !important;
     border-radius: none !important;
+    /* z-index: 2 !important; */
   }
   .accordian-sec::before{
     content: '';
