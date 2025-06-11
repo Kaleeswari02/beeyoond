@@ -1,7 +1,8 @@
 import { Geist, Geist_Mono ,Anton,Poppins,Plus_Jakarta_Sans} from "next/font/google";
 import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

@@ -1,0 +1,159 @@
+.portfolioSection {
+  /* background: #000; */
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 15px 60px;
+  z-index: 1;
+  background-image: url('/assets/images/aboutrans.png');
+ 
+}
+.activeCard {
+  transform: scale(1.2);  /* Bigger scale for visibility */
+  z-index: 10;
+  transition: transform 0.6s ease;
+    box-shadow: 0 30px 80px rgba(255, 25, 25, 0.6);
+
+}
+.bgCarousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.bgSlide {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.backgroundImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.4); 
+  background-size: cover;
+
+}
+
+.overlayContent {
+  position: absolute;
+  top: 0%;
+  left: 5%;
+  z-index: 10;
+  max-width: 600px;
+}
+
+.title {
+  font-size: 60px;
+  color: #ffffff;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.gameTitle {
+  font-size: 28px;
+  color: #F0CB11;
+  font-family: 'Anton', sans-serif;
+  margin-top: 30px;
+}
+
+.description {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  font-family: 'Anton', sans-serif;
+}
+
+.enquireBtn {
+  background: #F0CB11;
+  color: #000;
+  border: none;
+  padding: 8px 24px;
+  border-radius: 30px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.cardCarousel {
+  position: relative;
+  z-index: 20;
+  margin-top: -120px;
+}
+.cardList{
+    max-width: 1200px;
+    margin: 0 auto;
+ 
+}
+/* .cardItem {
+  padding: 0 10px;
+  cursor: pointer;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+} */
+.cardItem {
+  padding: 0 10px;
+  cursor: pointer;
+  will-change: transform;
+  transition: transform 0.6s ease, opacity 0.4s ease;
+}
+.cardInner {
+  overflow: hidden;
+  border-radius: 30px;
+  transition: transform 0.3s ease;
+  
+}
+
+.cardInner:hover {
+  transform: scale(1.05); 
+}
+
+.thumbImage {
+  border-radius: 30px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.arrowLeft,
+.arrowRight {
+  position: absolute;
+  top: -50px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.arrowLeft {
+  right: 90px;
+}
+
+.arrowRight {
+  right: 20px;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 40px;
+  }
+
+  .gameTitle {
+    font-size: 22px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .thumbImage {
+    height: 180px;
+  }
+}
