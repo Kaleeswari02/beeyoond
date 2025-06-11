@@ -156,7 +156,7 @@
     color: transparent;
     border: 0;
     outline: none;
-    background: black;
+    background: transparent !important;
     /* margin: 5% !important; */
     display: flex !important;
     flex-direction: column !important;

@@ -4,7 +4,7 @@ import './home.css';
 export default function Banner() {
   return (
     <div className="banner-container mt-xl-5 mt-lg-5 mt-md-5 mt-5">
-    <div className='video-sec mt-xl-5 mt-lg-5 mt-md-5 mt-5'>
+    <div className='video-sec mt-xl-5 mt-lg-5 mt-md-5 mt-5 mb-xl-5 mb-lg-5'>
         <video
             autoPlay
             muted
@@ -12,12 +12,12 @@ export default function Banner() {
             playsInline
             id="bg-video"
           >
-            <source src="/assets/videos/bannervideo.mp4" type="video/mp4" />
+            <source src="/assets/videos/Gen-4 Turbo I need loop background only animate dont move the car 796585601.mp4" type="video/mp4" />
         </video>
-        <div className='container'>
-        <div className="banner-overlay mt-xl-5 mt-lg-5 mt-md-5 mt-5">
-            <div className="row mt-xl-5 mt-lg-5 mt-md-5 mt-5">
-              <div className="col-xl-4 col-lg-5 mt-xl-3 mt-lg-3 mt-md-3 mt-5">
+        <div className='container-fluid home-bg'>
+        <div className="banner-overlay ">
+            <div className="row ">
+              <div className="col-xl-4 col-lg-5">
                 <div className="content-section ">
                   <h3 className='banner-head mt-xl-5 mt-lg-5 mt-md-5 mt-5'>WE MAKE</h3>
                   <h3 className='banner-subhead'>GAMES</h3>

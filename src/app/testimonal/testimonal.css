@@ -1,0 +1,69 @@
+.testimonal.slick-dots{
+    display: none !important;
+}
+.testi-width{
+    background-image: url('/assets/images/testibg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 3% 5%;
+
+}
+.testimonial{
+    background-color: black;
+    padding: 3%;
+}
+.testi-head{
+    color: #ffffff;
+    font-family: Anton, sans-serif !important;
+    font-size: 60px;
+    letter-spacing: 1px;
+}
+.container-image{
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 5%;
+}
+.testi-image{
+   text-align: right;
+   position: relative;
+   left: 20%;
+   top: 2%;
+}
+.test-sub{
+    position: relative;
+    left: 20%;
+    color: #ffffff  ;
+    font-family: Anton, sans-serif !important;
+    font-size: 35px;
+    letter-spacing: 1px;
+    padding: 2%;
+}
+.testi-content{
+    border-left: 1px solid #fff;
+    padding: 7% 10%;
+    width: 85%;
+}
+.testi-para{
+    color: #ffffff;
+    font-family: Anton, sans-serif !important;
+    font-size: 20px;
+}
+.test-arg{
+    display: flex;
+    /* justify-content: right; */
+    align-items: center;
+}
+.slick-next:before{
+    content: '' !important;
+}
+.slick-prev:before {
+    content: '' !important;
+}
+.testimonial.slick-dots {
+    display: none !important;
+}

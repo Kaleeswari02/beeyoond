@@ -6,6 +6,8 @@ import About from "./about/page";
 import Videosection from "./videosection/page";
 import Stats from "./stats/page";
 import VisionMission from "./visionmision/page";
+import Testimonalsec from "./testimonal/page";
+import AccordianFunction from "./accordian/page";
 
 export default function Home() {
   return (
@@ -15,8 +17,9 @@ export default function Home() {
   <About/>
   <Stats/>
   <Videosection/>
-
   <VisionMission/>
+  <Testimonalsec/>
+  <AccordianFunction/>
   </>
   );
 }

@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header>
       <nav className={`${styles.navbarbg} navbar navbar-expand-lg fixed-top`}>
-        <div className={`container d-flex justify-content-between align-items-center ${styles.navContainer}`}>
+        <div className={`container-fluid d-flex justify-content-between align-items-center ${styles.navContainer}`}>
           <a href="/" className={`navbar-brand ${styles.navbarBrand}`}>
             <Image
               src="/assets/images/logo.png"
