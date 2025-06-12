@@ -43,7 +43,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.beeyoondgaming.com/og-image.jpg",
+        url: "https://www.beeyoondgaming.com/assets/images/link-bg.png",
         width: 1200,
         height: 630,
         alt: "Beeyoond Gaming Preview",
