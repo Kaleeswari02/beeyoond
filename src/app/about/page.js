@@ -2,7 +2,7 @@ import './about.css';
 export default function About(){
     return(
         <>
-        <div className='container-fluid about-sec-bg'>
+        <div className='container-fluid about-sec-bg' id="aboutus">
             <div className="row">
                 <div className="col-xl-6 col-lg-6 col-md-6 col-12">
                     <div className="about-section">

@@ -24,7 +24,7 @@ export default function Banner() {
                   <p className='banner-para'>
                      An award-winning, India-based casino slot game studio, proudly backed by Sportstech, pushing the boundaries of storytelling and serious gaming.
                   </p>
-                  <div><button className='banner-btn mb-xl-5 mb-md-5 mb-lg-5'>Get Quotes</button></div>
+                  <div><button className='banner-btn mb-xl-5 mb-md-5 mb-lg-5 mb-md-5 mb-5'>Get Quotes</button></div>
                 </div>
               </div>
               <div className="col-xl-2 col-lg-1"></div>

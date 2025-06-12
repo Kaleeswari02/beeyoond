@@ -89,7 +89,7 @@ const cardSettings = {
 
 
   return (
-    <section className={`container-fluid ${styles.portfolioSection}`}>
+    <section className={`container-fluid ${styles.portfolioSection}`} id="portfolio">
       <div className={styles.bgCarousel}>
         <Slider ref={bgSliderRef} {...bgSettings}>
           {portfolioItems.map((item, index) => (

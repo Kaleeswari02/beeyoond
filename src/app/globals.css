@@ -2,3 +2,32 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
+@media only screen and (min-width: 1185px) and (max-width: 2560px){}
+@media only screen and (min-width: 999px) and (max-width:1185px){}
+@media only screen and (min-width: 796px) and (max-width: 999px){}
+@media only screen and (min-width: 690px) and (max-width: 794px){}
+@media only screen and (min-width: 600px) and (max-width: 750px){}
+@media only screen and (min-width: 450px) and (max-width: 600px){}
+@media only screen and (min-width: 300px) and (max-width: 450px) {
+    .banner-head {
+        font-size: 30px !important;
+    }
+    .banner-subhead {
+        font-size: 80px !important;
+    }
+
+    .banner-para {
+        font-size: 12px !important;
+    }
+    .banner-btn {
+        font-size: 13px !important;
+        padding: 5px 15px !important;
+    }
+    #bg-video {
+        width: 100% !important;
+        height: 57vh !important;
+    }
+}

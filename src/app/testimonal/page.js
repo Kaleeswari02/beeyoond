@@ -19,7 +19,7 @@ export default function Testimonalsec(){
           }
     return(
         <>
-           <div className='container-fluid testimonial'>
+           <div className='container-fluid testimonial' id="testimonial">
 
                 <div className=" testi-width ">
                 <h2 className="testi-head mt-5 mb-5">TESTIMONIAL</h2>
