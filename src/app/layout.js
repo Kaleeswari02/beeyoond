@@ -54,7 +54,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Beeyoond Gaming - A Sportstech World",
     description: "Fitness meets Gaming. Discover the Beeyoond experience now.",
-    images: ["https://www.beeyoondgaming.com/og-image.jpg"],
+    images: ["https://www.beeyoondgaming.com/assets/images/link-bg.png"],
   },
 };
 
