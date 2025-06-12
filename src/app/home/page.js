@@ -19,10 +19,10 @@ export default function Banner() {
             <div className="row ">
               <div className="col-xl-4 col-lg-5">
                 <div className="content-section mb-xl-5 mb-md-5 mb-lg-5">
-                  <h3 className='banner-head mt-xl-5 mt-lg-5 mt-md-5 mt-5'>WE MAKE</h3>
+                  <h3 className='banner-head mt-xl-5 mt-lg-5 mt-md-5 mt-5'>WE CREATE</h3>
                   <h3 className='banner-subhead'>GAMES</h3>
                   <p className='banner-para'>
-                    At Beeyoond, we create immersive AR/VR gaming experiences that connect with real world machines. 
+                     An award-winning, India-based casino slot game studio, proudly backed by Sportstech, pushing the boundaries of storytelling and serious gaming.
                   </p>
                   <div><button className='banner-btn mb-xl-5 mb-md-5 mb-lg-5'>Get Quotes</button></div>
                 </div>

@@ -14,7 +14,7 @@ const CareerSection = () => {
                   <div className="col-lg-8">
                       <div className={styles.content}>
                     <p className={`${styles.description}`}>
-                      Looking for a career at Gameerio means stepping into a dynamic world where creativity, innovation, and passion collide to shape the future of gaming. Here, your career isn’t just a job – it’s an opportunity to show your potential, pursue your passions, and make a meaningful impact on the gaming industry.
+                      Looking for a career at Beeyoond Gaming means stepping into a dynamic world where creativity, innovation, and passion collide to shape the future of gaming. Here, your career isn’t just a job – it’s an opportunity to show your potential, pursue your passions, and make a meaningful impact on the gaming industry.
                     </p>
                     <button className={styles.joinusBtn}>Join with us</button>
                   </div>

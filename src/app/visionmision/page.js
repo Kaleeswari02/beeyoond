@@ -15,7 +15,7 @@ const VisionMission = () => {
           <div className={styles.overlay}>
             <h3 className={styles.title}><span>OUR</span> VISION</h3>
             <p className={styles.description}>
-                  A cinematic 3D render of a global community of diverse players—different cultures, ages, and abilities—interacting through beautifully designed digital games. Their expressions show joy, wonder, and emotional connection. The games are visually rich, innovative, and creative—featuring fantastical environments, inclusive avatars, and collaborative experiences and creative—featuring fantastical environments, inclusive avatars, and collaborative experiences.
+            We envision a future where games transcend entertainment — becoming a universal language of creativity, connection, and inclusivity. As a Sportstech Venture, Beeyoond Gaming strives to lead the next wave of digital innovation, building fantastical yet grounded worlds where every player feels seen, inspired, and empowered to explore.
             </p>
           </div>
         </div>
@@ -29,7 +29,7 @@ const VisionMission = () => {
               <div className={styles.overlay}>
                 <h3 className={styles.title}><span>OUR</span> MISSION</h3>
                 <p className={styles.description}>
-                  A cinematic 3D render of a global community of diverse players—different cultures, ages, and abilities—interacting through beautifully designed digital games. Their expressions show joy, wonder, and emotional connection. The games are visually rich, innovative, and creative—featuring fantastical environments, inclusive avatars, and collaborative experiences  and creative—featuring fantastical environments, inclusive avatars, and collaborative experiences.
+                At Beeyoond Gaming, our mission is to create emotionally resonant, inclusive, and visually stunning digital experiences that connect people across cultures, generations, and abilities. Through imaginative game worlds, innovative storytelling, and collaborative gameplay, we aim to spark joy, wonder, and meaningful interaction in every player
                 </p>
               </div>
             </div>

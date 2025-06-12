@@ -39,7 +39,7 @@ export default function Testimonalsec(){
                                 <div className="col-7 test-arg">
                                     <div className="container-test">
                                         <div className="testi-content">
-                                            <p className='testi-para'>Gamecrio did amazing work with our unity project needs! They were proactive and came in with strong opinions...</p>
+                                            <p className='testi-para'>Beeyoond Gaming did amazing work with our Unity project needs! They were proactive and came in with strong opinions... </p>
                                         </div>
                                     </div>
                                 </div>
@@ -61,7 +61,7 @@ export default function Testimonalsec(){
                                <div className="col-7 test-arg">
                                     <div className="container-test">
                                         <div className="testi-content">
-                                            <p className='testi-para'>Gamecrio did amazing work with our unity project needs! They were proactive and came in with strong opinions...</p>
+                                            <p className='testi-para'>Beeyoond Gaming did amazing work with our Unity project needs! They were proactive and came in with strong opinions... </p>
                                         </div>
                                     </div>
                                 </div>
@@ -83,7 +83,7 @@ export default function Testimonalsec(){
                                <div className="col-7 test-arg">
                                     <div className="container-test">
                                         <div className="testi-content">
-                                            <p className='testi-para'>Gamecrio did amazing work with our unity project needs! They were proactive and came in with strong opinions...</p>
+                                            <p className='testi-para'>Beeyoond Gaming did amazing work with our Unity project needs! They were proactive and came in with strong opinions... </p>
                                         </div>
                                     </div>
                                 </div>

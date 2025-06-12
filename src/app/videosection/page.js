@@ -48,7 +48,7 @@ export default function Videosection(){
                             WE MAKE IT REAL
                             </h1>
                             <p className="subText mt-5">
-                            Together, let’s explore new worlds, tell unforgettable stories, and push <br/> the boundaries of what gaming can be.
+                            Together, let’s explore new worlds, tell unforgettable stories, and push the boundaries of what gaming can be.
                             </p>
                         </Container>
                         </div>
