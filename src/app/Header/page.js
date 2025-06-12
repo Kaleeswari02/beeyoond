@@ -43,13 +43,8 @@ const Header = () => {
           <div className="container">
             <div className={styles.menuContent}>
               <nav className={styles.navLinks}>
-                {["Home", "About us", "Services", "Portfolio", "Testimonial"].map((item, idx) => (
-                  <a key={idx} href={`/${item.toLowerCase().replace(" ", "")}`} onClick={toggleMenu}>
-                    {item}
-                  </a>
-                ))}
                 <div className={styles.careerWithIcons}>
-                  <a className={styles.navLinkCareer} href="/careers" onClick={toggleMenu}>Careers</a>
+                  <a className={styles.navLinkCareer} href="/careers" onClick={toggleMenu}>Home</a>
                   <div className={styles.socialIcons}>
                     {[
                       { name: "instagram", url: "https://www.instagram.com/p/DJoxDdohR6f/" },
@@ -69,6 +64,18 @@ const Header = () => {
                       </a>
                     ))}
                   </div>
+                </div>
+                {["About us", "Services", "Portfolio", "Testimonial"].map((item, idx) => (
+                  <a key={idx} href={`/${item.toLowerCase().replace(" ", "")}`} onClick={toggleMenu}>
+                    {item}
+                  </a>
+                ))}
+                 <div className={styles.careerWithIcons}>
+                  <a className={styles.navLinkCareer} href="/careers" onClick={toggleMenu}>Careers</a>
+                        <img className={styles.SportsLogo}
+                          src={`/assets/images/sports-logo.png`}
+                          alt={"logo"}
+                        />
                 </div>
               </nav>
             </div>
