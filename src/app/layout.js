@@ -61,8 +61,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
-        {/* JSON-LD Structured Data for SEO */}
+              {/* JSON-LD Structured Data for SEO */}
+      {/* <Head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -97,7 +97,7 @@ export default function RootLayout({ children }) {
             })
           }}
         />
-      </Head>
+      </Head> */}
       <body className={`${geistSans.variable} ${geistMono.variable}   ${poppins.variable}  ${anton.variable}  ${plusJakarta.variable}`}>
         {children}
       </body>

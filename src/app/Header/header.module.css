@@ -118,8 +118,8 @@
   width: 150px;
 }
 
-/* Responsive */
-@media (max-width: 991px) {
+ /* phone */
+@media only screen and (min-width: 450px) and (max-width: 600px){
   .navbarLogo {
     width: 100px;
   }
@@ -153,4 +153,71 @@
     width: 20px;
     height: 20px;
   }
+
 }
+/* laptop */
+@media only screen and (min-width: 999px) and (max-width:1185px){
+ .navbarLogo {
+    width: 150px;
+  }
+}
+
+/* tab */
+@media only screen and (min-width: 796px) and (max-width: 999px){
+ .navbarLogo {
+    width: 150px;
+  }
+}
+
+/* large mobile landscap */
+@media only screen and (min-width: 690px) and (max-width: 794px){
+   .navbarLogo {
+    width: 150px;
+  }
+}
+
+/* mobile landscape */
+@media only screen and (min-width: 600px) and (max-width: 750px){
+  .navbarLogo {
+    width: 130px;
+  }
+}
+
+/* iphone */
+@media  screen and (min-width: 300px) and (max-width: 450px) {
+.navbarLogo {
+    width: 100px;
+  }
+
+  .contactBtn {
+    font-size: 12px;
+    padding: 10px 15px;
+    margin-right: 10px;
+    border-radius: 20px;
+  }
+
+  .menuButton {
+    padding: 7px 15px;
+  }
+
+  .menuIcon {
+    width: 24px;
+    height: 21px;
+  }
+
+  .navLinks {
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  .navLinks a, .navLinkCareer {
+    font-size: 14px;
+  }
+
+  .socialIcons img {
+    width: 20px;
+    height: 20px;
+  }
+
+}
+
