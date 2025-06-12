@@ -1,7 +1,10 @@
+.footerSection{
+    padding: 0;
+    margin: 0;
+}
 .footer {
   background-color: #0B0B0A;
   border-top: 1px solid #333;
-  padding: 40px;
 }
 .footerLogo{
     width:200px;
@@ -11,14 +14,13 @@
   font-weight: 400;
   color: #fff;
   margin-bottom: 1rem;
-    color: #ffffff;
-    font-family: Anton, sans-serif !important;
-    letter-spacing: 1px;
+  color: #ffffff;
+  font-family: Anton, sans-serif !important;
+  letter-spacing: 1px;
 }
 .downArrow{
-width:53px;
+  width:53px;
   margin-left: 30px;
-
 }
 .text{
   font-size: 18px;
@@ -36,9 +38,7 @@ width:53px;
   font-size: 18px;
   padding: 20px;
   font-family: "Plus Jakarta Sans", sans-serif;
-    text-decoration: none !important;
-
-
+  text-decoration: none !important;
 }
 
 .link:hover {
@@ -50,7 +50,6 @@ width:53px;
   color: #fff;
   font-size: 44px;
   transition: color 0.3s;
-
 }
 
 .icon:hover {
@@ -62,25 +61,22 @@ width:53px;
   padding: 60px;
 }
 .copyright{
-    font-size: 18px;
-      font-family: "Plus Jakarta Sans", sans-serif;
-      color: #fff;
+  font-size: 18px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #fff;
 
 }
 .copyright span{
-      color: #f0cb11;
-
+  color: #f0cb11;
 }
 .servicesText{
     font-size: 18px;
-      font-family: "Plus Jakarta Sans", sans-serif;
-      color: #C2B0B0;
-      margin-left: 20px;
-
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #C2B0B0;
+    margin-left: 20px;
 }
 .fullWidthHr {
   border: none;
   border-top: 1px solid #fff;
-  width: 100vw;
   margin: 0;
 }

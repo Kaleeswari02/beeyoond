@@ -5,10 +5,10 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
+     <div className={`${styles.footerSection}`}>
     <footer className={`${styles.footer} pt-5 pb-3`}>
       <div className="container-fluid">
-        <div className="row align-items-start">
-          {/* Left Section */}
+        <div className="row align-items-start p-5">
           <div className="col-md-4 mb-4 mb-md-0">
             <img src="/assets/images/logo.png"  alt="Beeyoond Logo" className={`${styles.footerLogo} mb-3  img-fluid`}/>
             <div className="d-flex align-items-start mb-4">
@@ -26,7 +26,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Right Section */}
           <div className="col-md-8">
             <div className={`d-flex flex-wrap ${styles.navLinks}`}>
               <Link href="/" className={styles.link}>Home</Link>
@@ -69,6 +68,7 @@ const Footer = () => {
       </div>
       <hr className={`${styles.fullWidthHr} my-5 mt-5`}/>
     </footer>
+    </div>
   );
 };
 
