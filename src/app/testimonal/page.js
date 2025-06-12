@@ -11,7 +11,7 @@ export default function Testimonalsec(){
             speed: 1000,         
             slidesToShow: 1,
             slidesToScroll: 1,
-            autoplay: false,
+            autoplay: true,
             autoplaySpeed: 2000   
           };
           const VideoPlay = () => {

@@ -6,7 +6,7 @@ export default function About(){
         <div className="row">
     <div className="col-xl-6">
         <div className="about-section">
-            <div className="about-one">
+            <div className="about-one mt-5">
                 <img src="/assets/images/arrowr.png" alt=""/>
             </div>
             <div className="about-two mt-xl-3">
