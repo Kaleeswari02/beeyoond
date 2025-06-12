@@ -43,7 +43,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.beeyoondgaming.com/public/assets/images/link-bg.png",
+        url: "https://www.beeyoondgaming.com/assets/images/link-bg.png",
         width: 1200,
         height: 630,
         alt: "Beeyoond Gaming Preview",
@@ -54,7 +54,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Beeyoond Gaming - A Sportstech World",
     description: "Fitness meets Gaming. Discover the Beeyoond experience now.",
-    images: ["https://www.beeyoondgaming.com/public/assets/images/link-bg.png"],
+    images: ["https://www.beeyoondgaming.com/assets/images/link-bg.png"],
   },
 };
 
