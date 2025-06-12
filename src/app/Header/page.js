@@ -13,11 +13,10 @@ const Header = () => {
       <nav className={`${styles.navbarbg} navbar navbar-expand-lg fixed-top`}>
         <div className={`container-fluid d-flex justify-content-between align-items-center ${styles.navContainer}`}>
           <a href="/" className={`navbar-brand ${styles.navbarBrand}`}>
-            <Image
+            <img
               src="/assets/images/logo.png"
               alt="Beeyoond"
-              width={200}
-              height={60}
+
               className={styles.navbarLogo}
             />
           </a>
@@ -27,11 +26,10 @@ const Header = () => {
               {isOpen ? (
                 <FaXmark size={25} />
               ) : (
-                <Image
+                <img
                   src="/assets/images/menu-icon.png"
                   alt="menu"
-                  width={30}
-                  height={24}
+                 
                   className={styles.menuIcon}
                 />
               )}
@@ -64,11 +62,9 @@ const Header = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <Image
+                        <img
                           src={`/assets/images/${icon.name}.png`}
                           alt={icon.name}
-                          width={34}
-                          height={34}
                         />
                       </a>
                     ))}

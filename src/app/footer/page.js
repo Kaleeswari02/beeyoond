@@ -7,10 +7,11 @@ const Footer = () => {
   return (
      <div className={`${styles.footerSection}`}>
     <footer className={`${styles.footer} pt-5 pb-3`}>
-      <div className="container-fluid">
-        <div className="row align-items-start p-5">
-          <div className="col-md-4 mb-4 mb-md-0">
-            <img src="/assets/images/logo.png"  alt="Beeyoond Logo" className={`${styles.footerLogo} mb-3  img-fluid`}/>
+      <div className="container-fluid ">
+        <div  className={`${styles.imaSec} row align-items-start p-5 `}>
+          <div className="col-xl-1"></div>
+          <div className="col-md-4 col-xl-4 col-lg-4 mb-4 mb-md-0">
+            <img src="/assets/images/logo.png"  alt="Beeyoond Logo" className={`${styles.footerLogo} mb-3 img-fluid`}/>
             <div className="d-flex align-items-start mb-4">
               <h1 className={styles.email}>info@beeyoondgaming.com</h1>
               <img src="/assets/images/arrow-down.png" alt="email Logo" className={`${styles.downArrow}  img-fluid`}/>
@@ -22,11 +23,11 @@ const Footer = () => {
             </div>
             <div className="d-flex align-items-center">
               <img src="/assets/images/phone.png" alt="email Logo" className={`${styles.icon} mb-3 img-fluid`} />{" "}
-              <span  className={`${styles.text} text-decoration-underline`}>099429 98598</span>
+              <span ><Link href="tel:099429 98598" target="_blank"  className={`${styles.text} text-decoration-underline`}>099429 98598 </Link></span>   
             </div>
           </div>
 
-          <div className="col-md-8">
+          <div className="col-md-8 col-xl-7 col-lg-7">
             <div className={`d-flex flex-wrap ${styles.navLinks}`}>
               <Link href="/" className={styles.link}>Home</Link>
               <Link href="/about" className={styles.link}>About us</Link>
@@ -45,13 +46,13 @@ const Footer = () => {
               <Link href="/terms" className={styles.link}>Terms & Conditions</Link>
               <Link href="/cookies" className={styles.link}>Cookies</Link>
               <div className="ms-auto d-flex gap-4 mt-2">
-                <Link href="#" className={styles.icon}>
+                <Link href="https://in.linkedin.com/company/beeyoondgaming" className={styles.icon} target="_blank">
                   <img src={`/assets/images/linkedin.png`} alt="linkedin" width={40} height={40} />
                 </Link>
-                <Link href="#" className={styles.icon}>
+                <Link href="https://www.instagram.com/p/DJoxDdohR6f/" className={styles.icon} target="_blank">
                   <img src={`/assets/images/instagram.png`} alt="linkedin" width={40} height={40} />
                 </Link>
-                <Link href="#" className={styles.icon}>
+                <Link href="https://twitter.com/example" className={styles.icon} target="_blank">
                  <img src={`/assets/images/twitter.png`} alt="linkedin" width={40} height={40} />
                 </Link>
               </div>
@@ -59,14 +60,15 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="text-center mt-4">
+        <div className="text-center mb-xl-5 mb-lg-5">
           <p className={styles.copyright}>
             © 2025 <span>beeyoondgaming</span>. All
             rights reserved.
           </p>
+            <span><img src="/assets/images/copyrights.png"/></span>
         </div>
       </div>
-      <hr className={`${styles.fullWidthHr} my-5 mt-5`}/>
+      {/* <hr className={`${styles.fullWidthHr} my-5 mt-5`}/> */}
     </footer>
     </div>
   );
