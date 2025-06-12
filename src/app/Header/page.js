@@ -53,9 +53,23 @@ const Header = () => {
                 <div className={styles.careerWithIcons}>
                   <a className={styles.navLinkCareer} href="/careers" onClick={toggleMenu}>Careers</a>
                   <div className={styles.socialIcons}>
-                    {["instagram", "linkedin", "twitter"].map((icon, idx) => (
-                      <a key={idx} href="#">
-                        <Image src={`/assets/images/${icon}.png`} alt={icon} width={34} height={34} />
+                    {[
+                      { name: "instagram", url: "https://www.instagram.com/p/DJoxDdohR6f/" },
+                      { name: "linkedin", url: "https://in.linkedin.com/company/beeyoondgaming" },
+                      { name: "twitter", url: "https://twitter.com/example" },
+                    ].map((icon, idx) => (
+                      <a
+                        key={idx}
+                        href={icon.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Image
+                          src={`/assets/images/${icon.name}.png`}
+                          alt={icon.name}
+                          width={34}
+                          height={34}
+                        />
                       </a>
                     ))}
                   </div>

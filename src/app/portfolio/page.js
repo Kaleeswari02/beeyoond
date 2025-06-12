@@ -60,9 +60,9 @@ export default function Portfolio() {
     arrows: false,
     infinite: true,
     speed: 500,
-    //     autoplay: true,
+        autoplay: true,
 
-    //  autoplaySpeed: 1000,
+     autoplaySpeed: 3000,
     fade: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -75,8 +75,8 @@ const cardSettings = {
   prevArrow: <PrevArrow />,
   infinite: true,
   speed: 500,
-//   autoplay: true,
-//   autoplaySpeed: 3000, // smoother
+  autoplay: true,
+  autoplaySpeed: 3000, // smoother
   slidesToShow: 4,
   slidesToScroll: 1,
   beforeChange: (_, next) => syncSlide(next),
@@ -110,14 +110,14 @@ const cardSettings = {
         </Slider>
       </div>
 
-      <div className={`${styles.cardCarousel} container`}>
+      <div className={`${styles.cardCarousel} `}>
         <div className="row">
-          <div className="col-md-2"></div>
-          <div className="col-md-10">
+          <div className="col-xl-2"></div>
+          <div className="col-xl-10 mt-5">
             <div className={styles.cardList}>
               <Slider {...cardSettings} ref={cardSliderRef}>
                 {portfolioItems.map((item, index) => (
-                  <div key={index} className={`${styles.cardItem} `}>
+                  <div key={index} className={`${styles.cardItem}`}>
 
                     <div
                       className={`${styles.cardInner} ${activeSlide === index ? styles.activeCard : ""}`}
