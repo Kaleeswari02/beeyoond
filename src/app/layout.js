@@ -39,11 +39,11 @@ export const metadata = {
   openGraph: {
     title: "Beeyoond Gaming - A Sportstech World",
     description: "Explore our next-gen gaming platform built for fitness lovers. Train hard. Game harder.",
-    url: "https://www.beeyoondgaming.com/",
+    url: "https://beeyoondgamingsportstechdemo.netlify.app/",
     type: "website",
     images: [
       {
-        url: "https://www.beeyoondgaming.com/public/assets/images/link-bg.png",
+        url: "https://beeyoondgamingsportstechdemo.netlify.app/assets/images/link-bg.png",
         width: 1200,
         height: 630,
         alt: "Beeyoond Gaming Preview",
@@ -54,7 +54,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Beeyoond Gaming - A Sportstech World",
     description: "Fitness meets Gaming. Discover the Beeyoond experience now.",
-    images: ["https://www.beeyoondgaming.com/public/assets/images/link-bg.png"],
+    images: ["https://beeyoondgamingsportstechdemo.netlify.app/assets/images/link-bg.png"],
   },
 };
 
