@@ -41,9 +41,10 @@ export const metadata = {
     description: "Explore our next-gen gaming platform built for fitness lovers. Train hard. Game harder.",
     url: "https://www.beeyoondgaming.com/",
     type: "website",
+    
     images: [
       {
-        url: "https://www.beeyoondgaming.com/og-image.jpg",
+        url: "/assets/images/link-bg.png", 
         width: 1200,
         height: 630,
         alt: "Beeyoond Gaming Preview",
@@ -61,8 +62,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
-        {/* JSON-LD Structured Data for SEO */}
+              {/* JSON-LD Structured Data for SEO */}
+      {/* <Head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -97,7 +98,7 @@ export default function RootLayout({ children }) {
             })
           }}
         />
-      </Head>
+      </Head> */}
       <body className={`${geistSans.variable} ${geistMono.variable}   ${poppins.variable}  ${anton.variable}  ${plusJakarta.variable}`}>
         {children}
       </body>
