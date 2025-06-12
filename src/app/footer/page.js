@@ -30,11 +30,11 @@ const Footer = () => {
           <div className="col-md-8 col-xl-7 col-lg-7">
             <div className={`d-flex flex-wrap ${styles.navLinks}`}>
               <Link href="/" className={styles.link}>Home</Link>
-              <Link href="/about" className={styles.link}>About us</Link>
-              <Link href="/testimonial" className={styles.link}>Testimonial</Link>
-              <Link href="/careers" className={styles.link}>Careers</Link>
-              <Link href="/contact" className={styles.link}>Contact</Link>
-              <Link href="/portfolio" className={styles.link}>Portfolio</Link>
+              <Link href="#about" className={styles.link}>About us</Link>
+              <Link href="#testimonial" className={styles.link}>Testimonial</Link>
+              <Link href="#careers" className={styles.link}>Careers</Link>
+              <Link href="tel:099429 98598" target="_blank"  className={styles.link}>Contact</Link>
+              <Link href="#portfolio" className={styles.link}>Portfolio</Link>
               <div className="w-100 mt-2">
               <span className={styles.servicesText}>Services</span>
 
@@ -43,8 +43,8 @@ const Footer = () => {
               <Link href="/services#video" className={styles.link}>Video Editing</Link>
               <Link href="/services#ai" className={styles.link}>AI & Automation</Link>
               <Link href="/services#game" className={styles.link}>Game Development</Link>
-              <Link href="/terms" className={styles.link}>Terms & Conditions</Link>
-              <Link href="/cookies" className={styles.link}>Cookies</Link>
+              <Link href="/" className={styles.link}>Terms & Conditions</Link>
+              <Link href="/" className={styles.link}>Cookies</Link>
               <div className="ms-auto d-flex gap-4 mt-2">
                 <Link href="https://in.linkedin.com/company/beeyoondgaming" className={styles.icon} target="_blank">
                   <img src={`/assets/images/linkedin.png`} alt="linkedin" width={40} height={40} />

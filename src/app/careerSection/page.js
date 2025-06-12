@@ -5,7 +5,7 @@ import styles from "./careersection.module.css";
 const CareerSection = () => {
   return (
     <>
-      <div className={`${styles.careerSectionBg} container-fluid`}>
+      <div className={`${styles.careerSectionBg} container-fluid`} id="careers">
           <h2 className={`${styles.heading} mb-4`}>BOOST YOUR CAREER</h2>
           <section className={`${styles.careerSection} container-fluid`}>
             <div className={styles.overlay}>

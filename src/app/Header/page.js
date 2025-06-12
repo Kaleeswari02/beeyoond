@@ -44,7 +44,7 @@ const Header = () => {
             <div className={styles.menuContent}>
               <nav className={styles.navLinks}>
                 <div className={styles.careerWithIcons}>
-                  <a className={styles.navLinkCareer} href="/careers" onClick={toggleMenu}>Home</a>
+                  <a className={styles.navLinkCareer} href="" onClick={toggleMenu}>Home</a>
                   <div className={styles.socialIcons}>
                     {[
                       { name: "instagram", url: "https://www.instagram.com/p/DJoxDdohR6f/" },
@@ -65,13 +65,17 @@ const Header = () => {
                     ))}
                   </div>
                 </div>
-                {["About us", "Services", "Portfolio", "Testimonial"].map((item, idx) => (
-                  <a key={idx} href={`/${item.toLowerCase().replace(" ", "")}`} onClick={toggleMenu}>
-                    {item}
-                  </a>
-                ))}
+                      {["About us", "Services  [Coming Soon]", "Portfolio", "Testimonial"].map((item, idx) => {
+        const id = item.toLowerCase().replace(" ", "");
+        return (
+          <a key={idx} href={`#${id}`} onClick={toggleMenu}>
+            {item}
+          </a>
+        );
+      })}
+
                  <div className={styles.careerWithIcons}>
-                  <a className={styles.navLinkCareer} href="/careers" onClick={toggleMenu}>Careers</a>
+                  <a className={styles.navLinkCareer} href="#careers" onClick={toggleMenu}>Careers</a>
                         <img className={styles.SportsLogo}
                           src={`/assets/images/sports-logo.png`}
                           alt={"logo"}

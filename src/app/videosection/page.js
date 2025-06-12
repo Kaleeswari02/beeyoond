@@ -9,11 +9,12 @@ import { Container, Modal, ModalBody } from 'reactstrap';
 // import Image from 'next/image';
 // import styles from './videoplay.module.css';
 import { FiPlay } from 'react-icons/fi';
+// need to add when video developed onClick={() => setModalOpen(true)}
 export default function Videosection(){
     var settings = {
         dots: true,
         infinite: true,
-        speed: 1000,           // transition speed (half a second)
+        speed: 1000,           // transition speed (half a second) 
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
@@ -30,7 +31,7 @@ export default function Videosection(){
                         <div className="videoPlaySection">
                         <img src='/assets/images/videosectionim.png' alt="Desert Background" className="bgImage" />
                         <Container className="text-center position-relative z-1">
-                            <div className="playCircle " onClick={() => setModalOpen(true)}>
+                            <div className="playCircle " > 
                             <FiPlay className="playIcon" />
                             <svg className="rotatingText" viewBox="0 0 100 100">
                             <defs>
@@ -48,7 +49,7 @@ export default function Videosection(){
                             WE MAKE IT REAL
                             </h1>
                             <p className="subText mt-5">
-                            Together, let’s explore new worlds, tell unforgettable stories, and push the boundaries of what gaming can be.
+                            Together, let’s explore new worlds, tell unforgettable stories, and push�the boundaries of what gaming can be.
                             </p>
                         </Container>
                         </div>
@@ -57,7 +58,7 @@ export default function Videosection(){
                         <div className="videoPlaySection">
                         <img src='/assets/images/videosectionim.png' alt="Desert Background" className="bgImage" />
                         <Container className="text-center position-relative z-1">
-                            <div className="playCircle " onClick={() => setModalOpen(true)}>
+                            <div className="playCircle " >
                             <FiPlay className="playIcon" />
                             <svg className="rotatingText" viewBox="0 0 100 100">
                             <defs>
@@ -84,7 +85,7 @@ export default function Videosection(){
                         <div className="videoPlaySection">
                         <img src='/assets/images/videosectionim.png' alt="Desert Background" className="bgImage" />
                         <Container className="text-center position-relative z-1">
-                            <div className="playCircle " onClick={() => setModalOpen(true)}>
+                            <div className="playCircle ">
                             <FiPlay className="playIcon" />
                             <svg className="rotatingText" viewBox="0 0 100 100">
                             <defs>
