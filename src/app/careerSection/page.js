@@ -6,7 +6,7 @@ const CareerSection = () => {
   return (
     <>
       <div className={`${styles.careerSectionBg} container-fluid`} id="careers">
-          <h2 className={`${styles.heading} mb-4`}>BOOST YOUR CAREER</h2>
+          <h2 className={`${styles.heading} mb-xl-4 mb-lg-4`}>BOOST YOUR CAREER</h2>
           <section className={`${styles.careerSection} container-fluid`}>
             <div className={styles.overlay}>
               <div className="container text-center">

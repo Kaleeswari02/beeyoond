@@ -17,8 +17,8 @@ export default function AccordianFunction(props){
         <>
 
             <div className='container-fluid accordian-sec'>
-                <h1 className='accordian-head mb-xl-3 mb-lg-3'>FAQ</h1>
-                <div>
+                <h1 className='accordian-head mb-xl-3 mb-lg-3 mt-xl-0 mt-lg-0 pt-3 mb-md-3 mb-3'>FAQ</h1>
+                <div >
                     <Accordion open={open} toggle={toggle}>
                         <AccordionItem>
                         <AccordionHeader targetId="1">1. How to I request a quotes?  <span style={{ float: "right" }}>{open === "1" ? "×" : "+"}</span></AccordionHeader>
@@ -56,7 +56,7 @@ export default function AccordianFunction(props){
                         </AccordionItem>
                         <AccordionItem>
                         <AccordionHeader targetId="5">5. Can Beeyoond Gaming develop custom slot games for clients?<span style={{ float: "right" }}>{open === "5" ? "×" : "+"}</span></AccordionHeader>
-                        <AccordionBody accordionId="5">
+                        <AccordionBody accordionId="5" className='mb-xl-0 mb-lg-0 mb-3'>
                                 <ul className='listedit'>
                                 <li>Yes, we specialize in developing fully custom slot games tailored to your brand, audience, and business goals. From concept design and unique game mechanics to rich visuals, sound, and seamless platform integration — Beeyoond Gaming delivers end-to-end slot game development solutions that stand out in the market.
                                 </li>

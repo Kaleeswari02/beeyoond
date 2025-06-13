@@ -112,8 +112,8 @@ const cardSettings = {
 
       <div className={`${styles.cardCarousel} `}>
         <div className="row">
-          <div className="col-xl-2"></div>
-          <div className="col-xl-10 mt-5">
+          <div className="col-xl-2 col-lg-2 col-md-2"></div>
+          <div className="col-xl-10 col-lg-10 col-md-10 col-12 mt-5">
             <div className={styles.cardList}>
               <Slider {...cardSettings} ref={cardSliderRef}>
                 {portfolioItems.map((item, index) => (

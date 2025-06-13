@@ -19,7 +19,7 @@ export default function About(){
                     >
                         <source src="/assets/images/aboutsec.mp4" type="video/mp4" />
                         </video> */}
-                            <img src="/assets/images/aboutright.png" alt=""/>
+                            <img src="/assets/images/aboutright.png" alt="" className='center-image-about'/>
                         </div>
                         <div className="about-three">
                             <img src="/assets/images/arrowl.png" alt="" className='arrow-size-mobile'/>

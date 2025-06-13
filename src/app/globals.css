@@ -5,22 +5,147 @@
 html{
     scroll-behavior: smooth;
 }
-@media only screen and (min-width: 1185px) and (max-width: 2560px){}
-@media only screen and (min-width: 999px) and (max-width:1185px){}
+@media only screen and (min-width: 1185px) and (max-width: 2560px){
+    .accordion-button{
+        background-color: #000000 !important;
+        color: #ffffff !important;
+        font-family: Anton, sans-serif !important;
+        padding: 3% !important;
+        border-radius: 10px !important;
+        font-size: 30px !important;
+        outline: none !important;
+        z-index: 2 !important;
+    }
+    .accordion-body{
+        background-color: #000000;
+        color: #ffffff;
+        font-size: 18px !important;
+        font-family: Anton, sans-serif !important;
+        z-index: 2 !important;
+    }
+    .accordion-header span {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-left: auto;
+        float: right;
+        position: absolute;
+        right: 9vh;
+        font-size: 80px !important;
+        color: #02010100;
+        font-family: Anton, Sans-serif;
+        -webkit-text-stroke-width: 0.5px;
+        stroke-width: 0.5px;
+        -webkit-text-stroke-color: #fff;
+        stroke: #fff;
+        font-family: Anton, sans-serif !important;
+      }
+      .slick-dots li button:before {
+        font-family: 'slick';
+        font-size: 10px !important;
+        line-height: 30px !important;
+        position: absolute;
+        top: -15vh !important;
+        /* left: 100% !important; */
+        bottom: 5vh !important;
+        width: 30px !important;
+        height: 30px !important;
+        content: '•';
+        color: #ffffffff !important;
+        padding: 1% !important;
+        opacity: unset !important;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .slick-dots li.slick-active button:before {
+        opacity: unset !important;
+        color: #ffffffff !important;
+        border: 2px solid #ffffff !important;
+        border-radius: 50% !important;
+    }
+    .slick-dots li button {
+        font-size: 0;
+        line-height: 0;
+        display: block;
+        width: 28px;
+        height: 20px;
+        padding: 20px !important;
+        cursor: pointer;
+        color: transparent;
+        border: 0;
+        outline: none;
+        background: transparent !important;
+        /* margin: 5% !important; */
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .slick-dots {
+        position: absolute;
+        bottom: -20px;
+        width: 100%;
+        padding: 0;
+        /* margin: -1px; */
+        list-style: none;
+        text-align: left !important;
+      display: flex  !important;
+      flex-direction: column !important;
+    
+    }
+    .slick-dots li {
+        margin: 5px 70px !important;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+}
+@media only screen and (min-width: 999px) and (max-width:1185px){
+    .accordion-button{
+        background-color: #000000 !important;
+        color: #ffffff !important;
+        font-family: Anton, sans-serif !important;
+        padding: 3% !important;
+        border-radius: 10px !important;
+        font-size: 30px !important;
+        outline: none !important;
+        z-index: 2 !important;
+    }
+    .accordion-body{
+        background-color: #000000;
+        color: #ffffff;
+        font-size: 18px !important;
+        font-family: Anton, sans-serif !important;
+        z-index: 2 !important;
+    }
+    .accordion-header span {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-left: auto;
+        float: right;
+        position: absolute;
+        right: 9vh;
+        font-size: 80px !important;
+        color: #02010100;
+        font-family: Anton, Sans-serif;
+        -webkit-text-stroke-width: 0.5px;
+        stroke-width: 0.5px;
+        -webkit-text-stroke-color: #fff;
+        stroke: #fff;
+        font-family: Anton, sans-serif !important;
+      }
+}
 @media only screen and (min-width: 796px) and (max-width: 999px){}
 @media only screen and (min-width: 690px) and (max-width: 794px){}
-@media only screen and (min-width: 600px) and (max-width: 750px){}
-@media only screen and (min-width: 450px) and (max-width: 600px){}
-@media only screen and (min-width: 300px) and (max-width: 450px) {
+@media only screen and (min-width: 600px) and (max-width: 750px){
     .banner-head {
-        font-size: 30px !important;
+        font-size: 40px !important;
     }
     .banner-subhead {
-        font-size: 80px !important;
+        font-size: 90px !important;
     }
 
     .banner-para {
-        font-size: 13px !important;
+        font-size: 14px !important;
     }
     .banner-btn {
         font-size: 13px !important;
@@ -28,10 +153,16 @@ html{
     }
     #bg-video {
         width: 100% !important;
-        height: 82vh !important;
+        height: 107vh !important;
     }
+    .banner-container::before{
+        width: 100% !important;
+        height: 107vh !important;
+    }
+
     .about-two{
         padding-right: unset !important;
+        padding-left: unset !important;
     }
     .about-three {
         position: relative;
@@ -39,14 +170,14 @@ html{
         bottom: 0 !important;
     }
     .arrow-size-mobile{
-        width: 60% !important;
+        width: 50% !important;
     }
     .about-content {
         padding: 1% 0% 21% 0% !important;
         
       }
       .about-head {
-        font-size: 45px !important;
+        font-size: 40px !important;
         text-align: center !important;
       }
       .about-para {
@@ -67,10 +198,10 @@ html{
         height: unset !important;
     }
     .videoHeading{
-        font-size: 45px !important;
+        font-size: 38px !important;
     }
     .subText{
-        font-size: 12px !important;
+        font-size: 10px !important;
         letter-spacing: 0 !important;
     }
     .slick-dots {
@@ -83,5 +214,378 @@ html{
         height: 80px !important;
         margin: 5% auto 10% auto !important;
       }
-      
+      .testi-head {
+        font-size: 38px !important;
+        text-align: center !important;
+      }
+      .testi-image{
+        width: 100% !important;
+      }
+      .test-sub{
+            font-size: 12px !important;
+            text-align: center !important;
+      }
+      .testi-content{
+        width: 100% !important;
+        padding: 0px 10px !important;
+      }
+      .testi-para{
+        font-size: 12px !important;
+      }
+      .testi-width{
+        margin-left: unset !important;
+        margin-right: unset !important;
+        padding: unset !important;
+    
+    }
+    .accordian-head {
+        font-size: 40px !important;
+    }
+    .accordion-button{
+        font-size: 16px !important;
+        background-color: #000000 !important;
+        color: #ffffff !important;
+        font-family: Anton, sans-serif !important;
+        padding: 3% !important;
+        border-radius: 10px !important;
+        outline: none !important;
+        z-index: 2 !important;
+    }
+    .listedit {
+        list-style: none !important;
+        padding-left: 0 !important;
+    }
+
+.accordion-body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Anton, sans-serif !important;
+    z-index: 2 !important;
+    font-size: 12px !important;
+}
+.accordion-header span {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-left: auto;
+    float: right;
+    position: absolute;
+    right: 2vh;
+    font-size: 40px !important;
+    color: #02010100;
+    font-family: Anton, Sans-serif;
+    -webkit-text-stroke-width: 0.5px;
+    stroke-width: 0.5px;
+    -webkit-text-stroke-color: #fff;
+    stroke: #fff;
+    font-family: Anton, sans-serif !important;
+}
+.accord-arrow{
+    display: none !important;
+}
+.accordian-sec {
+    padding-bottom: 3% !important;
+}
+.center-image-about{
+    width: 100% !important;
+}
+}
+@media only screen and (min-width: 450px) and (max-width: 600px){
+
+    .banner-head {
+        font-size: 30px !important;
+    }
+    .banner-subhead {
+        font-size: 80px !important;
+    }
+
+    .banner-para {
+        font-size: 13px !important;
+    }
+    .banner-btn {
+        font-size: 13px !important;
+        padding: 5px 15px !important;
+    }
+    .banner-container::before {
+        height:114vh !important;
+    }
+    #bg-video {
+        width: 100% !important;
+        height:114vh !important;
+    }
+    .about-two{
+        padding-right: unset !important;
+        padding-left: unset !important;
+    }
+    .about-three {
+        position: relative;
+        left: 0;
+        bottom: 0 !important;
+    }
+    .arrow-size-mobile{
+        width: 50% !important;
+    }
+    .about-content {
+        padding: 1% 0% 21% 0% !important;
+        
+      }
+      .about-head {
+        font-size: 40px !important;
+        text-align: center !important;
+      }
+      .about-para {
+        font-size: 14px !important;
+        letter-spacing: unset !important;
+        padding: 15px !important;
+    }
+    .about-content::before {
+        content: "";
+        position: absolute;
+        top: 15vh;
+        right: 0vw !important;
+    }
+    .about-content {
+        background-size: contain !important;
+    }
+    .videoPlaySection{
+        height: unset !important;
+    }
+    .videoHeading{
+        font-size: 38px !important;
+    }
+    .subText{
+        font-size: 13px !important;
+        letter-spacing: 0 !important;
+    }
+    .slick-dots {
+        position: absolute !important;
+        bottom: -30px !important;
+        right: 13vw !important;
+    }
+    .playCircle {
+        width: 80px !important;
+        height: 80px !important;
+        margin: 5% auto 10% auto !important;
+      }
+      .testi-head {
+        font-size: 38px !important;
+        text-align: center !important;
+      }
+      .testi-image{
+        width: 100% !important;
+      }
+      .test-sub{
+            font-size: 12px !important;
+            text-align: center !important;
+      }
+      .testi-content{
+        width: 100% !important;
+        padding: 0px 10px !important;
+      }
+      .testi-para{
+        font-size: 12px !important;
+      }
+      .testi-width{
+        margin-left: unset !important;
+        margin-right: unset !important;
+        padding: unset !important;
+    
+    }
+    .accordian-head {
+        font-size: 40px !important;
+    }
+    .accordion-button{
+        font-size: 16px !important;
+        background-color: #000000 !important;
+        color: #ffffff !important;
+        font-family: Anton, sans-serif !important;
+        padding: 3% !important;
+        border-radius: 10px !important;
+        outline: none !important;
+        z-index: 2 !important;
+    }
+    .listedit {
+        list-style: none !important;
+        padding-left: 0 !important;
+    }
+
+.accordion-body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Anton, sans-serif !important;
+    z-index: 2 !important;
+    font-size: 12px !important;
+}
+.accordion-header span {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-left: auto;
+    float: right;
+    position: absolute;
+    right: 2vh;
+    font-size: 40px !important;
+    color: #02010100;
+    font-family: Anton, Sans-serif;
+    -webkit-text-stroke-width: 0.5px;
+    stroke-width: 0.5px;
+    -webkit-text-stroke-color: #fff;
+    stroke: #fff;
+    font-family: Anton, sans-serif !important;
+}
+.accord-arrow{
+    display: none !important;
+}
+.accordian-sec {
+    padding-bottom: 3% !important;
+}
+.center-image-about{
+    width: 100% !important;
+}
+}
+@media only screen and (min-width: 300px) and (max-width: 450px) {
+    .banner-head {
+        font-size: 30px !important;
+    }
+    .banner-subhead {
+        font-size: 80px !important;
+    }
+
+    .banner-para {
+        font-size: 13px !important;
+    }
+    .banner-btn {
+        font-size: 13px !important;
+        padding: 5px 15px !important;
+    }
+    #bg-video {
+        width: 100% !important;
+        height: 86vh !important;
+    }
+    .about-two{
+        padding-right: unset !important;
+        padding-left: unset !important;
+    }
+    .about-three {
+        position: relative;
+        left: 0;
+        bottom: 0 !important;
+    }
+    .arrow-size-mobile{
+        width: 50% !important;
+    }
+    .about-content {
+        padding: 1% 0% 21% 0% !important;
+        
+      }
+      .about-head {
+        font-size: 40px !important;
+        text-align: center !important;
+      }
+      .about-para {
+        font-size: 14px !important;
+        letter-spacing: unset !important;
+        padding: 15px !important;
+    }
+    .about-content::before {
+        content: "";
+        position: absolute;
+        top: 15vh;
+        right: 0vw !important;
+    }
+    .about-content {
+        background-size: contain !important;
+    }
+    .videoPlaySection{
+        height: unset !important;
+    }
+    .videoHeading{
+        font-size: 38px !important;
+    }
+    .subText{
+        font-size: 10px !important;
+        letter-spacing: 0 !important;
+    }
+    .slick-dots {
+        position: absolute !important;
+        bottom: -30px !important;
+        right: 13vw !important;
+    }
+    .playCircle {
+        width: 80px !important;
+        height: 80px !important;
+        margin: 5% auto 10% auto !important;
+      }
+      .testi-head {
+        font-size: 38px !important;
+        text-align: center !important;
+      }
+      .testi-image{
+        width: 100% !important;
+      }
+      .test-sub{
+            font-size: 12px !important;
+            text-align: center !important;
+      }
+      .testi-content{
+        width: 100% !important;
+        padding: 0px 10px !important;
+      }
+      .testi-para{
+        font-size: 12px !important;
+      }
+      .testi-width{
+        margin-left: unset !important;
+        margin-right: unset !important;
+        padding: unset !important;
+    
+    }
+    .accordian-head {
+        font-size: 40px !important;
+    }
+    .accordion-button{
+        font-size: 16px !important;
+        background-color: #000000 !important;
+        color: #ffffff !important;
+        font-family: Anton, sans-serif !important;
+        padding: 3% !important;
+        border-radius: 10px !important;
+        outline: none !important;
+        z-index: 2 !important;
+    }
+    .listedit {
+        list-style: none !important;
+        padding-left: 0 !important;
+    }
+
+.accordion-body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Anton, sans-serif !important;
+    z-index: 2 !important;
+    font-size: 12px !important;
+}
+.accordion-header span {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-left: auto;
+    float: right;
+    position: absolute;
+    right: 2vh;
+    font-size: 40px !important;
+    color: #02010100;
+    font-family: Anton, Sans-serif;
+    -webkit-text-stroke-width: 0.5px;
+    stroke-width: 0.5px;
+    -webkit-text-stroke-color: #fff;
+    stroke: #fff;
+    font-family: Anton, sans-serif !important;
+}
+.accord-arrow{
+    display: none !important;
+}
+.accordian-sec {
+    padding-bottom: 3% !important;
+}
+.center-image-about{
+    width: 100% !important;
+}
 }
