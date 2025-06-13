@@ -15,31 +15,7 @@
     width:200px;
 }
 
-.emailWrapper {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  cursor: pointer;
-}
 
-.emailText {
-  font-size: 30px;
-  font-weight: 400;
-  color: #fff;
-  margin-bottom: 1rem;
-  font-family: Anton, sans-serif !important;
-  cursor: pointer;
-}
-
-.emailArrow {
-  transition: transform 0.5s ease;
-  color: #fff;
-
-}
-
-.emailWrapper:hover .emailArrow {
-  transform: rotate(180deg);
-}
 
 .downArrow{
   width:50px;
@@ -70,7 +46,6 @@
 
 .icon {
   color: #fff;
-  font-size: 44px;
   transition: color 0.3s;
 }
 
@@ -115,4 +90,60 @@ span.copyrightsub{
 .iconHoverEffect:hover {
   transform: scale(1.15);
   filter: drop-shadow(0 0 8px rgba(255, 221, 0, 0.8)); /* Yellow glow */
+}
+
+
+
+.emailTextWrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+}
+
+.tooltipWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip {
+  position: absolute;
+  top: -28px;
+  left: 0;
+  background-color: #ffc107;
+  color: black;
+  padding: 4px 8px;
+  font-size: 13px;
+  border-radius: 4px;
+  white-space: nowrap;
+  z-index: 10;
+  animation: fadeInOut 1.5s ease-in-out forwards;
+}
+
+
+.emailWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.emailText {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  font-family: Anton, sans-serif !important;
+  margin-left: 20px;
+
+}
+
+.emailArrow {
+  transition: transform 0.5s ease;
+  color: #fff;
+  cursor: pointer;
+  width: 45px;
+
+}
+
+.emailArrow:hover {
+  transform: rotate(180deg);
 }

@@ -1,0 +1,102 @@
+.termsWrapper {
+  background-color: #0B0B0A;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.termsContainer {
+  padding: 80px 15px;
+  background-color: #0B0B0A;
+  color: #ffffff;
+    font-family: "Anton", sans-serif;
+
+  overflow-x: hidden;
+  margin-top: 7%;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.topContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/images/overlay-bg.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  opacity: 0.3;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.termsContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/images/overlay-bg.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  opacity: 0.3;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.termsContainer > * {
+  position: relative;
+  z-index: 2;
+}
+
+.title {
+  font-size: 42px;
+  color: #f0cb11;
+  font-family: "Anton", sans-serif;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #ccc;
+  max-width: 850px;
+  margin: 0 auto 40px auto;
+  text-align: center;
+  font-family: "Anton", sans-serif;
+}
+
+.section {
+  margin-bottom: 35px;
+}
+
+.section h3 {
+  color: #f0cb11;
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-family: "Anton", sans-serif;
+}
+
+.section p {
+  font-size: 16px;
+  color: #ddd;
+  font-family: "Anton", sans-serif;
+}
+
+.emailLink {
+  color: #f0cb11;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.emailLink:hover {
+  color: #fff000;
+}
