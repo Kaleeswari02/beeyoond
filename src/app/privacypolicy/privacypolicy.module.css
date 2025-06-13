@@ -54,7 +54,7 @@ content: "";
   margin-bottom: 30px;
   text-align: center;
 }
-
+/* 
 .subtitle {
   font-size: 18px;
   color: #ccc;
@@ -63,7 +63,7 @@ content: "";
   text-align: center;
   font-family: "Anton", sans-serif;
 
-}
+} */
 
 .section {
   margin-bottom: 35px;
@@ -81,6 +81,7 @@ content: "";
 .section ul {
   font-size: 16px;
   color: #ddd;
+  letter-spacing: 0.3px;
 }
 
 .section ul {
