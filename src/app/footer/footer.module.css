@@ -138,6 +138,10 @@ span.copyrightsub{
 .emailArrow:hover {
   transform: rotate(180deg);
 }
+.socialIcons{
+  display: flex;
+
+}
 
 @media  screen and (min-width: 300px) and (max-width: 450px) {
 .footerLogo{
@@ -155,4 +159,30 @@ margin-left: 20px;
     width: 26px;
     height: 26px;
 }
+ .navLinks {
+    flex-direction: column !important;
+    align-items: center;
+    margin-left: 0 !important;
+    text-align: center;
+  }
+
+  .link {
+    padding: 10px 0;
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  .ms-auto {
+    justify-content: center !important;
+    margin: 0 auto !important;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+.socialIcons {
+    justify-content: center !important;
+    margin-top: 20px;
+     padding: 10px 0;
+    margin: 5px 0;
+  }
+
 }
