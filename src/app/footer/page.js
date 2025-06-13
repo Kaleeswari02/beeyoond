@@ -40,7 +40,7 @@ const Footer = () => {
               <Link href="#about" className={styles.link}>About us</Link>
               <Link href="#testimonial" className={styles.link}>Testimonial</Link>
               <Link href="#careers" className={styles.link}>Careers</Link>
-              <Link href="tel:099429 98598" target="_blank"  className={styles.link}>Contact</Link>
+              <Link href="#contact" className={styles.link}>Contact</Link>
               <Link href="#portfolio" className={styles.link}>Portfolio</Link>
               <div className="w-100 mt-2">
               <span className={styles.servicesText}>Services</span>

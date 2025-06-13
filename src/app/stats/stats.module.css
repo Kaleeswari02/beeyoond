@@ -86,3 +86,8 @@
     gap: 20px;
   }
 }
+@media only screen and (min-width: 300px) and (max-width: 450px) {
+  .statsSection {
+    padding-bottom: 10px !important;
+  }
+}
