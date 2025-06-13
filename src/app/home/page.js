@@ -17,9 +17,9 @@ export default function Banner() {
         <div className='container-fluid home-bg'>
         <div className="banner-overlay ">
             <div className="row ">
-              <div className="col-xl-4 col-lg-5">
+              <div className="col-xl-4 col-lg-5 col-md-7">
                 <div className="content-section mb-xl-5 mb-md-5 mb-lg-5">
-                  <h3 className='banner-head mt-xl-5 mt-lg-5 mt-md-5 mt-5'>WE CREATE</h3>
+                  <h3 className='banner-head mt-xl-5 mt-lg-5 mt-md-3 mt-5'>WE CREATE</h3>
                   <h3 className='banner-subhead'>GAMES</h3>
                   <p className='banner-para'>
                      An award-winning, India-based casino slot game studio, proudly backed by Sportstech, pushing the boundaries of storytelling and serious gaming.
@@ -27,8 +27,8 @@ export default function Banner() {
                   <div><button className='banner-btn mb-xl-5 mb-md-5 mb-lg-5 mb-md-5 mb-5'>Get Quotes</button></div>
                 </div>
               </div>
-              <div className="col-xl-2 col-lg-1"></div>
-              <div className="col-xl-6 col-lg-6"></div>
+              <div className="col-xl-2 col-lg-1 col-md-1"></div>
+              <div className="col-xl-6 col-lg-6 col-md-4"></div>
             </div>
         </div>
      </div>

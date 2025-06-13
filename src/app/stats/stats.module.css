@@ -57,7 +57,11 @@
   font-weight: 500;
 }
 
-
+@media only screen and (min-width: 796px) and (max-width: 999px){
+  .boxGap{
+    gap: 20px !important;
+  }
+}
 /* Responsive adjustments */
 @media (max-width: 767px) {
   .hexagonBox {
