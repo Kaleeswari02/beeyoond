@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { FaXmark } from "react-icons/fa6";
 import styles from "./header.module.css";
+import { Icon } from '@iconify/react';
+
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,17 +13,20 @@ const Header = () => {
   return (
     <header>
       <nav className={`${styles.navbarbg} navbar navbar-expand-lg fixed-top`}>
-        <div className={`container-fluid d-flex justify-content-between align-items-center ${styles.navContainer}`}>
+        <div
+          className={`container-fluid d-flex justify-content-between align-items-center ${styles.navContainer}`}
+        >
           <a href="/" className={`navbar-brand ${styles.navbarBrand}`}>
             <img
               src="/assets/images/logo.png"
               alt="Beeyoond"
-
               className={styles.navbarLogo}
             />
           </a>
           <div className={`${styles.mobileNav} d-flex`}>
-            <a className={styles.contactBtn} href="#contact">Contact</a>
+            <a className={styles.contactBtn} href="#contact">
+              Contact
+            </a>
             <button onClick={toggleMenu} className={styles.menuButton}>
               {isOpen ? (
                 <FaXmark size={25} />
@@ -29,7 +34,6 @@ const Header = () => {
                 <img
                   src="/assets/images/menu-icon.png"
                   alt="menu"
-                 
                   className={styles.menuIcon}
                 />
               )}
@@ -44,42 +48,73 @@ const Header = () => {
             <div className={styles.menuContent}>
               <nav className={styles.navLinks}>
                 <div className={styles.careerWithIcons}>
-                  <a className={styles.navLinkCareer} href="" onClick={toggleMenu}>Home</a>
+                  <a
+                    className={styles.navLinkCareer}
+                    href=""
+                    onClick={toggleMenu}
+                  >
+                    Home
+                  </a>
                   <div className={styles.socialIcons}>
-                    {[
-                      { name: "instagram", url: "https://www.instagram.com/p/DJoxDdohR6f/" },
-                      { name: "linkedin", url: "https://in.linkedin.com/company/beeyoondgaming" },
-                      { name: "twitter", url: "https://twitter.com/example" },
-                    ].map((icon, idx) => (
-                      <a
-                        key={idx}
-                        href={icon.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <img
-                          src={`/assets/images/${icon.name}.png`}
-                          alt={icon.name}
-                        />
-                      </a>
-                    ))}
+                    <a
+                      href="https://www.instagram.com/p/DJoxDdohR6f/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.iconHoverEffect}
+                    >
+                      <Icon icon="lets-icons:insta" width="40" height="40" />
+                    </a>
+
+                    <a
+                      href="https://in.linkedin.com/company/beeyoondgaming"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.iconHoverEffect}
+                    >
+                      <Icon
+                        icon="mingcute:linkedin-line"
+                        width="42"
+                        height="42"
+                      />
+                    </a>
+
+                    <a
+                      href="https://twitter.com/example"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.iconHoverEffect}
+                    >
+                      <Icon icon="prime:twitter" width="30" height="30" />
+                    </a>
                   </div>
                 </div>
-                      {["About us", "Services  [Coming Soon]", "Portfolio", "Testimonial"].map((item, idx) => {
-        const id = item.toLowerCase().replace(" ", "");
-        return (
-          <a key={idx} href={`#${id}`} onClick={toggleMenu}>
-            {item}
-          </a>
-        );
-      })}
+                {[
+                  "About us",
+                  "Services  [Coming Soon]",
+                  "Portfolio",
+                  "Testimonial",
+                ].map((item, idx) => {
+                  const id = item.toLowerCase().replace(" ", "");
+                  return (
+                    <a key={idx} href={`#${id}`} onClick={toggleMenu}>
+                      {item}
+                    </a>
+                  );
+                })}
 
-                 <div className={styles.careerWithIcons}>
-                  <a className={styles.navLinkCareer} href="#careers" onClick={toggleMenu}>Careers</a>
-                        <img className={styles.SportsLogo}
-                          src={`/assets/images/sports-logo.png`}
-                          alt={"logo"}
-                        />
+                <div className={styles.careerWithIcons}>
+                  <a
+                    className={styles.navLinkCareer}
+                    href="#careers"
+                    onClick={toggleMenu}
+                  >
+                    Careers
+                  </a>
+                  <img
+                    className={styles.SportsLogo}
+                    src={`/assets/images/sports-logo.png`}
+                    alt={"logo"}
+                  />
                 </div>
               </nav>
             </div>

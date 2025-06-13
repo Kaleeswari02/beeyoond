@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: auto;
   width: 100%;
   z-index: 9998;
   display: flex;
@@ -87,7 +87,7 @@
   transition: color 0.3s;
   font-family: Anton, sans-serif !important;
   font-size: 30px;
-  line-height: 4;
+  line-height: 3;
   font-weight: 600;
   letter-spacing: 1px;
 }
@@ -116,6 +116,14 @@
 
 .SportsLogo{
   width: 150px;
+}
+.iconHoverEffect {
+  transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+}
+
+.iconHoverEffect:hover {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 8px rgba(255, 221, 0, 0.8)); /* Yellow glow */
 }
 
  /* phone */
