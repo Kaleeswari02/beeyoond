@@ -230,4 +230,9 @@
   transform: scale(1.2);
   z-index: 2;
 }
-
+@media only screen and (min-width: 300px) and (max-width: 450px) {
+  .title {
+    font-size: 45px !important;
+    margin-top: 25px !important;
+  }
+}

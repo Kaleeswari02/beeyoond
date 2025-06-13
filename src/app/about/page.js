@@ -6,10 +6,10 @@ export default function About(){
             <div className="row">
                 <div className="col-xl-6 col-lg-6 col-md-6 col-12">
                     <div className="about-section">
-                        <div className="about-one mt-5">
-                            <img src="/assets/images/arrowr.png" alt=""/>
+                        <div className="about-one mt-xl-5 mt-lg-5 mt-md-5">
+                            <img src="/assets/images/arrowr.png" alt="" className='arrow-size-mobile'/>
                         </div>
-                        <div className="about-two mt-xl-3">
+                        <div className="about-two mt-xl-3 mt-lg-3 mt-md-3 mt-3">
                         {/* <video
                         autoPlay
                         muted
@@ -22,11 +22,11 @@ export default function About(){
                             <img src="/assets/images/aboutright.png" alt=""/>
                         </div>
                         <div className="about-three">
-                            <img src="/assets/images/arrowl.png" alt=""/>
+                            <img src="/assets/images/arrowl.png" alt="" className='arrow-size-mobile'/>
                         </div>
                     </div>
                 </div>
-                <div className="col-xl-6 col-lg-6 col-md-6 col-12 p-5">
+                <div className="col-xl-6 col-lg-6 col-md-6 col-12 p-xl-5 p-lg-5 p-md-3 p-0">
                     <div className="about-content  mt-xl-5 mt-lg-5 mt-md-5">
                         <div className="content  mt-xl-5 mt-lg-5 mt-md-5">
                             <h2 className="about-head mt-xl-5 mt-lg-5 mt-md-5 ">Who We Are</h2>

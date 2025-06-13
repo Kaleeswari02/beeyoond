@@ -20,7 +20,7 @@ html{
     }
 
     .banner-para {
-        font-size: 12px !important;
+        font-size: 13px !important;
     }
     .banner-btn {
         font-size: 13px !important;
@@ -28,6 +28,60 @@ html{
     }
     #bg-video {
         width: 100% !important;
-        height: 57vh !important;
+        height: 82vh !important;
     }
+    .about-two{
+        padding-right: unset !important;
+    }
+    .about-three {
+        position: relative;
+        left: 0;
+        bottom: 0 !important;
+    }
+    .arrow-size-mobile{
+        width: 60% !important;
+    }
+    .about-content {
+        padding: 1% 0% 21% 0% !important;
+        
+      }
+      .about-head {
+        font-size: 45px !important;
+        text-align: center !important;
+      }
+      .about-para {
+        font-size: 14px !important;
+        letter-spacing: unset !important;
+        padding: 15px !important;
+    }
+    .about-content::before {
+        content: "";
+        position: absolute;
+        top: 15vh;
+        right: 0vw !important;
+    }
+    .about-content {
+        background-size: contain !important;
+    }
+    .videoPlaySection{
+        height: unset !important;
+    }
+    .videoHeading{
+        font-size: 45px !important;
+    }
+    .subText{
+        font-size: 12px !important;
+        letter-spacing: 0 !important;
+    }
+    .slick-dots {
+        position: absolute !important;
+        bottom: -30px !important;
+        right: 13vw !important;
+    }
+    .playCircle {
+        width: 80px !important;
+        height: 80px !important;
+        margin: 5% auto 10% auto !important;
+      }
+      
 }
