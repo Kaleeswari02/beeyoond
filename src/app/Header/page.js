@@ -57,7 +57,7 @@ const Header = () => {
                   </a>
                   <div className={styles.socialIcons}>
                     <a
-                      href="https://www.instagram.com/p/DJoxDdohR6f/"
+                      href="https://www.instagram.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className={styles.iconHoverEffect}

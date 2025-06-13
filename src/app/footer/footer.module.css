@@ -7,6 +7,11 @@
   border-top: 1px solid #333;
  
 }
+
+.footer-address-area2{
+  display: flex;
+  align-items: center;
+}
 .customContainer {
   padding-left: 5%;
   padding-right: 5%;
@@ -16,6 +21,9 @@
 }
 .downArrow{
   width:50px;
+}
+.text2{
+  margin-left: 85px;
 }
 .text{
   font-size: 18px;
@@ -60,7 +68,6 @@
   font-size: 18px;
   font-family: "Plus Jakarta Sans", sans-serif;
   color: #fff;
-
 }
 .copyright span{
   color: #f0cb11;
@@ -184,5 +191,15 @@ margin-left: 20px;
      padding: 10px 0;
     margin: 5px 0;
   }
-
+  .addressfooterarea{
+    position: relative;
+    left: 18% !important;
+   }
+   .copyright{
+    font-size: 13px !important;
+  }
+  .footercopyimg{
+    width: 65% !important;
+    margin-bottom: 10px !important;
+  }
 }
