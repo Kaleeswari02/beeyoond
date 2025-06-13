@@ -5,22 +5,44 @@
 .footer {
   background-color: #0B0B0A;
   border-top: 1px solid #333;
+ 
+}
+.customContainer {
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .footerLogo{
     width:200px;
 }
-.email {
-  font-size: 32px;
+
+.emailWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.emailText {
+  font-size: 30px;
   font-weight: 400;
   color: #fff;
   margin-bottom: 1rem;
-  color: #ffffff;
   font-family: Anton, sans-serif !important;
-  letter-spacing: 1px;
+  cursor: pointer;
 }
+
+.emailArrow {
+  transition: transform 0.5s ease;
+  color: #fff;
+
+}
+
+.emailWrapper:hover .emailArrow {
+  transform: rotate(180deg);
+}
+
 .downArrow{
-  width:53px;
-  margin-left: 30px;
+  width:50px;
 }
 .text{
   font-size: 18px;
@@ -36,7 +58,7 @@
   margin-bottom: 10px;
   display: inline-block;
   font-size: 18px;
-  padding: 20px;
+  padding: 24px;
   font-family: "Plus Jakarta Sans", sans-serif;
   text-decoration: none !important;
 }
@@ -58,7 +80,7 @@
 
 .navLinks {
   font-family: "Plus Jakarta Sans", sans-serif;
-  padding: 60px;
+  margin-left: 50px;
 }
 .copyright{
   font-size: 18px;
@@ -73,7 +95,7 @@
     font-size: 18px;
     font-family: "Plus Jakarta Sans", sans-serif;
     color: #C2B0B0;
-    margin-left: 20px;
+    margin-left: 22px;
 }
 .fullWidthHr {
   border: none;
@@ -85,4 +107,12 @@ span.copyrightsub{
   font-style: italic;
   font-size: 20px;
   font-weight: 600;
+}
+.iconHoverEffect {
+  transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+}
+
+.iconHoverEffect:hover {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 8px rgba(255, 221, 0, 0.8)); /* Yellow glow */
 }
