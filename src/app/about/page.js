@@ -6,7 +6,7 @@ export default function About(){
             <div className="row">
                 <div className="col-xl-6 col-lg-6 col-md-6 col-12">
                     <div className="about-section">
-                        <div className="about-one mt-xl-5 mt-lg-5 mt-md-5">
+                        <div className="about-one mt-xl-5 mt-lg-5">
                             <img src="/assets/images/arrowr.png" alt="" className='arrow-size-mobile'/>
                         </div>
                         <div className="about-two mt-xl-3 mt-lg-3 mt-md-3 mt-3">

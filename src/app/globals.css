@@ -134,7 +134,56 @@ html{
         font-family: Anton, sans-serif !important;
       }
 }
-@media only screen and (min-width: 796px) and (max-width: 999px){}
+@media only screen and (min-width: 796px) and (max-width: 999px){
+    .banner-head{
+    font-size: 35px !important;
+}
+.banner-subhead {
+    font-size: 80px !important;
+}
+.banner-para {
+    font-size: 14px !important;
+}
+.banner-btn {
+    font-size: 15px !important;
+    padding: 5px 20px !important;
+}
+#bg-video {
+    width: 100% !important;
+    height: 137vh !important;
+}
+.banner-container::before{
+    width: 100% !important;
+    height: 137vh !important;
+}
+.arrow-size-mobile{
+    width: 60% !important;
+}
+.about-two{
+    padding-left: unset !important;
+    padding-right: unset !important;
+}
+.center-image-about{
+    width: 100% !important;
+}
+.about-three{
+    bottom: unset !important;
+}
+
+.about-head {
+    font-size: 35px;
+}
+
+.about-head {
+    font-size: 40px !important;
+}
+.about-para {
+    font-size: 12px !important;
+}
+.about-content{
+    padding: unset !important;
+}
+}
 @media only screen and (min-width: 690px) and (max-width: 794px){}
 @media only screen and (min-width: 600px) and (max-width: 750px){
     .banner-head {
@@ -201,7 +250,7 @@ html{
         font-size: 38px !important;
     }
     .subText{
-        font-size: 10px !important;
+        font-size: 13px !important;
         letter-spacing: 0 !important;
     }
     .slick-dots {
@@ -287,6 +336,13 @@ html{
 }
 .center-image-about{
     width: 100% !important;
+}
+.testi-image{
+    position: relative;
+    left: unset !important;
+}
+.test-sub{
+    left: unset !important;
 }
 }
 @media only screen and (min-width: 450px) and (max-width: 600px){

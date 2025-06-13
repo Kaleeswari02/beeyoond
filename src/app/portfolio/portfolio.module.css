@@ -231,6 +231,30 @@
   z-index: 2;
 
 }
+@media only screen and (min-width: 600px) and (max-width: 750px){
+  .title {
+    font-size: 45px !important;
+    margin-top: 25px !important;
+  }
+  .description {
+    font-size: 14px !important;
+    padding: 0% 1% !important;
+  }
+  .enquireBtn {
+    font-size: 14px !important;
+    padding: 5px 17px !important;
+  }
+  .thumbImage {
+   display: none !important;
+  }
+  .arrowLeft,
+.arrowRight {
+  position: absolute;
+  top: 9vh;
+  z-index: 10;
+  cursor: pointer;
+}
+}
 @media only screen and (min-width: 450px) and (max-width: 600px){
   .title {
     font-size: 45px !important;
