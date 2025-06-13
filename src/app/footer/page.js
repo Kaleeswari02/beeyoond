@@ -19,15 +19,17 @@ const Footer = () => {
       <div className={`container-fluid ${styles.customContainer}`}>
         <div  className={`${styles.imaSec} row align-items-start mt-5`}>
           <div className=" col-md-4 mb-4">
-            <a href="/">
-            <img src="/assets/images/logo.png" alt="Beeyoond Logo" className={`${styles.footerLogo} mb-3 img-fluid`}/></a>
-            <div className="d-flex align-items-start mb-2 mt-2">
+            <div className={styles.contentCenter}>
+              <a href="/">
+                 <img src="/assets/images/logo.png" alt="Beeyoond Logo" className={`${styles.footerLogo} mb-3 img-fluid`}/>
+            </a>
+            </div>
             <div className="d-flex align-items-start mb-2 mt-2">
              <div className={styles.emailWrapper}>
                 <Icon
                   icon="proicons:mail-open"
-                  width="55"
-                  height="55"
+                  width="44"
+                  height="44"
                   className={`${styles.icon} mb-3 img-fluid`}
                   onClick={() =>
                     (window.location.href = "mailto:info@beeyoondgaming.com")
@@ -52,17 +54,18 @@ const Footer = () => {
                   </span>
                 </div>
               </div>
-              </div>
           </div>
+          <div className={styles.contentCenter}>
             <div className="d-flex align-items-start mb-4">
-              <Icon icon="entypo:location" width="44" height="44"  className={`${styles.icon}  mb-3 img-fluid`}/>
+              <Icon icon="entypo:location" className={`${styles.icon}  mb-3 img-fluid`}/>
               <span className={styles.text}>  Annai Therasa Street, Kalavasal, <br /> Madurai, Tamil Nadu 625016
               </span>
             </div>
             <div className="d-flex align-items-center">
-              <Icon icon="simple-line-icons:call-out" width="44" height="44" className={`${styles.icon} mb-3 img-fluid`} />
+              <Icon icon="simple-line-icons:call-out"className={`${styles.icon} mb-3 img-fluid`} />
               <span ><p className={`${styles.text} text-decoration-underline`}>+91 99429 98598 </p></span>   
             </div>
+          </div>
           </div>
 
             <div className="col-md-8  mt-5">
