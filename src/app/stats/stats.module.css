@@ -56,7 +56,16 @@
   text-transform: uppercase;
   font-weight: 500;
 }
-
+@media only screen and (min-width: 1000px) and (max-width:1300px){
+  .statsSection {
+    padding-bottom: 40px !important;
+    padding-top: 40px !important;
+  }
+  .hexagonBox .icon {
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
 @media only screen and (min-width: 796px) and (max-width: 999px){
   .boxGap{
     gap: 20px !important;

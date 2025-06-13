@@ -90,11 +90,11 @@ const Footer = () => {
                 <Icon icon="mingcute:linkedin-line" width="42" height="42" />
               </Link>
 
-              <Link href="https://www.instagram.com/" className={`${styles.icon} ${styles.iconHoverEffect}`} target="_blank">
+              <Link   href="https://www.instagram.com/beeyoondgaming/?utm_source=qr&igsh=N3A3d3h4eXJkM2Zp#" className={`${styles.icon} ${styles.iconHoverEffect}`} target="_blank">
                 <Icon icon="lets-icons:insta" width="40" height="40" />
               </Link>
 
-              <Link href="https://twitter.com/example" className={`${styles.icon} ${styles.iconHoverEffect}`} target="_blank">
+              <Link  href="https://x.com/beeyoondbees?t=ogj8pIqHkL0HNTtAE_acMA&s=35" className={`${styles.icon} ${styles.iconHoverEffect}`} target="_blank">
                 <Icon icon="prime:twitter" width="30" height="30" />
               </Link>          
               </div>

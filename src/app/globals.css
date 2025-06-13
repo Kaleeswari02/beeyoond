@@ -99,7 +99,7 @@ html{
     }
     
 }
-@media only screen and (min-width: 999px) and (max-width:1185px){
+@media only screen and (min-width: 1000px) and (max-width:1300px){
     .accordion-button{
         background-color: #000000 !important;
         color: #ffffff !important;
@@ -133,6 +133,22 @@ html{
         stroke: #fff;
         font-family: Anton, sans-serif !important;
       }
+
+    .about-head {
+        font-size: 50px !important;
+    }
+    .about-para {
+        font-size: 16px !important;
+    }
+    .testi-image{
+        left: unset !important;
+    }
+    .test-sub{
+        left: unset !important;
+    }
+    .center-image-about{
+        width: 100% !important;
+    }
 }
 @media only screen and (min-width: 796px) and (max-width: 999px){
     .banner-head{

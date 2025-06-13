@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: auto;
+  height: 100vh;
   width: 100%;
   z-index: 9998;
   display: flex;
@@ -12,6 +12,7 @@
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.85));
   backdrop-filter: blur(6px);
   overflow-y: auto;
+  margin-top: 5%;
 }
 
 .menuContent {
