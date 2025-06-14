@@ -108,7 +108,11 @@
   opacity: 1;
   max-height: 500px;
 }
-
+@media only screen and (min-width: 1000px) and (max-width:1300px){
+  .description{
+    font-size: 11px !important;
+  }
+}
 @media (max-width: 767px) {
   .VisionMissionSection h2 {
     font-size: 36px;

@@ -57,7 +57,7 @@ const Header = () => {
                   </a>
                   <div className={styles.socialIcons}>
                     <a
-                      href="https://www.instagram.com/p/DJoxDdohR6f/"
+                      href="https://www.instagram.com/beeyoondgaming/?utm_source=qr&igsh=N3A3d3h4eXJkM2Zp#"
                       target="_blank"
                       rel="noopener noreferrer"
                       className={styles.iconHoverEffect}
@@ -79,7 +79,7 @@ const Header = () => {
                     </a>
 
                     <a
-                      href="https://twitter.com/example"
+                      href="https://x.com/beeyoondbees?t=ogj8pIqHkL0HNTtAE_acMA&s=35"
                       target="_blank"
                       rel="noopener noreferrer"
                       className={styles.iconHoverEffect}
