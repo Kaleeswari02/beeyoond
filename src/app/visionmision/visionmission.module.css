@@ -113,6 +113,20 @@
     font-size: 11px !important;
   }
 }
+@media only screen and (min-width: 795px) and (max-width: 999px){
+  .VisionMissionSection h2 {
+    font-size: 50px !important;
+  }
+  .title {
+    font-size: 35px !important;
+  }
+  .description {
+    font-size: 11px !important;
+  }
+  .overlay {
+    padding: 15px !important;
+  }
+}
 @media (max-width: 767px) {
   .VisionMissionSection h2 {
     font-size: 36px;

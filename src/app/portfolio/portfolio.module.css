@@ -231,6 +231,44 @@
   z-index: 2;
 
 }
+@media only screen and (min-width: 795px) and (max-width: 999px) and (orientation:landscape){
+  .title {
+    font-size: 45px !important;
+    margin-top: 25px !important;
+  }
+  .description {
+    font-size: 14px !important;
+    padding: 0% 1% !important;
+  }
+  .enquireBtn {
+    font-size: 14px !important;
+    padding: 5px 17px !important;
+  }
+  .thumbImage {
+   display: none !important;
+  }
+  .arrowLeft,
+.arrowRight {
+  position: absolute;
+  top: 9vh;
+  z-index: 10;
+  cursor: pointer;
+}
+}
+@media only screen and (min-width: 795px) and (max-width: 999px) and (orientation: portrait) {
+  .title {
+    font-size: 50px !important;
+    margin-top: 25px !important;
+  }
+  .description {
+    font-size: 14px !important;
+    padding: 0% 1% !important;
+  }
+  .enquireBtn {
+    font-size: 14px !important;
+    padding: 5px 17px !important;
+  }
+}
 @media only screen and (min-width: 690px) and (max-width: 794px){
   .title {
     font-size: 45px !important;
@@ -309,6 +347,26 @@
   }
   .thumbImage {
     height: 180px;
+    width: unset !important;
+  }
+  
+ 
+}
+@media only screen and (max-width: 350px) {
+  .title {
+    font-size: 45px !important;
+    margin-top: 25px !important;
+  }
+  .description {
+    font-size: 14px !important;
+    padding: 0% 1% !important;
+  }
+  .enquireBtn {
+    font-size: 14px !important;
+    padding: 5px 17px !important;
+  }
+  .thumbImage {
+    height: 90px !important;
     width: unset !important;
   }
   
