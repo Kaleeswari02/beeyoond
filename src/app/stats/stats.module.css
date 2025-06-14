@@ -70,6 +70,31 @@
   .boxGap{
     gap: 20px !important;
   }
+  .hexagonBox .icon {
+    width: 25px !important;
+    height: 25px !important;
+    margin-bottom: unset !important;
+  }
+  .hexagonBox h4 {
+    font-size: 12px !important;
+  }
+  .hexagonBox p {
+    font-size: 12px !important;
+  }
+  .boxGap{
+    gap: 20px !important;
+  }
+  .statsSection {
+    padding-bottom: 90px !important;
+    padding-top: 90px !important;
+  }
+  .hexagonBox {
+    width: 120px; /* adjust as needed */
+    height: 137px; /* maintain aspect ratio */
+    padding: 0;    /* optional: reduce padding */
+    transform: scale(0.9); /* optional: fine-tune scaling */
+    margin: 0 auto; /* center horizontally */
+  }
 }
 @media only screen and (min-width: 690px) and (max-width: 794px){
   .hexagonBox .icon {

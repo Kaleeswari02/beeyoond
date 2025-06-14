@@ -5,6 +5,45 @@
 html{
     scroll-behavior: smooth;
 }
+@media only screen and (min-width:2560px){
+    .accordion-button{
+        background-color: #000000 !important;
+        color: #ffffff !important;
+        font-family: Anton, sans-serif !important;
+        padding: 3% !important;
+        border-radius: 10px !important;
+        font-size: 30px !important;
+        outline: none !important;
+        z-index: 2 !important;
+    }
+    .accordion-body{
+        background-color: #000000;
+        color: #ffffff;
+        font-size: 18px !important;
+        font-family: Anton, sans-serif !important;
+        z-index: 2 !important;
+    }
+    .accordion-header span {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-left: auto;
+        float: right;
+        position: absolute;
+        right: 9vh;
+        font-size: 80px !important;
+        color: #02010100;
+        font-family: Anton, Sans-serif;
+        -webkit-text-stroke-width: 0.5px;
+        stroke-width: 0.5px;
+        -webkit-text-stroke-color: #fff;
+        stroke: #fff;
+        font-family: Anton, sans-serif !important;
+      }
+      #bg-video {
+        height: 95vh !important;
+    }
+}
+
 @media only screen and (min-width: 1185px) and (max-width: 2560px){
     .accordion-button{
         background-color: #000000 !important;
@@ -100,6 +139,9 @@ html{
     .arrow-size-mobile{
         width: 60% !important;
     }
+    #bg-video {
+        height: 95vh !important;
+    }
 }
 @media only screen and (min-width: 999px) and (max-width:1300px){
     .accordion-button{
@@ -151,9 +193,122 @@ html{
     .center-image-about{
         width: 100% !important;
     }
+    .videoPlaySection{
+        height: unset !important;
+    }
 
 }
-@media only screen and (min-width: 795px) and (max-width: 999px){
+@media only screen and (min-width: 795px) and (max-width: 999px) and (orientation:landscape){
+    .banner-head{
+        font-size: 35px !important;
+    }
+    .banner-subhead {
+        font-size: 80px !important;
+    }
+    .banner-para {
+        font-size: 14px !important;
+    }
+    .banner-btn {
+        font-size: 15px !important;
+        padding: 5px 20px !important;
+    }
+    #bg-video {
+        width: 100% !important;
+        height: 157vh !important;
+    }
+    .banner-container::before{
+        width: 100% !important;
+        height: 137vh !important;
+    }
+    .arrow-size-mobile{
+        width: 60% !important;
+    }
+    .about-two{
+        padding-left: unset !important;
+        padding-right: unset !important;
+    }
+    .center-image-about{
+        width: 100% !important;
+    }
+    .about-three{
+        bottom: unset !important;
+    }
+    
+    .about-head {
+        font-size: 35px;
+    }
+    
+    .about-head {
+        font-size: 40px !important;
+    }
+    .about-para {
+        font-size: 12px !important;
+    }
+    .about-content{
+        padding: unset !important;
+    }
+    .videoPlaySection{
+        height: unset !important;
+    }
+    .testi-head {
+        font-size: 38px !important;
+        text-align: center !important;
+      }
+      .testi-image{
+        width: 80% !important;
+        left: unset !important;
+      }
+      .test-sub{
+            font-size: 16px !important;
+            left: unset !important;
+      }
+      .testi-content{
+        width: 100% !important;
+        padding: 0px 10px !important;
+      }
+      .testi-para{
+        font-size: 16px !important;
+      }
+      .testi-width{
+        margin-left: unset !important;
+        margin-right: unset !important;
+        padding: unset !important;
+    }
+    .accordion-button{
+        background-color: #000000 !important;
+        color: #ffffff !important;
+        font-family: Anton, sans-serif !important;
+        padding: 3% !important;
+        border-radius: 10px !important;
+        font-size: 20px !important;
+        outline: none !important;
+        z-index: 2 !important;
+    }
+    .accordion-body{
+        background-color: #000000;
+        color: #ffffff;
+        font-size: 12px !important;
+        font-family: Anton, sans-serif !important;
+        z-index: 2 !important;
+    }
+    .accordion-header span {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-left: auto;
+        float: right;
+        position: absolute;
+        right: 3vh;
+        font-size: 50px !important;
+        color: #02010100;
+        font-family: Anton, Sans-serif;
+        -webkit-text-stroke-width: 0.5px;
+        stroke-width: 0.5px;
+        -webkit-text-stroke-color: #fff;
+        stroke: #fff;
+        font-family: Anton, sans-serif !important;
+      }
+}
+@media only screen and (min-width: 795px) and (max-width: 999px) and (orientation: portrait){
     .banner-head{
     font-size: 35px !important;
 }
@@ -169,7 +324,7 @@ html{
 }
 #bg-video {
     width: 100% !important;
-    height: 137vh !important;
+    height: 57vh !important;
 }
 .banner-container::before{
     width: 100% !important;
@@ -202,8 +357,101 @@ html{
 .about-content{
     padding: unset !important;
 }
+.videoPlaySection{
+    height: unset !important;
+}
+.testi-head {
+    font-size: 38px !important;
+    text-align: center !important;
+  }
+  .testi-image{
+    width: 80% !important;
+    left: unset !important;
+  }
+  .test-sub{
+        font-size: 16px !important;
+        left: unset !important;
+  }
+  .testi-content{
+    width: 100% !important;
+    padding: 0px 10px !important;
+  }
+  .testi-para{
+    font-size: 16px !important;
+  }
+  .testi-width{
+    margin-left: unset !important;
+    margin-right: unset !important;
+    padding: unset !important;
+}
+.accordion-button{
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    font-family: Anton, sans-serif !important;
+    padding: 3% !important;
+    border-radius: 10px !important;
+    font-size: 20px !important;
+    outline: none !important;
+    z-index: 2 !important;
+}
+.accordion-body{
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 12px !important;
+    font-family: Anton, sans-serif !important;
+    z-index: 2 !important;
+}
+.accordion-header span {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-left: auto;
+    float: right;
+    position: absolute;
+    right: 3vh;
+    font-size: 50px !important;
+    color: #02010100;
+    font-family: Anton, Sans-serif;
+    -webkit-text-stroke-width: 0.5px;
+    stroke-width: 0.5px;
+    -webkit-text-stroke-color: #fff;
+    stroke: #fff;
+    font-family: Anton, sans-serif !important;
+  }
 }
 @media only screen and (min-width: 690px) and (max-width: 794px){
+    .accordion-button{
+        background-color: #000000 !important;
+        color: #ffffff !important;
+        font-family: Anton, sans-serif !important;
+        padding: 3% !important;
+        border-radius: 10px !important;
+        font-size: 30px !important;
+        outline: none !important;
+        z-index: 2 !important;
+    }
+    .accordion-body{
+        background-color: #000000;
+        color: #ffffff;
+        font-size: 18px !important;
+        font-family: Anton, sans-serif !important;
+        z-index: 2 !important;
+    }
+    .accordion-header span {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-left: auto;
+        float: right;
+        position: absolute;
+        right: 9vh;
+        font-size: 80px !important;
+        color: #02010100;
+        font-family: Anton, Sans-serif;
+        -webkit-text-stroke-width: 0.5px;
+        stroke-width: 0.5px;
+        -webkit-text-stroke-color: #fff;
+        stroke: #fff;
+        font-family: Anton, sans-serif !important;
+      }
     .arrow-size-mobile{
         width: 60% !important;
     }

@@ -176,6 +176,54 @@ span.copyrightsub{
     text-decoration: none !important;
   }
 }
+@media only screen and (min-width: 795px) and (max-width: 999px){
+  .footerLogo{
+    width:150px !important;
+}
+.text{
+  font-size: 13px !important;
+  margin-left: 0 !important;
+  padding: 10px !important;
+}
+.icon {
+  width: 25px !important;
+  height: 25px !important;
+}
+.navLinks {
+  margin-left: unset !important;
+}
+
+.link{
+  margin-right: unset !important;
+  margin-bottom: unset !important;
+  font-size: 12px !important;
+  padding: 8px !important;
+}
+}
+@media only screen and (min-width: 690px) and (max-width: 794px){
+  .footerLogo{
+    width:150px !important;
+}
+.text{
+  font-size: 13px !important;
+  margin-left: 0 !important;
+  padding: 10px !important;
+}
+.icon {
+  width: 25px !important;
+  height: 25px !important;
+}
+.navLinks {
+  margin-left: unset !important;
+}
+
+.link{
+  margin-right: unset !important;
+  margin-bottom: unset !important;
+  font-size: 12px !important;
+  padding: 8px !important;
+}
+}
 @media  screen and (min-width: 300px) and (max-width: 450px) {
 .footerLogo{
   width:60%;

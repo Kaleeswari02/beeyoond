@@ -58,6 +58,66 @@
   font-size: 18px;
   font-family: "Plus Jakarta Sans", sans-serif;
 }
+@media only screen and (min-width: 795px) and (max-width: 999px){
+  .heading {
+    font-size: 38px !important;
+    margin-top: 10px !important;
+  }
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background-image: url('/assets/images/careersec-overlay.png');
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding: 0px 10px !important;
+  }
+  .careerSection {
+    position: relative;
+    width: 100vw;
+    height: 35vh !important;
+  }
+  .description {
+    font-size: 12px !important;
+    padding: 0 !important;
+  }
+  .joinusBtn {
+    padding: 4px 15px !important;
+    font-size: 13px !important;
+  }
+}
+@media only screen and (min-width: 690px) and (max-width: 794px){
+  .heading {
+    font-size: 38px !important;
+    margin-top: 10px !important;
+  }
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background-image: url('/assets/images/careersec-overlay.png');
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding: 0px 10px !important;
+  }
+  .careerSection {
+    position: relative;
+    width: 100vw;
+    height: 35vh !important;
+  }
+  .description {
+    font-size: 12px !important;
+    padding: 0 !important;
+  }
+  .joinusBtn {
+    padding: 4px 15px !important;
+    font-size: 13px !important;
+  }
+}
 @media only screen and (min-width: 600px) and (max-width: 750px){
   .heading {
     font-size: 38px !important;

@@ -18,7 +18,7 @@ const Footer = () => {
     <footer className={`${styles.footer}`}>
       <div className={`container-fluid ${styles.customContainer}`}>
         <div  className={`${styles.imaSec} row align-items-start mt-5`}>
-              <div className="col-xl-4 col-lg-4 col-md-4 col-12 mb-4 text-md-start text-center">
+              <div className="col-xl-4 col-lg-4 col-md-5 col-12 mb-4 text-md-start text-center">
                   <div className={styles.contentCenter}>
                     <a href="/">
                       <img src="/assets/images/logo.png" alt="Beeyoond Logo" className={`${styles.footerLogo} mb-3 img-fluid`}/>
@@ -68,7 +68,7 @@ const Footer = () => {
                   </div>
               </div>
 
-            <div className="col-xl-8 col-lg-8 col-md-8 col-12 md-mt-5">
+            <div className="col-xl-8 col-lg-8 col-md-7 col-12 md-mt-5">
             <div className={`d-flex flex-wrap ${styles.navLinks} md-mt-3`}>
               <Link href="/" className={styles.link}>Home</Link>
               <Link href="#about" className={styles.link}>About us</Link>
@@ -102,7 +102,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="text-center mt-5">
+        <div className="text-center mt-md-2 mt-5">
           <p className={styles.copyright}>
             © 2025 <span>beeyoondgaming</span>. All
             rights reserved.
