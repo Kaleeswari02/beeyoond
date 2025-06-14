@@ -830,3 +830,10 @@ html{
     width: 100% !important;
 }
 }
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("/assets/fonts/Breit-HalbfettKursiv.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

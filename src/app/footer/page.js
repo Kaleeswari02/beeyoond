@@ -95,7 +95,7 @@ const Footer = () => {
               </Link>
 
               <Link  href="https://x.com/beeyoondbees?t=ogj8pIqHkL0HNTtAE_acMA&s=35" className={`${styles.icon} ${styles.iconHoverEffect}`} target="_blank">
-                <Icon icon="prime:twitter" width="30" height="30" />
+                <Icon icon="proicons:x-twitter" width="40" height="40" />
               </Link>          
               </div>
             </div>
@@ -107,7 +107,15 @@ const Footer = () => {
             © 2025 <span>beeyoondgaming</span>. All
             rights reserved.
           </p>
-            <span ><img src="/assets/images/copyrights.png" alt="" className={styles.footercopyimg}/></span>
+          <p className={styles.copyrightSports}>
+          Powered by <span className={styles.copyrightsub}  style={{ 
+            fontFamily: "MyCustomFont", 
+             marginLeft: "2px"
+          }}>
+            Sportstech.
+          </span>
+        </p>
+            {/* <span ><img src="/assets/images/copyrights.png" alt="" className={styles.footercopyimg}/></span> */}
         </div>
       </div>
       {/* <hr className={`${styles.fullWidthHr} my-5 mt-5`}/> */}
