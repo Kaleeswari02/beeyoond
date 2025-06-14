@@ -56,13 +56,12 @@
   text-transform: uppercase;
   font-weight: 500;
 }
-
+/* 
 @media only screen and (min-width: 796px) and (max-width: 999px){
   .boxGap{
     gap: 20px !important;
   }
 }
-/* Responsive adjustments */
 @media (max-width: 767px) {
   .hexagonBox {
     width: 130px;
@@ -91,7 +90,8 @@
   }
 }
 @media only screen and (min-width: 300px) and (max-width: 450px) {
+  
   .statsSection {
     padding-bottom: 10px !important;
   }
-}
+} */
