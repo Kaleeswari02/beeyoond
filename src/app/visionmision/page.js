@@ -9,7 +9,7 @@ const VisionMission = () => {
         <h2 className="text-center mb-5">WE MAKE THE FUTURE</h2>
         <div className="row justify-content-center">
           {/* Vision Card */}
-          <div className="col-12 col-sm-6 col-md-6 col-xl-6 xol-lg-6 p-xl-5 p-lg-5 p-md-5 p-1 mb-xl-0 mb-lg-0 mb-md-0 mb-5">
+          <div className="col-12 col-sm-6 col-md-6 col-xl-6 xol-lg-6 p-xl-5 p-lg-5 p-1 mb-xl-0 mb-lg-0 mb-md-0 mb-5">
          <div className={`${styles.cardBox}`}>
           <img src="/assets/images/vision.png" alt="Vision" className={styles.cardImage} />
           <div className={styles.overlay}>
@@ -23,7 +23,7 @@ const VisionMission = () => {
           </div>
 
           {/* Mission Card */}
-         <div className="col-12 col-sm-6 col-md-6 col-xl-6 xol-lg-6 p-xl-5 p-lg-5 p-md-5 p-1">
+         <div className="col-12 col-sm-6 col-md-6 col-xl-6 xol-lg-6 p-xl-5 p-lg-5  p-1">
             <div className={styles.cardBox}>
               <img src="/assets/images/mission.png" alt="Mission" className={styles.cardImage} />
               <div className={styles.overlay}>

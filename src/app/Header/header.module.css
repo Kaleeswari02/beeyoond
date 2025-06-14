@@ -227,6 +227,9 @@
     width: 20px;
     height: 20px;
   }
-
+  .SportsLogo {
+    width: 100px !important;
+    padding: 5% !important;
+}
 }
 

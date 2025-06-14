@@ -66,9 +66,36 @@
     height: 40px !important;
   }
 }
-@media only screen and (min-width: 796px) and (max-width: 999px){
+@media only screen and (min-width: 795px) and (max-width: 999px){
   .boxGap{
     gap: 20px !important;
+  }
+}
+@media only screen and (min-width: 690px) and (max-width: 794px){
+  .hexagonBox .icon {
+    width: 25px !important;
+    height: 25px !important;
+    margin-bottom: unset !important;
+  }
+  .hexagonBox h4 {
+    font-size: 12px !important;
+  }
+  .hexagonBox p {
+    font-size: 12px !important;
+  }
+  .boxGap{
+    gap: 20px !important;
+  }
+  .statsSection {
+    padding-bottom: 90px !important;
+    padding-top: 90px !important;
+  }
+  .hexagonBox {
+    width: 120px; /* adjust as needed */
+    height: 137px; /* maintain aspect ratio */
+    padding: 0;    /* optional: reduce padding */
+    transform: scale(0.9); /* optional: fine-tune scaling */
+    margin: 0 auto; /* center horizontally */
   }
 }
 /* Responsive adjustments */
