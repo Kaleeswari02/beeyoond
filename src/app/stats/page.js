@@ -36,8 +36,10 @@ const Stats = () => {
       <div className="container py-2">
         <div className={`${styles.boxGap} row justify-content-center text-center`}>
           {statsData.map((item, index) => (
-          <div key={index} className="col-12 d-sm-block d-flex  col-md-2 col-lg-2 col-xl-2 justify-content-center mb-4">
-              <div className={styles.dropShadow}>
+          // <div key={index} className="col-12 d-sm-block d-flex  col-md-2 col-lg-2 col-xl-2 justify-content-center mb-4">
+             <div key={index} className="col-6 col-md-2 d-flex justify-content-center mb-4">
+
+             <div className={styles.dropShadow}>
             <div className={styles.hexagonBox}>
             <div className={styles.hexagonInner}>
                 <img src={item.img} alt={item.label} className={styles.icon} />
