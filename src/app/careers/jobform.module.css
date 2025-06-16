@@ -1,0 +1,178 @@
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.85);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.modalContent {
+  background: #0B0B0A;
+  border: 1px solid #F0CB11;
+  padding: 40px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 700px;
+  color: #fff;
+  overflow-y: auto;
+  max-height: 90vh;
+  position: relative;
+  box-sizing: border-box;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.jobTitle{
+  color: #fff;
+  font-family: 'Anton', sans-serif;
+
+}
+.modalContent input,
+.modalContent textarea {
+  width: 100%;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.modalContent textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.submitBtn {
+   border: 1px solid #F0CB11;
+  border-radius: 30px;
+  color: white;
+  background-color: transparent;
+  font-size: 18px;
+  padding: 8px 25px;
+  transition: all 0.3s ease;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  float: right;
+}
+
+.submitBtn:hover {
+  background: #F0CB11;
+  color: #000;
+}
+
+.closeBtn {
+  background: none;
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.buttonWrapper {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.error {
+  color: #ff5050;
+  font-size: 0.85rem;
+  margin-top: -6px;
+  margin-bottom: 10px;
+}
+/* Input & Textarea Focus Styles */
+.modalContent input:focus,
+.modalContent textarea:focus {
+  outline: none;
+  border-color: #F0CB11;
+  box-shadow: 0 0 0 2px rgba(255, 204, 0, 0.3);
+}
+
+/* File Upload */
+.fileInputWrapper {
+  position: relative;
+}
+
+.hiddenFileInput {
+  display: none;
+}
+
+.fileLabel {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  transition: border-color 0.3s ease;
+}
+
+.fileLabel:hover {
+  border-color: #F0CB11;
+}
+
+.uploadIcon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  color: #F0CB11 !important;
+}
+/* Default placeholder color */
+.modalContent input::placeholder,
+.modalContent textarea::placeholder {
+  color: #888; /* or white, or any subtle color you want */
+  transition: color 0.3s ease;
+}
+
+/* Yellow placeholder ONLY on focus */
+.modalContent input:focus::placeholder,
+.modalContent textarea:focus::placeholder {
+  color: #F0CB11;
+}
+.fileName {
+  color: #ffcc00;
+  font-size: 14px;
+}
+@media  screen and (min-width: 300px) and (max-width: 600px) {
+  .grid {
+  display: flex;
+  flex-direction: column;
+}
+.submitBtn{
+  float: none !important;
+}
+.buttonWrapper {
+  margin-top: 20px;
+  text-align: center !important;
+}
+ .modalContent {
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+    .modalContent {
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+
+}
+}

@@ -1,0 +1,442 @@
+.careerSection {
+  background: linear-gradient(to bottom, #000000, #333300, #000000);
+  padding: 60px 7%;
+  color: #fff;
+  font-family: 'Anton', sans-serif;
+  margin-top: 8%;
+}
+
+.contentSection {
+  text-align: center;
+}
+
+.careerTitle {
+  font-size: 55px;
+  font-family: 'Anton', sans-serif;
+}
+
+.careerIntro {
+  font-size: 26px;
+  line-height: 1.5;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 0.5px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.currentOpening {
+  font-size: 48px;
+  font-family: 'Anton', sans-serif;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.customAccordion {
+  margin-top: 20px;
+}
+
+.customItem {
+  background-color: transparent;
+  border: none;
+}
+
+.customHeader {
+  background-color: #0B0B0A;
+  color: #fff;
+  padding: 20px 30px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.roleTitle {
+  font-family: 'Anton', sans-serif;
+  font-size: 22px;
+}
+
+.icon {
+  font-size: 28px;
+}
+.accordianSec{
+  padding: 0 !important;
+}
+
+.customBody {
+  background-color: #0B0B0A;
+  border: 1px solid #fff;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  color: #fff;
+}
+
+.jobCard {
+  background: transparent;
+  font-family: 'Anton', sans-serif;
+  margin-left: 40px !important;
+}
+
+.jobCard h5 {
+  font-size: 20px;
+  margin: 30px 0 30px;
+  color: #ffcc00;
+}
+
+.jobCard p {
+  font-size: 18px;
+}
+
+.jobCard ul {
+  margin-bottom: 20px;
+  list-style: disc !important;
+
+}
+.Button {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding:0 24px 20px 0;
+}
+
+.qualList {
+  flex: 1;
+}
+
+
+.applyBtn {
+  border: 1px solid #F0CB11;
+  border-radius: 30px;
+  color: white;
+  background-color: transparent;
+  font-size: 18px;
+  padding: 8px 25px;
+  transition: all 0.3s ease;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.applyBtn:hover {
+  background: #F0CB11;
+  color: #000;
+}
+
+
+.accordianHead{
+    text-align: center;
+    color: #ffffff;
+    font-family: Anton, sans-serif !important;
+    font-size: 60px;
+}
+
+.accordion-body:focus{
+    z-index: 2 !important;
+}
+.accordion-collapse{
+    border: none !important;
+}
+.accordion-item{
+    margin:0% 0% 2% 0% !important;
+    border: 2px solid #ffffff !important;
+    z-index: 2 !important;
+}
+.accordion-button:focus{
+    outline: none !important;
+}
+  .accordion-button::after{
+    background-image: none !important;
+  }
+
+.listedit{
+    list-style: none !important;
+}
+.accordion :global(.accordion) {
+ border: none !important;
+
+}
+
+.accordion :global(.accordion-item) {
+  margin-bottom: 20px;
+  border: 2px solid #fff !important;
+  background: transparent !important;
+  border-radius: 8px !important;
+
+}
+
+.accordion :global(.accordion-button) {
+  background-color: #0B0B0A !important;
+  color: #fff !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.accordion :global(.accordion-button:focus) {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.accordion :global(.accordion-collapse),
+.accordion :global(.accordion-body) {
+  background-color: #0B0B0A !important;
+  color: #fff !important;
+  border-top: none !important;
+  
+}
+.accordion :global(.accordion-button::after) {
+  display: none !important;
+}
+.accordion :global(.accordion-button) {
+  background-color: #0B0B0A !important;
+  color: #fff !important;
+  border-bottom: none !important; 
+  border-radius: 8px 8px 8px 8px !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+.accordion :global(.accordion-body) {
+  border-top: none !important;
+  background-color: #0B0B0A !important;
+  color: #fff !important;
+  border-radius: 0 0 8px 8px !important;
+  padding: 0 !important;
+}
+
+
+/* @media only screen and (min-width: 1185px) and (max-width: 2560px){
+    .careerTitle {
+  font-size: 40px;
+  font-family: 'Anton', sans-serif;
+}
+.careerIntro{
+  font-size: 20px;
+}
+.currentOpening{
+  font-size: 40px;
+  margin-top: 10px;
+}
+.jobCard {
+  margin-left: 37px !important;
+}
+.jobCard h5 {
+  font-size: 20px;
+  margin: 10px 0 10px;
+}
+
+.jobCard p {
+  font-size: 20px;
+}
+
+.applyBtn {
+  font-size: 20px;
+  padding: 12px 30px;
+}
+} */
+
+@media only screen and (min-width: 999px) and (max-width:1300px){
+   .careerTitle {
+  font-size: 40px;
+  font-family: 'Anton', sans-serif;
+}
+.careerIntro{
+  font-size: 18px;
+}
+.currentOpening{
+  font-size: 40px;
+  margin-top: 10px;
+}
+.jobCard {
+  margin-left: 26px !important;
+}
+.jobCard h5 {
+  font-size: 20px;
+  margin: 10px 0 10px;
+}
+
+.jobCard p {
+  font-size: 18px;
+}
+
+.applyBtn {
+  font-size: 14px;
+  padding: 8px 20px;
+}
+
+}
+
+@media only screen and (min-width: 795px) and (max-width: 999px) and (orientation:landscape){
+ .careerTitle {
+  font-size: 40px;
+  font-family: 'Anton', sans-serif;
+}
+.careerIntro{
+  font-size: 14px;
+}
+.currentOpening{
+  font-size: 40px;
+  margin-top: 10px;
+}
+.jobCard {
+  margin-left: 20px !important;
+}
+.jobCard h5 {
+  font-size: 14px;
+  margin: 10px 0 10px;
+}
+
+.jobCard p {
+  font-size: 14px;
+}
+
+.applyBtn {
+  font-size: 12px;
+  padding: 6px 13px;
+}
+
+}
+
+@media only screen and (min-width: 795px) and (max-width: 999px) and (orientation: portrait){
+  .careerTitle {
+  font-size: 40px;
+  font-family: 'Anton', sans-serif;
+}
+.careerIntro{
+  font-size: 14px;
+}
+.currentOpening{
+  font-size: 40px;
+  margin-top: 10px;
+}
+.jobCard {
+  margin-left: 20px !important;
+}
+.jobCard h5 {
+  font-size: 14px;
+  margin: 10px 0 10px;
+}
+
+.jobCard p {
+  font-size: 14px;
+}
+
+.applyBtn {
+  font-size: 12px;
+  padding: 6px 13px;
+}
+}
+
+@media only screen and (min-width: 690px) and (max-width: 794px){
+ .careerTitle {
+  font-size: 40px;
+  font-family: 'Anton', sans-serif;
+}
+.careerIntro{
+  font-size: 12px;
+}
+.currentOpening{
+  font-size: 40px;
+  margin-top: 12px;
+}
+.jobCard {
+  margin-left: 20px !important;
+}
+.jobCard h5 {
+  font-size: 12px;
+  margin: 10px 0 10px;
+}
+
+.jobCard p {
+  font-size: 14px;
+}
+
+.applyBtn {
+  font-size: 14px;
+  padding: 6px 13px;
+}
+.accordion :global(.accordion-button) span {
+font-size: 10px;
+float: right !important;
+right: 4vh !important;
+}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 750px){
+    .careerTitle {
+  font-size: 30px;
+  font-family: 'Anton', sans-serif;
+}
+.careerIntro{
+  font-size: 12px;
+}
+.currentOpening{
+  font-size: 30px;
+  margin-top: 10px;
+}
+.jobCard {
+  margin-left: 11px !important;
+}
+.jobCard h5 {
+  font-size: 12px;
+  margin: 10px 0 10px;
+}
+
+.jobCard p {
+  font-size: 12px;
+}
+
+.applyBtn {
+  font-size: 12px;
+  padding: 6px 13px;
+}
+.accordion :global(.accordion-button) span {
+font-size: 10px;
+float: right !important;
+right: 2vh !important;
+bottom: 2px;
+}
+}
+@media  screen and (min-width: 300px) and (max-width: 600px) {
+  .careerTitle {
+  font-size: 30px;
+  font-family: 'Anton', sans-serif;
+}
+.careerIntro{
+  font-size: 12px;
+}
+.currentOpening{
+  font-size: 30px;
+  margin-top: 10px;
+}
+.jobCard {
+  margin-left: 11px !important;
+}
+.jobCard h5 {
+  font-size: 12px;
+  margin: 10px 0 10px;
+}
+
+.jobCard p {
+  font-size: 12px;
+}
+
+.applyBtn {
+  font-size: 12px;
+  padding: 6px 13px;
+}
+.accordion :global(.accordion-button) span {
+font-size: 10px;
+float: right !important;
+right: 2vh !important;
+bottom: 2px;
+}
+
+}
+
+
+

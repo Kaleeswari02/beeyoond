@@ -56,7 +56,7 @@ const Footer = () => {
                             </div>
                           </div>
                       </div>
-                      <div className="d-flex align-items-start  md-mb-4 mb-2">
+                      <div className="d-flex align-items-start  md-mb-4 mb-4">
                         <Icon icon="entypo:location"  className={`${styles.icon}  md-mb-3 img-fluid`}/>
                         <span className={styles.text}>  Annai Therasa Street, Kalavasal, <br />Madurai, Tamil Nadu 625016
                         </span>
@@ -73,7 +73,7 @@ const Footer = () => {
               <Link href="/" className={styles.link}>Home</Link>
               <Link href="#about" className={styles.link}>About us</Link>
               <Link href="#testimonial" className={styles.link}>Testimonial</Link>
-              <Link href="#careers" className={styles.link}>Careers</Link>
+              <Link href="/careers" className={styles.link}>Careers</Link>
               <Link href="#contact" className={styles.link}>Contact</Link>
               <Link href="#portfolio" className={styles.link}>Portfolio</Link>
               <div className="w-100 mt-2">
