@@ -58,7 +58,7 @@ const Footer = () => {
                       </div>
                       <div className="d-flex align-items-start  md-mb-4 mb-2">
                         <Icon icon="entypo:location"  className={`${styles.icon}  md-mb-3 img-fluid`}/>
-                        <span className={styles.text}>  Annai Therasa Street, Kalavasal, <br />Madurai, Tamil Nadu 625016
+                        <span className={styles.text}>Annai Therasa Street, Kalavasal,<br/>Madurai, Tamil Nadu 625016
                         </span>
                       </div>
                       <div className="d-flex align-items-center mb-2">
@@ -71,7 +71,7 @@ const Footer = () => {
             <div className="col-xl-8 col-lg-8 col-md-7 col-12 md-mt-5">
             <div className={`d-flex flex-wrap ${styles.navLinks} md-mt-3`}>
               <Link href="/" className={styles.link}>Home</Link>
-              <Link href="#about" className={styles.link}>About us</Link>
+              <Link href="/aboutpage" className={styles.link}>About us</Link>
               <Link href="#testimonial" className={styles.link}>Testimonial</Link>
               <Link href="#careers" className={styles.link}>Careers</Link>
               <Link href="#contact" className={styles.link}>Contact</Link>

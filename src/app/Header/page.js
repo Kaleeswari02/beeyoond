@@ -4,7 +4,7 @@ import Image from "next/image";
 import { FaXmark } from "react-icons/fa6";
 import styles from "./header.module.css";
 import { Icon } from '@iconify/react';
-
+import Link from "next/link";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -88,8 +88,8 @@ const Header = () => {
                     </a>
                   </div>
                 </div>
+                <Link href="/aboutpage" onClick={toggleMenu}> About us</Link>
                 {[
-                  "About us",
                   "Services  [Coming Soon]",
                   "Portfolio",
                   "Testimonial",
