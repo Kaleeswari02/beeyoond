@@ -62,7 +62,7 @@ const Header = () => {
                       rel="noopener noreferrer"
                       className={styles.iconHoverEffect}
                     >
-                      <Icon icon="lets-icons:insta" width="40" height="40" />
+                      <Icon icon="lets-icons:insta" className={styles.icon} />
                     </a>
 
                     <a
@@ -73,8 +73,8 @@ const Header = () => {
                     >
                       <Icon
                         icon="mingcute:linkedin-line"
-                        width="42"
-                        height="42"
+                       
+                        className={styles.icon}
                       />
                     </a>
 
@@ -84,7 +84,7 @@ const Header = () => {
                       rel="noopener noreferrer"
                       className={styles.iconHoverEffect}
                     >
-                      <Icon icon="prime:twitter" width="30" height="30" />
+                      <Icon icon="proicons:x-twitter" className={styles.icon} />
                     </a>
                   </div>
                 </div>
@@ -110,11 +110,19 @@ const Header = () => {
                   >
                     Careers
                   </a>
-                  <img
+                    <p className={`${styles.copyrightSports}`}>
+                      Powered by <br></br>
+                   
+                    <span className={styles.copyrightsub}  style={{ 
+                        fontFamily: "MyCustomFont", 
+                      }}>
+                        Sportstech. 
+                      </span> </p>
+                  {/* <img
                     className={styles.SportsLogo}
                     src={`/assets/images/sports-logo.png`}
                     alt={"logo"}
-                  />
+                  /> */}
                 </div>
               </nav>
             </div>

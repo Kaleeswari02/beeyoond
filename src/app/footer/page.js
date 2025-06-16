@@ -56,7 +56,7 @@ const Footer = () => {
                             </div>
                           </div>
                       </div>
-                      <div className="d-flex align-items-start  md-mb-4 mb-2">
+                      <div className="d-flex align-items-start  md-mb-4 mb-4">
                         <Icon icon="entypo:location"  className={`${styles.icon}  md-mb-3 img-fluid`}/>
                         <span className={styles.text}>Annai Therasa Street, Kalavasal,<br/>Madurai, Tamil Nadu 625016
                         </span>
@@ -73,7 +73,7 @@ const Footer = () => {
               <Link href="/" className={styles.link}>Home</Link>
               <Link href="/aboutpage" className={styles.link}>About us</Link>
               <Link href="#testimonial" className={styles.link}>Testimonial</Link>
-              <Link href="#careers" className={styles.link}>Careers</Link>
+              <Link href="/careers" className={styles.link}>Careers</Link>
               <Link href="#contact" className={styles.link}>Contact</Link>
               <Link href="#portfolio" className={styles.link}>Portfolio</Link>
               <div className="w-100 mt-2">
@@ -95,7 +95,7 @@ const Footer = () => {
               </Link>
 
               <Link  href="https://x.com/beeyoondbees?t=ogj8pIqHkL0HNTtAE_acMA&s=35" className={`${styles.icon} ${styles.iconHoverEffect}`} target="_blank">
-                <Icon icon="prime:twitter" width="30" height="30" />
+                <Icon icon="proicons:x-twitter" width="40" height="40" />
               </Link>          
               </div>
             </div>
@@ -107,7 +107,15 @@ const Footer = () => {
             © 2025 <span>beeyoondgaming</span>. All
             rights reserved.
           </p>
-            <span ><img src="/assets/images/copyrights.png" alt="" className={styles.footercopyimg}/></span>
+          <p className={styles.copyrightSports}>
+          Powered by <span className={styles.copyrightsub}  style={{ 
+            fontFamily: "MyCustomFont", 
+             marginLeft: "2px"
+          }}>
+            Sportstech.
+          </span>
+        </p>
+            {/* <span ><img src="/assets/images/copyrights.png" alt="" className={styles.footercopyimg}/></span> */}
         </div>
       </div>
       {/* <hr className={`${styles.fullWidthHr} my-5 mt-5`}/> */}

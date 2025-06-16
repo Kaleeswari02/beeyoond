@@ -72,6 +72,7 @@
 .copyright span{
   color: #f0cb11;
 }
+
 .servicesText{
     font-size: 18px;
     font-family: "Plus Jakarta Sans", sans-serif;
@@ -83,11 +84,21 @@
   border-top: 1px solid #fff;
   margin: 0;
 }
+.copyrightSports{
+  font-size: 19px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #fff;
+  
+}
+  .copyrightSports{
+    padding-bottom: 50px !important;
+  }
 span.copyrightsub{
   color: #ff0000;
   font-style: italic;
   font-size: 20px;
   font-weight: 600;
+  
 }
 .iconHoverEffect {
   transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
@@ -149,6 +160,9 @@ span.copyrightsub{
   display: flex;
   margin-left: auto;
 }
+
+
+
 @media only screen and (min-width: 1000px) and (max-width:1300px){
   .link {
     color: #fff;
@@ -258,8 +272,17 @@ margin-left: 20px;
    .copyright{
     font-size: 13px !important;
   }
+  .copyrightsub{
+     font-size: 13px !important;
+  }
+  .copyrightSports{
+         font-size: 13px !important;
+  }
   .footercopyimg{
     width: 65% !important;
+    margin-bottom: 10px !important;
+  }
+  .copyrightSports{
     margin-bottom: 10px !important;
   }
 }

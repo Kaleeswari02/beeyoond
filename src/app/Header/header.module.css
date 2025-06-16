@@ -109,12 +109,15 @@
   gap: 20px;
   align-items: center;
 }
-
-.socialIcons img {
-  width: 34px;
-  height: 34px;
+.icon {
+  color: #fff;
+  transition: color 0.3s;
+  width: 42px;
+  height: 42px;
 }
-
+.icon:hover {
+  color: #ffbf01;
+}
 .SportsLogo{
   width: 150px;
 }
@@ -125,6 +128,22 @@
 .iconHoverEffect:hover {
   transform: scale(1.15);
   filter: drop-shadow(0 0 8px rgba(255, 221, 0, 0.8)); /* Yellow glow */
+}
+
+.copyrightSports{
+  font-size: 18px;
+  font-family: "Anton", sans-serif;
+  color: #fff;
+  text-align: end;
+  
+}
+
+span.copyrightsub{
+  color: #ff0000;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 600;
+  
 }
 
  /* phone */
@@ -189,12 +208,64 @@
     font-size: 14px;
   }
 
-  .socialIcons img {
+  .icon{
     width: 20px;
     height: 20px;
   }
 
 }
+/* laptop */
+@media only screen and (min-width: 999px) and (max-width:1185px){
+ .navbarLogo {
+    width: 150px;
+  }
+   .icon{
+    width: 42px;
+    height: 42px;
+  }
+
+}
+
+/* tab */
+@media only screen and (min-width: 796px) and (max-width: 999px){
+ .navbarLogo {
+    width: 150px;
+  }
+   .icon{
+    width: 42px;
+    height: 42px;
+  }
+
+}
+
+/* large mobile landscap */
+@media only screen and (min-width: 690px) and (max-width: 794px){
+   .navbarLogo {
+    width: 150px;
+  }
+    .icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* mobile landscape */
+@media only screen and (min-width: 600px) and (max-width: 750px){
+  .navbarLogo {
+    width: 130px;
+  }
+   .icon {
+    width: 24px;
+    height: 24px;
+  }
+    .copyrightsub{
+     font-size: 13px !important;
+  }
+  .copyrightSports{
+         font-size: 12px !important;
+  }
+}
+
 /* iphone */
 @media  screen and (min-width: 300px) and (max-width: 450px) {
 .navbarLogo {
@@ -226,13 +297,23 @@
     font-size: 14px;
   }
 
-  .socialIcons img {
-    width: 20px;
-    height: 20px;
+  .icon {
+    width: 24px;
+    height: 24px;
   }
   .SportsLogo {
     width: 100px !important;
     padding: 5% !important;
 }
+
+.navbarbg {
+  padding: 1% 6%;
+}
+  .copyrightsub{
+     font-size: 13px !important;
+  }
+  .copyrightSports{
+         font-size: 12px !important;
+  }
 }
 
