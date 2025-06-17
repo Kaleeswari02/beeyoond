@@ -3,6 +3,9 @@ import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import Head from "next/head";
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -99,8 +102,21 @@ export default function RootLayout({ children }) {
           }}
         />
       </Head> */}
+      
       <body className={`${geistSans.variable} ${geistMono.variable}   ${poppins.variable}  ${anton.variable}  ${plusJakarta.variable}`}>
+        
         {children}
+        <ToastContainer
+        position="top-center"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
       </body>
     </html>
   );
