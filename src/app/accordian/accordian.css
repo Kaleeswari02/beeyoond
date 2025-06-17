@@ -33,7 +33,7 @@
     /* z-index: 2 !important; */
 }
 .accordion{
-    border: 1px solid #000000;
+    border: unset !important;
     --bs-accordion-bg:none !important;
     outline: none !important;
     --bs-accordion-active-color: none !important;
@@ -56,9 +56,13 @@
   }
   .accord-arrow{
     position: relative;
-    bottom: 10vh;
-    left: 13vw;
+    bottom: 17vh;
+    left: 18vw;
+    white-space: nowrap;
   }
 .listedit{
     list-style: none !important;
+}
+.image-area{
+  height: 50px;
 }

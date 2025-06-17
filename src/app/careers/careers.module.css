@@ -14,7 +14,7 @@
   right: 0;
   width: 100%;
   bottom: -28%;
-  opacity: 0.6;
+  opacity: 0.3;
   background-size: 160% auto; 
   background-position: left top; 
   background-repeat: no-repeat;
@@ -149,9 +149,11 @@
     font-family: Anton, sans-serif !important;
     font-size: 60px;
 }
-
+.accordianSec{
+  z-index: 1 !important;
+}
 .accordion-body:focus{
-    z-index: 2 !important;
+    z-index: 1 !important;
 }
 .accordion-collapse{
     border: none !important;
@@ -159,7 +161,7 @@
 .accordion-item{
     margin:0% 0% 2% 0% !important;
     border: 2px solid #ffffff !important;
-    z-index: 2 !important;
+    z-index: 1 !important;
 }
 .accordion-button:focus{
     outline: none !important;
@@ -202,7 +204,7 @@
   background-color: #0B0B0A !important;
   color: #fff !important;
   border-top: none !important;
-  
+  position: relative !important;
 }
 .accordion :global(.accordion-button::after) {
   display: none !important;
@@ -214,6 +216,7 @@
   border-radius: 8px 8px 8px 8px !important;
   box-shadow: none !important;
   outline: none !important;
+  position: relative !important;
 }
 .accordion :global(.accordion-body) {
   border-top: none !important;

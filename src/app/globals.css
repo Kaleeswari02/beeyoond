@@ -13,7 +13,7 @@ html{
         font-family: Anton, sans-serif !important;
         padding: 3% !important;
         border-radius: 10px !important;
-        font-size: 30px !important;
+        font-size: 38px !important;
         outline: none !important;
         z-index: 2 !important;
     }
@@ -55,7 +55,7 @@ html{
         font-family: Anton, sans-serif !important;
         padding: 3% !important;
         border-radius: 10px !important;
-        font-size: 30px !important;
+        font-size: 38px !important;
         outline: none !important;
         z-index: 2 !important;
     }
@@ -145,6 +145,12 @@ html{
     }
     #bg-video {
         height: 95vh !important;
+    }
+
+}
+@media only screen and (min-width: 1185px) and (max-width:1300px){
+    .playCircle{
+        margin: 5% auto 10% auto;
     }
 }
 @media only screen and (min-width: 999px) and (max-width:1300px){

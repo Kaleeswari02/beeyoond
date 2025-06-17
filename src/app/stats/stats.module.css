@@ -56,15 +56,35 @@
   text-transform: uppercase;
   font-weight: 500;
 }
-@media only screen and (min-width: 1000px) and (max-width:1300px){
+.statsSectionstat{
+  padding-left: 7%;
+  padding-right: 7%;
+}
+@media only screen and (min-width: 1185px) and (max-width: 2560px){
+  .hexagonInner {
+    padding: 30px !important;
+  }
+
+}
+@media only screen and (min-width: 1185px) and (max-width:1300px){
   .statsSection {
     padding-bottom: 40px !important;
     padding-top: 40px !important;
   }
   .hexagonBox .icon {
-    width: 40px !important;
-    height: 40px !important;
+    width: 32px !important;
+    height: 32px !important;
   }
+  .hexagonInner {
+    padding: 30px !important;
+  }
+  .hexagonBox p {
+    font-size: 16px !important;
+  }
+  .hexagonBox h4 {
+    font-size: 16px !important;
+  }
+
 }
 @media only screen and (min-width: 795px) and (max-width: 999px){
   .boxGap{
@@ -124,6 +144,8 @@
   }
 }
 /* Responsive adjustments */
+
+@media only screen and (min-width: 690px) and (max-width: 794px){}
 @media (max-width: 767px) {
   .hexagonBox {
     width: 130px;
@@ -150,10 +172,32 @@
   .boxGap {
     gap: 20px;
   }
+  .dropShadow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 600px){
+  .hexagonBox {
+    width: 130px;
+    height: 97px;
+  }
 }
 @media only screen and (min-width: 300px) and (max-width: 450px) {
   
   .statsSection {
     padding-bottom: 10px !important;
   }
+  .dropShadow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 } 
+@media only screen and (max-width: 350px) {
+  .hexagonInner {
+    padding: unset !important;
+  }
+}

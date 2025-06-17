@@ -369,6 +369,9 @@
     height: 90px !important;
     width: unset !important;
   }
-  
+  .cardInner {
+    padding: unset !important;
+    margin-top: 5px !important;
+  }
  
 }

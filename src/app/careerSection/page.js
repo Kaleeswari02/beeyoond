@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import styles from "./careersection.module.css";
-
+import Link from "next/link";
 const CareerSection = () => {
   return (
     <>
@@ -16,7 +16,7 @@ const CareerSection = () => {
                     <p className={`${styles.description}`}>
                       Looking for a career at Beeyoond Gaming means stepping into a dynamic world where creativity, innovation, and passion collide to shape the future of gaming. Here, your career isn’t just a job – it’s an opportunity to show your potential, pursue your passions, and make a meaningful impact on the gaming industry.
                     </p>
-                    <button className={styles.joinusBtn}>Join with us</button>
+                    <button className={styles.joinusBtn}><Link href="/careers" className={styles.link}>Join with us</Link></button>
                   </div>
                   </div>
                 </div>

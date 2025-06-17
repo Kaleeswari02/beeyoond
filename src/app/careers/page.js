@@ -89,68 +89,68 @@ export default function Careers() {
       <Header />
 
       <div className={`container-fluid ${styles.careerSection}`}>
-        <img src='/assets/images/overlay-bg.png' className={styles.careerOvrlay}/>
-        {/* <div className={styles.careerOvrlay}/> */}
-          <h1 className={`${styles.careerTitle} text-start mt-2 md-mb-5`}>
-            Join Our Creative Team
-          </h1>
+          <img src='/assets/images/overlay-bg.png' className={styles.careerOvrlay}/>
+          {/* <div className={styles.careerOvrlay}/> */}
+            <h1 className={`${styles.careerTitle} text-start mt-2 md-mb-5`}>
+              Join Our Creative Team
+            </h1>
 
-          <p className={`${styles.careerIntro} text-center md-p-5`}>
-            Shape the future of digital innovation with Beeyoond Gaming, where
-            creativity meets technology. Join a team that’s redefining what’s
-            possible in animation, game development, and immersive digital
-            experiences. Explore exciting opportunities to work on
-            groundbreaking projects in a dynamic, collaborative environment.
-            Here, your ideas matter, your growth is supported, and your impact
-            is real. Let’s build something extraordinary — together.
-          </p>
+            <p className={`${styles.careerIntro} text-center md-p-5`}>
+              Shape the future of digital innovation with Beeyoond Gaming, where
+              creativity meets technology. Join a team that’s redefining what’s
+              possible in animation, game development, and immersive digital
+              experiences. Explore exciting opportunities to work on
+              groundbreaking projects in a dynamic, collaborative environment.
+              Here, your ideas matter, your growth is supported, and your impact
+              is real. Let’s build something extraordinary — together.
+            </p>
 
-        <div className="md-mt-5">
-          <h2 className={`${styles.currentOpening} md-mt-5`}>Current Openings</h2>
-        </div>
+          <div className="md-mt-5">
+            <h2 className={`${styles.currentOpening} md-mt-5`}>Current Openings</h2>
+          </div>
 
-        <div className={`container-fluid ${styles.accordianSec} md-mt-5`}>
-          <div className={styles.accordion}>
-            <Accordion open={open} toggle={toggle}>
-              {jobList.map((job) => (
-                <AccordionItem key={job.id}>
-                  <AccordionHeader targetId={job.id}>
-                    {job.title}
-                    <span style={{ float: "right" }}>
-                      {open === job.id ? "×" : "+"}
-                    </span>
-                  </AccordionHeader>
-                  <AccordionBody accordionId={job.id}>
-                    <div className={styles.jobCard}>
-                      <p>{job.description}</p>
+          <div className={`container-fluid ${styles.accordianSec} md-mt-5`}>
+            <div className={styles.accordion}>
+              <Accordion open={open} toggle={toggle}>
+                {jobList.map((job) => (
+                  <AccordionItem key={job.id}>
+                    <AccordionHeader targetId={job.id}>
+                      {job.title}
+                      <span style={{ float: "right" }}>
+                        {open === job.id ? "×" : "+"}
+                      </span>
+                    </AccordionHeader>
+                    <AccordionBody accordionId={job.id}>
+                      <div className={styles.jobCard}>
+                        <p>{job.description}</p>
 
-                      <h5>Primary Responsibilities</h5>
-                      <ul>
-                        {job.responsibilities.map((item, i) => (
-                          <li key={i}>{item}</li>
-                        ))}
-                      </ul>
-
-                      <h5>Preferred Qualifications</h5>
-                        <ul className={styles.qualList}>
-                          {job.qualifications.map((item, i) => (
+                        <h5>Primary Responsibilities</h5>
+                        <ul>
+                          {job.responsibilities.map((item, i) => (
                             <li key={i}>{item}</li>
                           ))}
                         </ul>
 
-                        <div className={styles.Button}>
-                          <button className={styles.applyBtn}
-                           onClick={() => handleApplyClick(job.title)}
-                          >Apply now</button>
-                        </div>
-                    </div>
-                  </AccordionBody>
-                </AccordionItem>
-              ))}
-            </Accordion>
+                        <h5>Preferred Qualifications</h5>
+                          <ul className={styles.qualList}>
+                            {job.qualifications.map((item, i) => (
+                              <li key={i}>{item}</li>
+                            ))}
+                          </ul>
+
+                          <div className={styles.Button}>
+                            <button className={styles.applyBtn}
+                            onClick={() => handleApplyClick(job.title)}
+                            >Apply now</button>
+                          </div>
+                      </div>
+                    </AccordionBody>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </div>
           </div>
-        </div>
-                </div>
+      </div>
 
       {/* </div> */}
       <Footer />
