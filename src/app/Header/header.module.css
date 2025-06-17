@@ -22,8 +22,12 @@
 .navbarbg {
   background-color: #0B0B0A;
   z-index: 9999;
+  /* z-index: 0; */
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
   padding: 1% 7%;
+}
+.pagecareers {
+  z-index: 0;
 }
 
 .navbarBrand {

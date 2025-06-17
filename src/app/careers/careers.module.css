@@ -1,16 +1,29 @@
 .careerSection {
-  background: linear-gradient(to bottom, #000000, #333300, #000000);
+  background-color: #0B0B0A;
   padding: 60px 7%;
   color: #fff;
   font-family: 'Anton', sans-serif;
   margin-top: 8%;
+  z-index: 1;
 }
 
-.contentSection {
-  text-align: center;
+
+.careerOvrlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  bottom: -28%;
+  opacity: 0.6;
+  background-size: 160% auto; 
+  background-position: left top; 
+  background-repeat: no-repeat;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
 }
 
-.careerTitle {
+.careerTitle { 
   font-size: 55px;
   font-family: 'Anton', sans-serif;
 }
@@ -24,6 +37,8 @@
   max-width: 1000px;
   margin: 0 auto;
   padding: 30px 0;
+    z-index: 1;
+
 }
 
 .currentOpening {
@@ -208,37 +223,6 @@
   padding: 0 !important;
 }
 
-
-/* @media only screen and (min-width: 1185px) and (max-width: 2560px){
-    .careerTitle {
-  font-size: 40px;
-  font-family: 'Anton', sans-serif;
-}
-.careerIntro{
-  font-size: 20px;
-}
-.currentOpening{
-  font-size: 40px;
-  margin-top: 10px;
-}
-.jobCard {
-  margin-left: 37px !important;
-}
-.jobCard h5 {
-  font-size: 20px;
-  margin: 10px 0 10px;
-}
-
-.jobCard p {
-  font-size: 20px;
-}
-
-.applyBtn {
-  font-size: 20px;
-  padding: 12px 30px;
-}
-} */
-
 @media only screen and (min-width: 999px) and (max-width:1300px){
    .careerTitle {
   font-size: 40px;
@@ -267,6 +251,9 @@
   font-size: 14px;
   padding: 8px 20px;
 }
+.careerOvrlay {
+   display: none;
+  }
 
 }
 
@@ -298,6 +285,9 @@
   font-size: 12px;
   padding: 6px 13px;
 }
+.careerOvrlay {
+   display: none;
+  }
 
 }
 
@@ -329,6 +319,9 @@
   font-size: 12px;
   padding: 6px 13px;
 }
+.careerOvrlay {
+   display: none;
+  }
 }
 
 @media only screen and (min-width: 690px) and (max-width: 794px){
@@ -364,6 +357,9 @@ font-size: 10px;
 float: right !important;
 right: 4vh !important;
 }
+.careerOvrlay {
+   display: none;
+  }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 750px){
@@ -400,6 +396,9 @@ float: right !important;
 right: 2vh !important;
 bottom: 2px;
 }
+.careerOvrlay {
+   display: none;
+  }
 }
 @media  screen and (min-width: 300px) and (max-width: 600px) {
   .careerTitle {
@@ -435,6 +434,9 @@ float: right !important;
 right: 2vh !important;
 bottom: 2px;
 }
+.careerOvrlay {
+   display: none;
+  }
 
 }
 

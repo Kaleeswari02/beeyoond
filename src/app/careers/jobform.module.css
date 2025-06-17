@@ -22,8 +22,8 @@
   width: 100%;
   max-width: 700px;
   color: #fff;
-  overflow-y: auto;
-  max-height: 90vh;
+  /* overflow-y: auto; */
+  max-height: unset;
   position: relative;
   box-sizing: border-box;
 }

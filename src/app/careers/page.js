@@ -87,8 +87,10 @@ export default function Careers() {
   return (
     <>
       <Header />
+
       <div className={`container-fluid ${styles.careerSection}`}>
-        <div className={`${styles.contentSection}`}>
+        <img src='/assets/images/overlay-bg.png' className={styles.careerOvrlay}/>
+        {/* <div className={styles.careerOvrlay}/> */}
           <h1 className={`${styles.careerTitle} text-start mt-2 md-mb-5`}>
             Join Our Creative Team
           </h1>
@@ -102,7 +104,6 @@ export default function Careers() {
             Here, your ideas matter, your growth is supported, and your impact
             is real. Let’s build something extraordinary — together.
           </p>
-        </div>
 
         <div className="md-mt-5">
           <h2 className={`${styles.currentOpening} md-mt-5`}>Current Openings</h2>
@@ -149,7 +150,9 @@ export default function Careers() {
             </Accordion>
           </div>
         </div>
-      </div>
+                </div>
+
+      {/* </div> */}
       <Footer />
        <JobApplicationModal
         show={modalOpen}

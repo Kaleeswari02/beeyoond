@@ -4,15 +4,18 @@ import Image from "next/image";
 import { FaXmark } from "react-icons/fa6";
 import styles from "./header.module.css";
 import { Icon } from '@iconify/react';
+import { usePathname } from "next/navigation";
 
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
-
+const pathname = usePathname();
+const isCareerPage = pathname === "/careers";
   return (
     <header>
-      <nav className={`${styles.navbarbg} navbar navbar-expand-lg fixed-top`}>
+
+<nav className={`${styles.navbarbg} ${isCareerPage ? styles.pagecareers : ""} navbar navbar-expand-lg fixed-top`}>
         <div
           className={`container-fluid d-flex justify-content-between align-items-center ${styles.navContainer}`}
         >

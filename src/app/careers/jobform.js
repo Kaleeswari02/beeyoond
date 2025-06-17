@@ -5,35 +5,26 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import styles from "./jobform.module.css";
 import { Icon } from "@iconify/react";
+import axios from "axios";
+
 
 const schema = yup.object().shape({
   name: yup.string().required("Name is required"),
   email: yup.string().email("Invalid email").required("Email is required"),
   phone: yup.string().required("Phone number is required"),
   message: yup.string(),
-  resume: yup.string().required("Name is required"),
-  // resume: yup
-  //   .mixed()
-  //   .required("Resume is required")
-  //   .test("fileSize", "File too large", (value) => value && value[0]?.size < 2 * 1024 * 1024)
-  //   .test("fileFormat", "Unsupported file format", (value) =>
-  //     value &&
-  //     ["application/pdf", "application/msword", "application/vnd.openxmlformats-officedocument.wordprocessingml.document"].includes(
-  //       value[0]?.type
-  //     )
-  //   ),
 
 });
 
 export default function JobApplicationModal({ show, onClose, jobTitle }) {
   const [fileName, setFileName] = useState("");
+  const [resumeFile, setResumeFile] = useState(null);
+  const [resumeError, setResumeError] = useState("");
 
  const {
   register,
   handleSubmit,
   formState: { errors },
-  setValue,
-  trigger, // Add trigger
   reset,
 } = useForm({
   resolver: yupResolver(schema),
@@ -45,10 +36,45 @@ export default function JobApplicationModal({ show, onClose, jobTitle }) {
     onClose();
   };
 
-  const onSubmit = (data) => {
-    console.log("formdetails", jobTitle, data);
-    handleModalClose();
-  };
+
+const onSubmit = async (data) => {
+  if (!resumeFile) {
+    setResumeError("Resume is required");
+    return;
+  }
+
+  const formData = new FormData();
+  formData.append("name", data.name);
+  formData.append("email", data.email);
+  formData.append("mobile", data.phone);
+  formData.append("message", data.message || "");
+  formData.append("jobRoleName", jobTitle);
+  formData.append("resume", resumeFile);
+
+  try {
+    const response = await axios.post("http://localhost:5000/api/contact", formData, {
+      headers: {
+        "Content-Type": "multipart/form-data",
+      },
+    });
+
+    if (response.status === 201) {
+      alert("Application submitted successfully!");
+    console.log("55555555555555555555555555")
+
+      handleModalClose();
+    } else {
+      alert("Error: " + response.data.error);
+    console.log("999999999999999999999999999999999999999999999")
+
+    }
+  } catch (error) {
+    console.error("Submission failed:", error);
+    const errMsg = error.response?.data?.error || "Something went wrong while submitting the form.";
+    alert(errMsg);
+  }
+};
+
 
   if (!show) return null;
 
@@ -80,21 +106,23 @@ export default function JobApplicationModal({ show, onClose, jobTitle }) {
               <Icon icon="material-symbols:upload" className={styles.uploadIcon} />
               Upload Resume
             </label>
+          
             <input
               type="file"
               id="resume"
               accept=".pdf,.doc,.docx"
               className={styles.hiddenFileInput}
-              {...register("resume")}
               onChange={(e) => {
                 const file = e.target.files[0];
                 if (file) {
-                  setFileName(file.name); // Just update file name
-                  trigger("resume");      // Re-validate the input
+                  setResumeFile(file);
+                  setFileName(file.name);
+                  setResumeError(""); // Clear manual error
                 }
               }}
             />
-            {errors.resume && <p className={`${styles.error} mt-1`}>{errors.resume.message}</p>}
+            {resumeError && <p className={`${styles.error} mt-1`}>{resumeError}</p>}
+
             {fileName && <p className={`${styles.fileName} mt-1`}>{fileName}</p>}
           </div>
 
