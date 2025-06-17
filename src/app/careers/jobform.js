@@ -6,13 +6,24 @@ import * as yup from "yup";
 import styles from "./jobform.module.css";
 import { Icon } from "@iconify/react";
 import axios from "axios";
+import { toast } from 'react-toastify';
 
 
 const schema = yup.object().shape({
-  name: yup.string().required("Name is required"),
-  email: yup.string().email("Invalid email").required("Email is required"),
-  phone: yup.string().required("Phone number is required"),
-  message: yup.string(),
+  name: yup.string().required("Name is required").min(2).max(50),
+  email: yup
+    .string()
+    .required("Email is required")
+    .matches(
+      /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+      "Email must be a valid address from gmail.com or yourdomain.com"
+    ),
+      phone: yup
+    .string()
+    .matches(/^\d{10}$/, "Phone number must be exactly 10 digits")
+    .required("Phone number is required"),
+    message: yup.string(),
+
 
 });
 
@@ -53,25 +64,18 @@ const onSubmit = async (data) => {
 
   try {
     const response = await axios.post("http://localhost:5000/api/contact", formData, {
-      headers: {
-        "Content-Type": "multipart/form-data",
-      },
+      headers: { "Content-Type": "multipart/form-data" },
     });
 
     if (response.status === 201) {
-      alert("Application submitted successfully!");
-    console.log("55555555555555555555555555")
-
+      toast.success(response.data.message); 
       handleModalClose();
     } else {
-      alert("Error: " + response.data.error);
-    console.log("999999999999999999999999999999999999999999999")
-
+      toast.error("Error: " + response.data.error);
     }
   } catch (error) {
-    console.error("Submission failed:", error);
     const errMsg = error.response?.data?.error || "Something went wrong while submitting the form.";
-    alert(errMsg);
+    toast.error(errMsg);
   }
 };
 
@@ -107,20 +111,29 @@ const onSubmit = async (data) => {
               Upload Resume
             </label>
           
-            <input
-              type="file"
-              id="resume"
-              accept=".pdf,.doc,.docx"
-              className={styles.hiddenFileInput}
-              onChange={(e) => {
-                const file = e.target.files[0];
-                if (file) {
-                  setResumeFile(file);
-                  setFileName(file.name);
-                  setResumeError(""); // Clear manual error
+          <input
+            type="file"
+            id="resume"
+            accept=".pdf,.doc,.docx"
+            className={styles.hiddenFileInput}
+            onChange={(e) => {
+              const file = e.target.files[0];
+              if (file) {
+                const maxSize = 2 * 1024 * 1024; // 2MB in bytes
+                if (file.size > maxSize) {
+                  setResumeError("File size should not exceed 2MB");
+                  setResumeFile(null);
+                  setFileName("");
+                  return;
                 }
-              }}
-            />
+
+                setResumeFile(file);
+                setFileName(file.name);
+                setResumeError("");
+              }
+            }}
+          />
+
             {resumeError && <p className={`${styles.error} mt-1`}>{resumeError}</p>}
 
             {fileName && <p className={`${styles.fileName} mt-1`}>{fileName}</p>}
