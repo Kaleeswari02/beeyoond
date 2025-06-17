@@ -105,7 +105,7 @@ const Header = () => {
                 <div className={styles.careerWithIcons}>
                   <a
                     className={styles.navLinkCareer}
-                    href="#careers"
+                    href="/careers"
                     onClick={toggleMenu}
                   >
                     Careers

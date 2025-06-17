@@ -123,3 +123,8 @@
       overflow: hidden;
   }
   
+  @media only screen and (min-width: 1185px) and (max-width:1300px){
+    .playCircle{
+        margin: 5% auto 10% auto;
+    }
+}

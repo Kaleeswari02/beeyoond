@@ -33,11 +33,11 @@ const statsData = [
 const Stats = () => {
   return (
     <section className={`${styles.statsSection}`}>
-      <div className="container py-2">
+      <div className={`${styles.statsSectionstat} container-fluid`}>
         <div className={`${styles.boxGap} row justify-content-center text-center`}>
           {statsData.map((item, index) => (
           // <div key={index} className="col-12 d-sm-block d-flex  col-md-2 col-lg-2 col-xl-2 justify-content-center mb-4">
-             <div key={index} className="col-6 col-md-2 d-flex justify-content-center mb-4">
+             <div key={index} className={`${styles.hexarea} row col-12 col-md-2  mb-4`}>
 
              <div className={styles.dropShadow}>
             <div className={styles.hexagonBox}>
