@@ -1,0 +1,844 @@
+.aboutpage-section{
+    width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.aboutpage-bgimage {
+    background-image: url('/assets/images/aboutpagebacg.png'); /* adjust path */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 200px 20px; /* adjust spacing */
+    color: white; /* for text contrast */
+  }
+  
+  .aboutpage-bgimage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/images/homeoverlay.png');
+    background-size: cover;
+    background-position: center;
+    /* opacity: 0.4; */
+    z-index: 1;
+    
+  }
+  
+  .aboutpage-content-sec {
+    position: relative;
+    z-index: 2; /* make content appear above overlay */
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+.aboupagehead{
+    color: #ffffff;
+    font-size: 60px;
+    font-family: Anton, sans-serif !important;
+}
+.aboutpage-para{
+    color: #ffffff;
+    font-size: 20px;
+    font-family: Anton, sans-serif !important; 
+    padding: 5% 10%;
+}
+.aboutpage-btn{
+    font-size: 20px;
+    border: none;
+    background-color: #ffbf00;
+    border-radius: 30px 30px 30px 30px !important;
+    padding: 5px 30px;
+    color: #000;
+}
+.pillar-section{
+    background-image: radial-gradient(
+        circle at bottom left,
+     
+        #947e0d 0%,
+        transparent 30%,
+        transparent 30%
+      );
+      background-color: #0b0b0b;
+}
+.arrow-image-about{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 9%;
+}
+.pillar-head{
+    color: #ffffff;
+    font-size: 60px;
+    font-family: Anton, sans-serif !important; 
+    text-align: center;
+    
+   
+}
+.pillar-subhead{
+    color: #F0CB11;
+    font-size: 51px;
+    font-family: Anton, sans-serif !important;
+}
+.pillar-para{
+    color: #ffffff;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-family: Anton, sans-serif !important;
+    position: relative;
+    padding-right: 7%;
+}
+.aboutpage-pillar-c{
+    content: '';
+    background-image: url('/assets/images/aboutpage.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    max-width: 100%;
+
+}
+.about-content::before {
+    content: "";
+    position: absolute;
+    top: 15vh;
+    right: 4vw;
+    width: 100%;
+    height: 60%;
+    background-color: rgba(0, 0, 0, 0.39);
+    z-index: 0;
+}
+.aboutpage-imagearea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2 !important;
+}
+.aboutpage-img{
+    padding: 5px;
+    z-index: 2;
+}
+.aboutpage-sec2{
+    width: 100%;
+    padding: 0 !important;
+    margin: 0;
+}
+
+.aboutpage-head{
+    color: #ffffff;
+    font-size: 50px;
+    font-family: Anton, sans-serif !important; 
+    padding-left: 20%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.about-border-area{
+    border-bottom: 1px solid #ffbf00;
+    width: 80%;
+    margin: auto;
+}
+.arrow-image-leftsec{
+    display: flex;
+    justify-content: center; 
+    position: relative;
+    left: 3%;
+}
+.aboutpage-btn1{
+    background-color: #ffbf00;
+    padding: 10px 35px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    border: 1px solid #ffbf00;
+    gap: 30px;
+}
+.aboutpage-btn1 a{
+    color: #000;
+}
+.aboutpage-btn2 a{
+    color: #ffffff;
+}
+.aboutpage-btn2{
+    background-color: #0b0b0b;
+    padding: 10px 35px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    border: 1px solid #ffbf00;
+}
+.aboutpage-btn-area{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+.feeds-section{
+    background-image: 
+    radial-gradient(circle at top left, #947e0d 0%, transparent 30%, transparent 0%),
+    radial-gradient(circle at bottom left, #947e0d 0%, #0b0b0b 75%, transparent 0%);
+  background-color: #0b0b0b;
+}
+.icon-menu-about{
+    margin-left: 7px;
+}
+.arrow-image-leftsecf{
+    display: flex;
+    justify-content: center; 
+    position: relative;
+    left: 18%;
+}
+.feed-arrow{
+  position: relative;
+    bottom: 3vh;
+    transform: rotate(-12deg);
+}
+.career-about{
+    padding: 0 !important;
+}
+  .careerSection {
+    position: relative;
+
+    background-image: url('/assets/images/careersec-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0;
+  }
+  
+  
+  .aboutoverlay {
+
+    background-image: url('/assets/images/careersec-overlay.png');
+    background-size: cover;
+    /* background-position: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    width: 100%;
+    padding: 0;
+
+  }
+  
+  .heading {
+    text-transform: uppercase;
+      color: #ffffff;
+      font-family: Anton, sans-serif !important;
+      font-size: 60px;
+      letter-spacing: 1px;
+      text-align: left;
+      margin-left: 30%;
+      bottom: 7vh;
+      margin-bottom: 1%;
+      position: relative;
+  }
+  
+  .description {
+    font-size: 18px;
+    color: #ffffff;
+    font-family: "Anton", sans-serif;
+    letter-spacing: 0.2px;
+    padding: 20px;
+    
+  }
+  
+  .joinusBtn {
+    background: #F0CB11;
+    color: #000;
+    border: none;
+    padding: 5px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+  .about-pagecontent{
+    margin-top: 50%;
+    margin-bottom: 10%;
+    padding: 0% 15%;
+  }
+  .about-ceo{
+    padding-left: 15%;
+    padding-right: 10%;
+  }
+@media only screen and (min-width:2560px){}
+@media only screen and (min-width: 1185px) and (max-width: 2560px){}
+@media only screen and (min-width: 999px) and (max-width:1300px){
+    .aboutpage-bgimage {
+        padding: 80px 0px !important;
+        background-size: contain;
+    }
+    
+    .aboupagehead {
+        font-size: 60px !important;
+    }
+    .aboutpage-para {
+        font-size: 23px !important;
+    }
+    .about-ceo{
+        padding-left: unset !important;
+        padding-right: unset !important;
+    }
+    .pillar-head {
+        font-size: 60px !important;
+    }
+    .ceo-img{
+        width: 100%;
+        padding: 5%;
+    }
+    .pillar-subhead{
+    font-size: 60px !important;
+    }
+
+    .pillar-para {
+        font-size: 25px !important;
+    }
+    .arrow-image-leftsec {
+        position: relative;
+        left: 9% !important;
+        bottom: 8vh !important;
+    }
+    .aboutpage-head {
+        font-size: 60px !important;
+        padding-top: 9% !important;
+
+    }
+    .aboutpage-btn1{
+        margin-top: 3% !important;
+    }
+    .aboutpage-btn2{
+        margin-top: 3% !important;
+    }
+    .icon-menu-about{
+        width: 20%;
+    }
+    .aboutpage-img{
+        width: 20%;
+    }
+    .aboutpage-imagearea{
+        padding: 1% !important;
+    }
+    .feed-arrow {
+        position: relative;
+        bottom: 12vh !important;
+    }
+    .heading {
+        font-size: 60px !important;
+        bottom: 6vh !important;
+    }
+    .description{
+        font-size: 20px !important;
+        padding: unset !important;
+      }
+}
+@media only screen and (min-width: 795px) and (max-width: 999px) and (orientation:landscape){
+    .aboutpage-bgimage {
+        padding: 80px 0px !important;
+        background-size: contain;
+    }
+    
+    .aboupagehead {
+        font-size: 50px !important;
+    }
+    .aboutpage-para {
+        font-size: 16px !important;
+    }
+    .about-ceo{
+        padding-left: unset !important;
+        padding-right: unset !important;
+    }
+    .pillar-head {
+        font-size: 50px !important;
+    }
+    .ceo-img{
+        width: 100%;
+        padding: 5%;
+    }
+    .pillar-subhead{
+    font-size: 40px !important;
+    }
+
+    .pillar-para {
+        font-size: 20px !important;
+    }
+    .arrow-image-leftsec {
+        position: relative;
+        left: 9% !important;
+        bottom: 8vh !important;
+    }
+    .aboutpage-head {
+        font-size: 40px !important;
+        padding-top: 9% !important;
+
+    }
+    .aboutpage-btn1{
+        padding: 5px 15px !important;
+        font-size: 14px !important;
+        font-weight: 400;
+        gap: unset !important;
+    }
+    .aboutpage-btn2{
+        padding: 5px 15px !important;
+        font-size: 14px !important;
+        border: 1px solid #ffbf00;
+    }
+    .icon-menu-about{
+        width: 20%;
+    }
+    .aboutpage-img{
+        width: 20%;
+    }
+    .aboutpage-imagearea{
+        padding: 2% !important;
+    }
+    .feed-arrow {
+        position: relative;
+        bottom: 12vh !important;
+    }
+    .heading {
+        font-size: 40px !important;
+        bottom: 6vh !important;
+    }
+    .description{
+        font-size: 16px !important;
+        padding: unset !important;
+      }
+}
+@media only screen and (min-width: 795px) and (max-width: 999px) and (orientation: portrait){
+    .aboutpage-bgimage {
+        padding: 80px 0px !important;
+        background-size: contain;
+    }
+    
+    .aboupagehead {
+        font-size: 50px !important;
+    }
+    .aboutpage-para {
+        font-size: 16px !important;
+    }
+    .about-ceo{
+        padding-left: unset !important;
+        padding-right: unset !important;
+    }
+    .pillar-head {
+        font-size: 50px !important;
+    }
+    .ceo-img{
+        width: 100%;
+        padding: 5%;
+    }
+    .pillar-subhead{
+    font-size: 40px !important;
+    }
+
+    .pillar-para {
+        font-size: 20px !important;
+    }
+    .arrow-image-leftsec {
+        position: relative;
+        left: 9% !important;
+        bottom: 8vh !important;
+    }
+    .aboutpage-head {
+        font-size: 40px !important;
+        padding-top: 9% !important;
+
+    }
+    .aboutpage-btn1{
+        padding: 5px 15px !important;
+        font-size: 14px !important;
+        font-weight: 400;
+        gap: unset !important;
+    }
+    .aboutpage-btn2{
+        padding: 5px 15px !important;
+        font-size: 14px !important;
+        border: 1px solid #ffbf00;
+    }
+    .icon-menu-about{
+        width: 20%;
+    }
+    .aboutpage-img{
+        width: 20%;
+    }
+    .aboutpage-imagearea{
+        padding: 2% !important;
+    }
+    .feed-arrow {
+        position: relative;
+        bottom: 12vh !important;
+    }
+    .heading {
+        font-size: 40px !important;
+        bottom: 6vh !important;
+    }
+    .description{
+        font-size: 16px !important;
+        padding: unset !important;
+      }
+}
+@media only screen and (min-width: 690px) and (max-width: 794px){
+    .aboutpage-bgimage {
+        padding: 80px 0px !important;
+        background-size: contain;
+    }
+    
+    .aboupagehead {
+        font-size: 50px !important;
+    }
+    .aboutpage-para {
+        font-size: 16px !important;
+    }
+    .about-ceo{
+        padding-left: unset !important;
+        padding-right: unset !important;
+    }
+    .pillar-head {
+        font-size: 40px !important;
+    }
+    .arrow-rightabt{
+        width: 20%;
+    }
+    .arrow-leftabt{
+        width: 20%;
+    }
+    .ceo-img{
+        width: 100%;
+        padding: 5%;
+    }
+    .pillar-subhead{
+    font-size: 30px !important;
+    }
+
+    .pillar-para {
+        font-size: 13px !important;
+    }
+    .arrow-image-leftsec {
+        position: relative;
+        left: 9% !important;
+    }
+    .aboutpage-head {
+        font-size: 40px !important;
+        padding-top: 9% !important;
+
+    }
+    .aboutpage-btn1{
+        padding: 5px 15px !important;
+        font-size: 14px !important;
+        font-weight: 400;
+        gap: unset !important;
+    }
+    .aboutpage-btn2{
+        padding: 5px 15px !important;
+        font-size: 14px !important;
+        border: 1px solid #ffbf00;
+    }
+    .icon-menu-about{
+        width: 20%;
+    }
+    .aboutpage-img{
+        width: 20%;
+    }
+    .aboutpage-imagearea{
+        padding: 2% !important;
+    }
+    .feed-arrow {
+        position: relative;
+        bottom: 12vh !important;
+        width: 20%;
+    }
+    .heading {
+        font-size: 40px !important;
+        bottom: 6vh !important;
+    }
+    .description{
+        font-size: 16px !important;
+        padding: unset !important;
+      }
+}
+@media only screen and (min-width: 600px) and (max-width: 750px){
+    .aboutpage-bgimage{
+        padding: 0 20px !important;
+    }
+    .aboutpage-para {
+        font-size: 12px !important;
+    }
+    .aboupagehead{
+     position: relative;
+     top: 5vh;
+     font-size: 40px;
+     padding: 5%;
+    }
+    .aboutpage-btn {
+        font-size: 13px !important;
+        padding: 5px 25px !important;
+    }
+    .arrow-rightabt{
+        width: 40%;
+    }
+    .pillar-head {
+        font-size: 40px !important;
+    }
+    .ceo-img{
+        width: 100%;
+    }
+    .about-ceo{
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+    }
+    .pillar-subhead {
+        font-size: 40px !important;
+        text-align: center !important;
+    }
+    .pillar-para {
+        font-size: 15px !important;
+        letter-spacing: unset !important;
+        padding-right: unset !important;
+        text-align: justify !important;
+    }
+    .arrow-leftabt{
+        width: 30% !important; 
+    }
+
+    .aboutpage-head {
+        color: #ffffff;
+        font-size: 40px;
+        font-family: Anton, sans-serif !important;
+        padding-left: unset !important;
+        padding-top: unset !important;
+        padding-bottom: unset !important;
+        text-align: center;
+    }
+    .aboutpage-btn1{
+        padding: 5px 15px !important;
+        font-size: 14px !important;
+        font-weight: 400;
+        gap: unset !important;
+    }
+    .aboutpage-btn2{
+        padding: 5px 15px !important;
+        font-size: 14px !important;
+        border: 1px solid #ffbf00;
+    }
+    .icon-menu-about{
+        width: 20%;
+    }
+    .aboutpage-img{
+        width: 20%;
+    }
+    .feed-arrow{
+        display: none !important;
+    }
+    .heading {
+          font-size: 40px;
+          letter-spacing: 1px;
+          text-align: center;
+          margin-left: unset !important;
+          bottom: unset !important;
+          margin-bottom: 1%;
+          position: relative;
+          padding: 5%;
+      }
+      .about-pagecontent{
+        margin-top: 20% !important;
+        margin-bottom: 10%;
+        padding: 0% 10% !important;
+      }
+      .description{
+        font-size: 13px !important;
+        padding: unset !important;
+      }
+}
+@media only screen and (min-width: 450px) and (max-width: 600px){
+    .aboutpage-bgimage{
+        padding: 0 20px !important;
+    }
+    .aboutpage-para {
+        font-size: 12px !important;
+    }
+    .aboupagehead{
+     position: relative;
+     top: 5vh;
+     font-size: 40px;
+     padding: 5%;
+    }
+    .aboutpage-btn {
+        font-size: 13px !important;
+        padding: 5px 25px !important;
+    }
+    .arrow-rightabt{
+        width: 40%;
+    }
+    .pillar-head {
+        font-size: 40px !important;
+    }
+    .ceo-img{
+        width: 100%;
+    }
+    .about-ceo{
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+    }
+    .pillar-subhead {
+        font-size: 40px !important;
+        text-align: center !important;
+    }
+    .pillar-para {
+        font-size: 15px !important;
+        letter-spacing: unset !important;
+        padding-right: unset !important;
+        text-align: justify !important;
+    }
+    .arrow-leftabt{
+        width: 30% !important; 
+    }
+
+    .aboutpage-head {
+        color: #ffffff;
+        font-size: 40px;
+        font-family: Anton, sans-serif !important;
+        padding-left: unset !important;
+        padding-top: unset !important;
+        padding-bottom: unset !important;
+        text-align: center;
+    }
+    .aboutpage-btn1{
+        padding: 5px 15px !important;
+        font-size: 14px !important;
+        font-weight: 400;
+        gap: unset !important;
+    }
+    .aboutpage-btn2{
+        padding: 5px 15px !important;
+        font-size: 14px !important;
+        border: 1px solid #ffbf00;
+    }
+    .icon-menu-about{
+        width: 20%;
+    }
+    .aboutpage-img{
+        width: 20%;
+    }
+    .feed-arrow{
+        display: none !important;
+    }
+    .heading {
+          font-size: 40px;
+          letter-spacing: 1px;
+          text-align: center;
+          margin-left: unset !important;
+          bottom: unset !important;
+          margin-bottom: 1%;
+          position: relative;
+          padding: 5%;
+      }
+      .about-pagecontent{
+        margin-top: 20% !important;
+        margin-bottom: 10%;
+        padding: 0% 10% !important;
+      }
+      .description{
+        font-size: 13px !important;
+        padding: unset !important;
+      }
+}
+@media only screen and (min-width: 300px) and (max-width: 450px) {
+    .aboutpage-bgimage{
+        padding: 0 20px !important;
+    }
+    .aboutpage-para {
+        font-size: 12px !important;
+    }
+    .aboupagehead{
+     position: relative;
+     top: 5vh;
+     font-size: 40px;
+     padding: 5%;
+    }
+    .aboutpage-btn {
+        font-size: 13px !important;
+        padding: 5px 25px !important;
+    }
+    .arrow-rightabt{
+        width: 40%;
+    }
+    .pillar-head {
+        font-size: 40px !important;
+    }
+    .ceo-img{
+        width: 100%;
+    }
+    .about-ceo{
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+    }
+    .pillar-subhead {
+        font-size: 40px !important;
+        text-align: center !important;
+    }
+    .pillar-para {
+        font-size: 15px !important;
+        letter-spacing: unset !important;
+        padding-right: unset !important;
+        text-align: justify !important;
+    }
+    .arrow-leftabt{
+        width: 30% !important; 
+    }
+
+    .aboutpage-head {
+        color: #ffffff;
+        font-size: 40px;
+        font-family: Anton, sans-serif !important;
+        padding-left: unset !important;
+        padding-top: unset !important;
+        padding-bottom: unset !important;
+        text-align: center;
+    }
+    .aboutpage-btn1{
+        padding: 5px 15px !important;
+        font-size: 14px !important;
+        font-weight: 400;
+        gap: unset !important;
+    }
+    .aboutpage-btn2{
+        padding: 5px 15px !important;
+        font-size: 14px !important;
+        border: 1px solid #ffbf00;
+    }
+    .icon-menu-about{
+        width: 20%;
+    }
+    .aboutpage-img{
+        width: 20%;
+    }
+    .feed-arrow{
+        display: none !important;
+    }
+    .heading {
+          font-size: 40px;
+          letter-spacing: 1px;
+          text-align: center;
+          margin-left: unset !important;
+          bottom: unset !important;
+          margin-bottom: 1%;
+          position: relative;
+          padding: 5%;
+      }
+      .about-pagecontent{
+        margin-top: 20% !important;
+        margin-bottom: 10%;
+        padding: 0% 10% !important;
+      }
+      .description{
+        font-size: 13px !important;
+        padding: unset !important;
+      }
+}

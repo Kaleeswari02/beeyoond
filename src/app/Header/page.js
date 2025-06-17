@@ -5,7 +5,7 @@ import { FaXmark } from "react-icons/fa6";
 import styles from "./header.module.css";
 import { Icon } from '@iconify/react';
 import { usePathname } from "next/navigation";
-
+import Link from "next/link";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -91,8 +91,8 @@ const isCareerPage = pathname === "/careers";
                     </a>
                   </div>
                 </div>
+                <Link href="/aboutpage" onClick={toggleMenu}> About us</Link>
                 {[
-                  "About us",
                   "Services  [Coming Soon]",
                   "Portfolio",
                   "Testimonial",
