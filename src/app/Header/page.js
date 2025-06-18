@@ -8,6 +8,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 // modal work
 import { Modal, ModalHeader, ModalBody, ModalFooter, Button, FormGroup, Label, Input, FormFeedback } from "reactstrap";
+import './custom-modal.css';
 
 import emailjs from "emailjs-com";
 import { useForm } from "react-hook-form";
