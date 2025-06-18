@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import { ModalProvider } from "./context/ModalContext";
 import Head from "next/head";
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -104,7 +104,9 @@ export default function RootLayout({ children }) {
       </Head> */}
       
       <body className={`${geistSans.variable} ${geistMono.variable}   ${poppins.variable}  ${anton.variable}  ${plusJakarta.variable}`}>
-        
+      <ModalProvider>
+        {children}
+        </ModalProvider>
         {children}
         <ToastContainer
         position="top-center"

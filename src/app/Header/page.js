@@ -1,17 +1,67 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState ,useRef} from "react";
 import Image from "next/image";
 import { FaXmark } from "react-icons/fa6";
 import styles from "./header.module.css";
 import { Icon } from '@iconify/react';
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+// modal work
+import { Modal, ModalHeader, ModalBody, ModalFooter, Button, FormGroup, Label, Input, FormFeedback } from "reactstrap";
+
+import emailjs from "emailjs-com";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
+import { toast } from 'react-toastify';
+import { useModal } from '../context/ModalContext';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
 const pathname = usePathname();
 const isCareerPage = pathname === "/careers";
+const { isModalOpen, openModal, closeModal } = useModal();
+const formRef = useRef();
+const schema = yup.object().shape({
+  name: yup.string().required("Name is required"),
+  email: yup.string().email("Invalid email").required("Email is required"),
+  message: yup
+    .string()
+    .required("Message is required")
+  // .max(500, "Message can't exceed 500 characters"),
+});
+
+const {
+  register,
+  handleSubmit,
+  reset,
+  formState: { errors, isValid },
+} = useForm({
+  resolver: yupResolver(schema),
+  mode: "onChange",
+});
+
+
+const sendEmail = (data) => {
+  emailjs
+    // .send("service_am2sw1d", "template_h7n0uvo", data, "aH6tkRSl3LIesgTSP")
+    .send("service_6pnuomn", "template_cnsdo3r", data, "YDvctNu4CoXENihrU")
+    
+    .then(
+      () => {
+        toast.success("Message sent successfully!");
+        reset();
+        closeModal();
+
+      },
+      (error) => {
+        console.error(error.text);
+        toast.error("Failed to send message.");
+      }
+    );
+};
+
   return (
     <header>
 
@@ -27,9 +77,62 @@ const isCareerPage = pathname === "/careers";
             />
           </a>
           <div className={`${styles.mobileNav} d-flex`}>
-            <a className={styles.contactBtn} href="#contact">
+            {/* <a className={styles.contactBtn} href="#contact">
               Contact
-            </a>
+            </a> */}
+            <button className={styles.contactBtn}  onClick={openModal}>Contact</button>
+            <Modal isOpen={isModalOpen} toggle={closeModal} centered backdrop="static">
+          <ModalHeader toggle={closeModal}>Contact Us</ModalHeader>
+          <form ref={formRef} onSubmit={handleSubmit(sendEmail)}>
+            <ModalBody>
+              <FormGroup>
+                <Label for="name">Name</Label>
+                <input
+                  id="name"
+                  type="text"
+                  autoComplete="off"
+                  {...register("name")}
+                  className={`form-control ${errors.name ? 'is-invalid' : ''}`}
+
+                />
+                <div className="invalid-feedback">{errors.name?.message}</div>
+              </FormGroup>
+
+              <FormGroup>
+                <Label for="email">Email</Label>
+                <input
+                  id="email"
+                  type="email"
+                  autoComplete="off"
+                  {...register("email")}
+                  className={`form-control ${errors.email ? 'is-invalid' : ''}`}
+                />
+                <div className="invalid-feedback">{errors.email?.message}</div></FormGroup>
+
+              <FormGroup>
+                <Label for="message">Message</Label>
+                <textarea
+                  id="message"
+                  type="textarea"
+                  autoComplete="off"
+                  rows={4}
+                  {...register("message")}
+                  className={`form-control ${errors.message ? 'is-invalid' : ''}`}
+                />
+                <div className="invalid-feedback">{errors.message?.message}</div>
+              </FormGroup>
+            </ModalBody>
+
+            <ModalFooter>
+              <Button className='my-3' type="submit" color="primary">
+                Submit
+              </Button>
+              {/* <Button color="secondary" onClick={toggle}>
+                Cancel
+              </Button> */}
+            </ModalFooter>
+          </form>
+            </Modal>
             <button onClick={toggleMenu} className={styles.menuButton}>
               {isOpen ? (
                 <FaXmark size={25} />
