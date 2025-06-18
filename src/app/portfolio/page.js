@@ -60,7 +60,7 @@ export default function Portfolio() {
     arrows: false,
     infinite: true,
     speed: 500,
-        autoplay: true,
+        autoplay: false,
 
      autoplaySpeed: 3000,
     fade: true,
