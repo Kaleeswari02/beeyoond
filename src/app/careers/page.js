@@ -11,63 +11,121 @@ import Footer from "../footer/page";
 import Header from "../Header/page";
 import JobApplicationModal from "./jobform";
 
+
 const jobList = [
   {
     id: "1",
-    title: "UI/UX Designer",
-    description:
-      "We are looking for an ambitious UX Designer to be a part of the UX function at Beeyoond Gaming. This new role will sit alongside our UI/UX team and report to the Head of Strategy and UX/UI Team Lead.",
+    title: "2D Artist",
+    description: (
+      <>
+        We’re Hiring: 2D Artist (3+ Years Experience)<br /><br />
+        Company: BEEYOOND GAMING<br />
+        Location: Madurai, Tamil Nadu<br />
+        Experience: 3+ Years<br />
+        Employment Type: Full-Time
+      </>
+    ),
     responsibilities: [
-      "Conduct user research through interviews, surveys, and usability testing to gain insights into user behaviour and needs.",
-      "Create wireframes, prototypes, and user flows to communicate design ideas effectively.",
-      "Design intuitive and visually appealing user interfaces that align with business goals and user needs.",
-      "Collaborate with cross-functional teams, including developers and product managers, to ensure designs are implemented accurately.",
-      "Iterate designs based on user feedback and testing results.",
-      "Maintain and contribute to a design system to ensure consistency across products.",
-      "Stay up-to-date with industry trends, best practices, and emerging tools/technologies in UX design.",
+      "Create high-quality 2D assets such as characters, environments, props, and UI elements.",
+      "Perform advanced image manipulation (photobashing, compositing, retouching).",
+      "Enhance and modify existing assets while maintaining visual consistency.",
+      "Collaborate with designers, animators, and developers to integrate artwork.",
+      "Contribute creatively to new visual directions and follow established visual guidelines.",
+      "Prepare artwork for animation and production pipelines.",
+      "Maintain organized file structures and asset libraries."
     ],
     qualifications: [
-      "Experience with front-end development (HTML, CSS, JavaScript) is a plus.",
-      "Familiarity with agile methodologies and working in sprints.",
-      "Understanding of analytics tools like Google Analytics or Hotjar to inform design decisions.",
-    ],
+      "Bachelor’s degree in fine arts, Graphic Design, Animation, or related field (preferred).",
+      "3+ years of professional experience in 2D art and image manipulation.",
+      "Proficiency in Adobe Photoshop, Illustrator, and design tools.",
+      "Expertise in photo manipulation, matte painting, and compositing.",
+      "Strong understanding of color theory, lighting, composition, and storytelling.",
+      "Ability to work in both realistic and stylized art styles.",
+      "Strong communication skills and openness to feedback.",
+      "A strong portfolio is a must — show versatility and creativity."
+    ]
   },
   {
     id: "2",
-    title: "3D Animator",
-    description:
-      "We're seeking a skilled 3D Animator to breathe life into our characters and environments. You’ll work with a passionate team to create visually stunning animations for immersive gaming and fitness experiences.",
+    title: "Android Developer (Native) – IoT Projects",
+    description: (
+      <>
+        We’re Hiring: Android Developer (Native) – IoT Projects<br />
+        Location: Madurai<br />
+        Focus: Smart, connected solutions for next-gen devices
+      </>
+    ),
     responsibilities: [
-      "Create high-quality 3D animations for characters, props, and environments.",
-      "Collaborate with designers, modelers, and developers to bring ideas to life.",
-      "Ensure animations run smoothly within game engines like Unity or Unreal.",
-      "Participate in motion capture sessions and refine mocap data.",
-      "Maintain consistent animation style across the project.",
+      "Develop native Android applications in Kotlin and/or Java.",
+      "Collaborate with IoT and embedded systems engineers.",
+      "Integrate wireless protocols: BLE, Wi-Fi, NFC, MQTT.",
+      "Design real-time data visualization and device management UIs.",
+      "Optimize app performance and battery usage in IoT use cases.",
+      "Ensure seamless UX in connected environments."
     ],
     qualifications: [
-      "Proficiency in Maya, Blender, or 3ds Max.",
-      "Experience with Unity or Unreal Engine is a strong plus.",
-      "Understanding of character rigging and skinning techniques.",
-    ],
+      "2+ years of Android development experience.",
+      "Strong knowledge of Kotlin (preferred) or Java.",
+      "Experience integrating Android apps with IoT devices.",
+      "Familiarity with BLE, MQTT, WebSockets, Firebase.",
+      "Experience with APIs, device data, and background services.",
+      "Strong understanding of performance, security, and connectivity issues."
+    ]
   },
   {
     id: "3",
-    title: "Game Developer",
-    description:
-      "We are looking for a talented Game Developer to join our team to design and develop interactive games that integrate with fitness equipment and AR/VR systems.",
+    title: "Graphic Designer with Video Editing Expertise",
+    description: (
+      <>
+        We’re Hiring: Graphic Designer with Video Editing Expertise<br />
+        Location: Madurai | Experience: 2+ Years
+      </>
+    ),
     responsibilities: [
-      "Develop and maintain game code using Unity or Unreal Engine.",
-      "Integrate hardware devices like treadmills and bikes into game mechanics.",
-      "Collaborate with artists, designers, and testers for game polish.",
-      "Implement gameplay systems, AI behaviors, and multiplayer logic.",
-      "Optimize performance for smooth real-time gameplay.",
+      "Design graphics, layouts, and assets for digital and print media.",
+      "Edit and produce high-quality videos for various campaigns.",
+      "Collaborate with animation team to deliver on-brand content.",
+      "Contribute to brainstorming and shape visual storytelling.",
+      "Maintain brand consistency across all outputs.",
+      "Manage multiple creative projects and meet deadlines.",
+      "Stay updated with design trends and tools."
     ],
     qualifications: [
-      "Strong knowledge of C# or C++.",
-      "Familiarity with physics engines, animations, and rendering pipelines.",
-      "Experience in VR/AR development is a bonus.",
-    ],
+      "Degree in Graphic Design/Multimedia or relevant experience.",
+      "2+ years of graphic design and video editing experience.",
+      "Proficient in Photoshop, Illustrator, Premiere Pro, After Effects.",
+      "Bonus: Knowledge of 3D software like Blender or Maya.",
+      "Solid typography, color theory, and layout skills.",
+      "Attention to detail and storytelling ability.",
+      "Strong communication and organizational skills."
+    ]
   },
+  {
+    id: "4",
+    title: "2D Animator & 3D Artist",
+    description: (
+      <>
+        URGENT HIRING – 2D Animator & 3D Artist<br />
+        Location: Madurai, Tamilnadu
+      </>
+    ),
+    responsibilities: [
+      "Create high-quality 2D and 3D animations.",
+      "Collaborate with game designers and creative leads.",
+      "Deliver motion graphics and animations with precision.",
+      "Work on fitness, product, or motion design animation tasks.",
+      "Model and texture realistic or stylized 3D assets.",
+      "Rig and animate characters or mechanical elements."
+    ],
+    qualifications: [
+      "Strong portfolio with fitness/product animation work.",
+      "Expertise in After Effects, Photoshop, Illustrator, Premiere Pro.",
+      "3D proficiency with Blender, Maya, or Cinema4D.",
+      "Experience with V-Ray, Unreal, or Cycles rendering.",
+      "Understanding of anatomy, movement, and cinematic lighting.",
+      "Strong storytelling and visual communication skills."
+    ]
+  }
 ];
 
 export default function Careers() {
@@ -80,6 +138,13 @@ export default function Careers() {
     setSelectedJob(jobTitle);
     setModalOpen(true);
   };
+ const handleApplyClick1 = (role) => {
+    const subject = encodeURIComponent(`Application for ${role} role at Beeyoond`);
+    const body = encodeURIComponent(`Hi Beeyoond team,\n\nI'm interested in the ${role} position. Please find my resume attached.\n\nBest regards,\n[Your Name]`);
+    window.location.href = `mailto:info@beeyoondgaming.com?subject=${subject}&body=${body}`;
+  };
+
+  
   const toggle = (id) => {
     setOpen(open === id ? undefined : id);
   };
@@ -138,11 +203,17 @@ export default function Careers() {
                             ))}
                           </ul>
 
-                          <div className={styles.Button}>
+                          {/* <div className={styles.Button}>
                             <button className={styles.applyBtn}
                             onClick={() => handleApplyClick(job.title)}
                             >Apply now</button>
+                          </div> */}
+                           <div className={styles.Button}>
+                            <button className={styles.applyBtn}
+                            onClick={() => handleApplyClick1(job.title)}
+                            >Apply now</button>
                           </div>
+                          
                       </div>
                     </AccordionBody>
                   </AccordionItem>
