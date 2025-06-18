@@ -159,7 +159,6 @@ export default function Careers() {
             <h1 className={`${styles.careerTitle} text-start mt-2 md-mb-5`}>
               Join Our Creative Team
             </h1>
-
             <p className={`${styles.careerIntro} text-center md-p-5`}>
               Shape the future of digital innovation with Beeyoond Gaming, where
               creativity meets technology. Join a team that’s redefining what’s
