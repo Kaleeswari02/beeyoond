@@ -321,3 +321,104 @@ span.copyrightsub{
   }
 }
 
+.modalForm {
+  padding: 0;
+  border: 1px solid #FFD700;
+  background: #000;
+
+}
+
+.modalBody {
+  background: #000;
+  color: #fff;
+  padding: 20px;
+}
+
+.inputGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputField {
+  background: transparent;
+  border: 1px solid #666;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  transition: border 0.3s ease;
+}
+
+.inputField:focus {
+  border-color: #FFD700;
+  outline: none;
+}
+
+.textArea {
+  margin-top: 1rem;
+  width: 100%;
+  background: transparent;
+  border: 1px solid #666;
+  border-radius: 6px;
+  color: #fff;
+  padding: 1rem;
+  resize: none;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.uploadLabel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed #FFD700;
+  border-radius: 6px;
+  height: 100%;
+  padding: 0.75rem 1rem;
+  color: #FFD700;
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.invalid {
+  border-color: red !important;
+}
+
+.modalFooter {
+  background: #000;
+  border-top: none;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submitBtn {
+  background: transparent;
+  border: 1px solid #FFD700;
+  color: #FFD700;
+  border-radius: 20px;
+  padding: 0.5rem 2rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.submitBtn:hover {
+  background-color: #FFD700;
+  color: #000;
+}
+.errorMsg {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.invalid {
+  border-color: red !important;
+}
