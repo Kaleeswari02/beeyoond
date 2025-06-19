@@ -152,7 +152,7 @@ const Footer = () => {
                 © 2025 <span>beeyoondgaming</span>. All
                 rights reserved.
               </p>
-              <p className={styles.copyrightSports}>Powered by <span className={styles.copyrightsub}  style={{fontFamily: "MyCustomFont",  marginLeft: "2px"}}>Sportstech.</span>
+              <p className={styles.copyrightSports}>Powered by <span className={styles.copyrightsub}  style={{fontFamily: "MyCustomFont",  marginLeft: "2px"}}>Sportstech</span>
             </p>
             </div>
           </div>

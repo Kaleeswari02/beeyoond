@@ -257,7 +257,7 @@ const Header = () => {
                         fontFamily: "MyCustomFont",
                       }}
                     >
-                      Sportstech.
+                      Sportstech
                     </span>{" "}
                   </p>
                   {/* <img
