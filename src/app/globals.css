@@ -7,6 +7,35 @@
 html{
     scroll-behavior: smooth;
 }
+.modal-header{
+    background-color: #000 !important;
+    color: #ffffff !important;
+    font-family: Anton, sans-serif !important;
+    border-top: 1px solid #ffbf00;
+    border-right: 1px solid #ffbf00;
+    border-left: 1px solid #ffbf00;
+    border-bottom: none !important;
+  }
+  .modalForm {
+    padding: 0;
+    border-bottom: 1px solid #ffbf00 !important;
+    border-right: 1px solid #ffbf00 !important;
+    border-left: 1px solid #ffbf00 !important;
+    border-top: none !important;
+    background: #000;
+  }
+  .modal-title{
+    font-size: 40px !important;
+  }
+  .modal-header .btn-close {
+    filter: invert(1) !important; /* Inverts black to white */
+    opacity: 1 !important;
+    outline: unset !important;
+  }
+  .modal-header .btn-close:focus{
+    outline:1px solid #000 !important;
+  }
+
 @media only screen and (min-width:2560px){
     .accordion-button{
         background-color: #000000 !important;

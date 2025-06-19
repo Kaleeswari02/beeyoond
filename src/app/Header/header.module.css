@@ -323,9 +323,11 @@ span.copyrightsub{
 
 .modalForm {
   padding: 0;
-  border: 1px solid #FFD700;
+  border-bottom: 1px solid #ffbf00 !important;
+  border-right: 1px solid #ffbf00 !important;
+  border-left: 1px solid #ffbf00 !important;
+  border-top: none !important;
   background: #000;
-
 }
 
 .modalBody {
@@ -351,7 +353,7 @@ span.copyrightsub{
   color: #fff;
   padding: 0.75rem 1rem;
   border-radius: 6px;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: "Anton", sans-serif;
   transition: border 0.3s ease;
 }
 
@@ -359,7 +361,11 @@ span.copyrightsub{
   border-color: #FFD700;
   outline: none;
 }
-
+.btn-close{
+  color: #ffbf00;
+  font-size: 40px;
+  background-color: #fff !important;
+}
 .textArea {
   margin-top: 1rem;
   width: 100%;
@@ -369,7 +375,7 @@ span.copyrightsub{
   color: #fff;
   padding: 1rem;
   resize: none;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: "Anton", sans-serif;
 }
 
 .uploadLabel {
@@ -383,7 +389,7 @@ span.copyrightsub{
   color: #FFD700;
   cursor: pointer;
   text-align: center;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: "Anton", sans-serif;
 }
 
 .invalid {
@@ -404,7 +410,7 @@ span.copyrightsub{
   color: #FFD700;
   border-radius: 20px;
   padding: 0.5rem 2rem;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: "Anton", sans-serif;
   transition: all 0.3s ease;
 }
 
@@ -416,7 +422,7 @@ span.copyrightsub{
   color: red;
   font-size: 0.8rem;
   margin-top: 0.25rem;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: "Anton", sans-serif;
 }
 
 .invalid {
